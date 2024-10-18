@@ -36,7 +36,7 @@ Instructions taken from: https://openzfs.github.io/openzfs-docs/Developer%20Reso
  
 3) `sudo rm -rf /var/lib/docker`
 
-4) `sudo zpool create -f zpool-docker -m /var/lib/docker /dev/sda /dev/sdb /dev/sdc`. Note that you should first check with 'lsblk' in which disk the OS mount point is.
+4) `sudo zpool create -f zpool-docker -m /var/lib/docker /dev/sda /dev/sdb /dev/sdc`. Note that you should first check with `lsblk` in which disk the OS mount point is.
 
 5) `sudo systemctl start docker`
 
