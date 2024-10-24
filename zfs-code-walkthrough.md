@@ -8,7 +8,7 @@
 
 `uberblock_update()`:
 
-`txg_sync_thread()`: runs from a separate thread asynchronously
+`module/zfs/txg.c:58:txg_sync_thread()`: runs from a separate thread asynchronously
 
 `spa_sync()`:
 
