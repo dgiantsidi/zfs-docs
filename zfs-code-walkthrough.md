@@ -6,6 +6,11 @@
 `zil_commit()`:
  -  commit ZIL transactions (itxs) to stable storage
 
+`zil_alloc()`:
+ -  allocates an in-memory structure (`kmem_zalloc()`) for the ZIL
+ -  `os_zil`: the in-memory pointer to the ZIL (`zilog_t*`)
+ -  `zil_header_t`: ZIL header buffer (`struct zil_header`)
+
 `spa_sync_rewrite_vdev_config()`:
 
 `vdev_config_sync()`:
