@@ -14,6 +14,13 @@
 `spa_sync_rewrite_vdev_config()`:
 
 `vdev_config_sync()`:
+ - sync the uberblock and any changes to the vdev configuration
+ - calls into `uberblock_update()` which updates the in-memory state and then
+   flushes the write cache of every disk that is dirty due to the current transaction group
+   It makes sure that all blocks written in this txg will be first committed to the persistent storage
+   before any uberblock that references them (atomic update). We first update the even labels (`vdev_label_sync_list()`) to the
+   perstistent storage and then the uberblock (`vdev_uberblock_sync_list()`). Then we update the odd labels similarly to the even
+   labels (`vdev_label_sync_list()`).
 
 `uberblock_update()`:
 
