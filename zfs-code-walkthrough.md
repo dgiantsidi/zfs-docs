@@ -14,7 +14,7 @@
   -  `txg_sync_start()` is called at `module/zfs/spa.c:spa_load_impl()` (to load an existing storage pool using the config provided) and at `module/zfs/spa.c:spa_create()` (to create a new pool)
 
 `spa_sync()`:
-  - calls into `spa_sync_iterate_to_convergence()` which calls into `dsl_pool_sync()` `dsl_dataset_sync()` `dmu_objset_sync()` `zil_sync()`
+  - calls into `spa_sync_iterate_to_convergence()` which calls into `dsl_pool_sync()` `dsl_dataset_sync()` `dmu_objset_sync()` `zil_sync()` `dsl_pool_sync_mos()`
 
 `space_map_write_seg()`:
 
