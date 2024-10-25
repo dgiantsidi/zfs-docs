@@ -1,6 +1,10 @@
 # Documentation of ZFS codebase
 
 `zil_sync()`:
+-  called in syncing context to free committed log blocks and update log header
+
+`zil_commit()`:
+ -  commit ZIL transactions (itxs) to stable storage
 
 `spa_sync_rewrite_vdev_config()`:
 
@@ -14,7 +18,7 @@
   -  `txg_sync_start()` is called at `module/zfs/spa.c:spa_load_impl()` (to load an existing storage pool using the config provided) and at `module/zfs/spa.c:spa_create()` (to create a new pool)
 
 `spa_sync()`:
-  - calls into `spa_sync_iterate_to_convergence()` which calls into `dsl_pool_sync()` `dsl_dataset_sync()` `dmu_objset_sync()` `zil_sync()` `dsl_pool_sync_mos()`
+  - calls into `spa_sync_iterate_to_convergence()` which calls into `dsl_pool_sync()` and then `dsl_dataset_sync()` and then `dmu_objset_sync()` and then `zil_sync()` and then `dsl_pool_sync_mos()` (which updates the MOS and sets the `ub_rootbp` with `spa_set_rootblkptr()`)
 
 `space_map_write_seg()`:
 
