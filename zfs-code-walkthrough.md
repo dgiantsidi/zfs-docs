@@ -8,7 +8,10 @@
 
 `uberblock_update()`:
 
-`module/zfs/txg.c:58:txg_sync_thread()`: runs from a separate thread asynchronously
+`module/zfs/txg.c:58:txg_sync_thread()`: 
+  -  runs continuously from a separate thread asynchronously that is spawn at `txg_sync_start()`
+  -  calls into `spa_sync()`
+  -  `txg_sync_start()` is called at `module/zfs/spa.c:spa_load_impl()` (to load an existing storage pool using the config provided) and at `module/zfs/spa.c:spa_create()` (to create a new pool)
 
 `spa_sync()`:
 
