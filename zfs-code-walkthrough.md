@@ -22,7 +22,9 @@
    perstistent storage and then the uberblock (`vdev_uberblock_sync_list()`). Then we update the odd labels similarly to the even
    labels (`vdev_label_sync_list()`).
 
-`uberblock_update()`:
+`uberblock_update()`: 
+ - computes the in-memory uberblock data and returns
+ - then, this in-memory uberblock is serialized into a buffer and flashed to the persistent storage at `vdev_uberblock_sync_list()`  (called by `vdev_config_sync()`)
 
 `module/zfs/txg.c:58:txg_sync_thread()`: 
   -  runs continuously from a separate thread asynchronously that is spawn at `txg_sync_start()`
@@ -38,7 +40,7 @@
 
 `space_map_write_impl()`:
 
-`metaslab.c:2445:metaslab_load_impl()`: also this is called asynchronously by a separate thread (other than the one that calls the `txg_sync_thread()`)
+`metaslab.c:2445:metaslab_load_impl()`: also this is called asynchronously by a separate thread (might be other than the one that calls the `txg_sync_thread()`)
 
 
 # Execution paths
