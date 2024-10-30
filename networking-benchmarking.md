@@ -13,6 +13,6 @@
 # Results
 | VMs   | `ping` (ms) | `netperf` (ms) |
 |---|---|---|
-| CVMs (test1)   |  min=0.487, avg=0.781, max=2.115, mdev=0.390 w/ interval = 1 (1s) |  cannot set interval w/ package manager |
+| CVMs (test1)   |  min=0.487, avg=0.781, max=2.115, mdev=0.390 w/ interval = 1 (1s) |  cannot set interval for netperf w/ package manager |
 | CVMs  (test2) | min=0.179, avg=**0.318**, max=0.986, mdev=0.159 w/ interval = 0.002 (2ms) | min=0.141, avg=**0.358**, max=4.673, mdev=0.26, (tran/s=2778/s) | 
 | R-VMs  |   |   |
