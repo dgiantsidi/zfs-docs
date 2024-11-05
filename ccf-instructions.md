@@ -11,3 +11,6 @@
 `ninja`
 
 `sudo ninja install`
+
+`../tests/sandbox/sandbox.sh -p samples/apps/logging/liblogging.virtual.so  -v -n local://127.0.0.1 -n local://127.0.0.
+2 -n local://127.0.0.3`
