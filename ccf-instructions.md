@@ -1,16 +1,19 @@
-# 
+# How to build
 
-`cd CCF/getting_started/setup_vm`
+1. `cd CCF/getting_started/setup_vm` or `cd CCF-bench/getting_started/setup_vm`
 
-`sudo -E ./run.sh ccf-dev.yml --extra-vars "platform=virtual" --extra-vars "clang_version=15"`
+2. `sudo -E ./run.sh ccf-dev.yml --extra-vars "platform=virtual" --extra-vars "clang_version=15"`
 
-`mkdir build && cd build`
+3. `mkdir build && cd build`
 
-`cmake -GNinja -DCOMPILE_TARGET=virtual ..`
+4. `cmake -GNinja -DCOMPILE_TARGET=virtual ..`
 
-`ninja`
+5. `ninja`
 
-`sudo ninja install`
+6. `sudo ninja install`
 
-`../tests/sandbox/sandbox.sh -p samples/apps/logging/liblogging.virtual.so  -v -n local://127.0.0.1 -n local://127.0.0.
+
+# How to run
+
+1. `../tests/sandbox/sandbox.sh -p samples/apps/logging/liblogging.virtual.so  -v -n local://127.0.0.1 -n local://127.0.0.
 2 -n local://127.0.0.3`
