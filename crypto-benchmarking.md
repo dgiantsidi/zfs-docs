@@ -1,6 +1,6 @@
 On regural VM: 
 
-```openssl speed -evp aes-128-gcm sha hmac-sha256```
+```openssl speed -evp aes-128-gcm sha hmac```
 
 ```
 type             16 bytes     64 bytes    256 bytes   1024 bytes   8192 bytes  16384 bytes
