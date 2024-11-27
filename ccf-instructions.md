@@ -21,7 +21,10 @@
 
 # Evaluation
 
-Cmd to run: `./raft_driver` and then 0 or 1. 
+### Code:
+  We extended raft_driver.cpp in [link](https://github.com/dgiantsidi/CCF-bench), (tag=ccf-6.0.0-dev4).
+  
+  **Cmd to run**: `./raft_driver` and then the process id, e.g., 0 or 1. 
 
 ### Experiment 1: 2 VMs (no failures)
 
@@ -30,6 +33,7 @@ Cmd to run: `./raft_driver` and then 0 or 1.
 | R-VMs (acc)  | **tput**=15084.9 op/s, **latency**=0.066 ms| | **tput**=11690.294 op/s, **latency**=0.085ms |
 | R-VMs (w/o acc) |  | | |
 
-Notes:
+Notes on the code/implementation:
 - send msg (leader) = 114B (w/o any data)
 - recv msg (leader) = 33B (ACKs)
+- ledger implemented as a vector of entries and grows infinitely
