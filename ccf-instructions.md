@@ -30,7 +30,7 @@
 
 | VMs   | w/ sha256 | native | netperf |
 |---|---|---|---|
-| R-VMs (acc)  | **tput**=15084.9 op/s, **latency**=0.066 ms| | **tput**=11690.294 op/s, **latency**=0.085ms |
+| R-VMs (acc)  | **tput**=15084.9 op/s, **latency**=0.066 ms| **tput**=15392.9 op/s, **latency**=0.064ms| **tput**=11690.294 op/s, **latency**=0.085ms |
 | R-VMs (w/o acc) |  | | |
 
 Notes on the code/implementation:
