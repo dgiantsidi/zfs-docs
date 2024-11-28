@@ -37,3 +37,4 @@ Notes on the code/implementation:
 - send msg (leader) = 114B (w/o any data)
 - recv msg (leader) = 33B (ACKs)
 - ledger implemented as a vector of entries and grows infinitely
+- latency_bench: 1e6 txs (Request/Response), 64B msg_sz
