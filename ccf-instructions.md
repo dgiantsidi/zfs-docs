@@ -28,10 +28,10 @@
 
 ### Experiment 1: 2 VMs (no failures)
 
-| VMs   | CCF w/ sha256 | CCF (native) | netperf |
-|---|---|---|---|
-| R-VMs (acc)  | **tput**=15084.9 op/s, **latency**=0.066 ms| **tput**=15392.9 op/s, **latency**=0.064ms| **tput**=11690.294 op/s, **latency**=0.085ms |
-| CVMs (w/o acc) |  **tput**=7284 op/s, **latency**=0.1372 ms | **tput**=7487.7 op/s, **latency**=0.133 ms | **tput**=4567.294 op/s, **latency**=0.218ms |
+| VMs   | CCF w/ sha256 | CCF (native) | netperf | latency_bench w/ sha256 | latency_bench (native) |
+|---|---|---|---|---|---|
+| R-VMs (acc)  | **tput**=15084.9 op/s, **latency**=0.066 ms| **tput**=15392.9 op/s, **latency**=0.064ms| **tput**=11690.294 op/s, **latency**=0.085ms | | |
+| CVMs (w/o acc) |  **tput**=7284 op/s, **latency**=0.1372 ms | **tput**=7487.7 op/s, **latency**=0.133 ms | **tput**=4567.294 op/s, **latency**=0.218ms | **tput**=3291.44 op/s, **latency**=0.303 ms| **tput**= op/s, **latency**= ms|
 
 Notes on the code/implementation:
 - send msg (leader) = 114B (w/o any data)
