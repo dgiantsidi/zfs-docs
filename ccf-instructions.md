@@ -30,7 +30,7 @@
 
 | VMs   | CCF w/ sha256 | CCF (native) | netperf | latency_bench w/ sha256 | latency_bench (native) |
 |---|---|---|---|---|---|
-| R-VMs (acc)  | **tput**=15084.9 op/s, **latency**=0.066 ms| **tput**=15392.9 op/s, **latency**=0.064ms| **tput**=11690.294 op/s, **latency**=0.085ms | | |
+| R-VMs (acc)  | **tput**=15084.9 op/s, **latency**=0.066 ms| **tput**=15392.9 op/s, **latency**=0.064ms| **tput**=8678.294 op/s, **latency**=0.115ms | |**tput**=8181.94 ops, **latency**=0.122 ms |
 | CVMs (w/o acc) |  **tput**=3741.8 op/s, **latency**=0.267 ms | **tput**=3931.4 op/s, **latency**=0.254 ms | **tput**=4567.294 op/s, **latency**=0.218ms | **tput**=4321.8 op/s, **latency**=0.231 ms| **tput**= 4364.947 op/s, **latency**= 0.2290 ms|
 
 Notes on the code/implementation:
