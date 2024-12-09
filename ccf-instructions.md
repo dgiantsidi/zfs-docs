@@ -22,7 +22,7 @@
 # Evaluation
 
 ### Code:
-  We extended raft_driver.cpp in [link](https://github.com/dgiantsidi/CCF-bench), (tag=ccf-6.0.0-dev4).
+  We extended raft_driver.cpp in [link](https://github.com/dgiantsidi/CCF-bench), (tag=ccf-6.0.0-dev4). We need `g++/gcc --version 9.4.0`
   
   **Cmd to run**: `./raft_driver` and then the process id, e.g., 0 or 1. 
 
