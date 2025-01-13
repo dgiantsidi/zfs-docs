@@ -38,3 +38,10 @@ Notes on the code/implementation:
 - recv msg (leader) = 33B (ACKs)
 - ledger implemented as a vector of entries and grows infinitely
 - latency_bench: 1e6 txs (Request/Response), 64B msg_sz
+
+
+### Experiment 2: QUIC protocol 2 VMs
+
+| VMs   |  latency  |
+|---|---|
+| R-VMs (acc)  | **latency**=107569 ns ( approx 0.107 ms)|
