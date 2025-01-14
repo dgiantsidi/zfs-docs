@@ -24,6 +24,6 @@ Instructions followed from the following references:
   - `git submodule init` and `git submodule update`
   - `cmake . && make`
 3) Configure `ngtcp2`
-  - `./configure --with-picotls PICOTLS_CFLAGS="-I$PWD/picotls/include/" PICOTLS_LIBS="-L$PWD/picotls -lpicotls-openssl -lpicotls-core" PKG_CONFIG_PATH=$PWD/../nghttp3/build/lib/pkgconfig`
+  - `./configure --with-picotls PICOTLS_CFLAGS="-I$PWD/picotls/include/" PICOTLS_LIBS="-L$PWD/picotls -lpicotls-openssl -lpicotls-core" PKG_CONFIG_PATH=$PWD/nghttp3/build/lib/pkgconfig`
 4) Build
   - `make`
