@@ -18,10 +18,13 @@ The directories organization should be (for cmake to find the correct paths in t
 
 ### How to run
 
-`./examples/wsslserver 10.5.0.6 1800 server.key server.crt`
+Quick stand-alone
+`./examples/wsslserver 10.5.0.6 1800 server.key server.crt` or `ptlsserver`
 
-`./examples/wsslclient 10.5.0.6 1800 https://10.5.0.6:1800 -d ./examples/text2.txt`
+`./examples/wsslclient 10.5.0.6 1800 https://10.5.0.6:1800 -d ./examples/text2.txt` or `ptlsclient`
 
+
+`sudo -E LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:$(realpath ../../ngtcp2/lib/.libs):$(realpath ../../ngtcp2/nghttp3/build/lib) ./raft_driver <args>`
 
 ### How to build
 
