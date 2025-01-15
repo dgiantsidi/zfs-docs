@@ -29,7 +29,7 @@ The results have been verified with `picotls` too.
 
 | VMs   |  latency  |
 |---|---|
-| R-VMs (acc)  | **latency**=  ns ( approx  ms)|
+| R-VMs (acc)  | **latency**= 232293 ns ( approx  0.23 ms) (std_dev = 15678.9 ns) |
 
 ### How to run
 
