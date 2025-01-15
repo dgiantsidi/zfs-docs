@@ -1,4 +1,14 @@
+### Documentation
 
+To experiment with QUIC protocol as a stand-alone client/server implementation use the `picotls-dev` branch.
+
+For the integration w/ CCF on the CCF side you should use the `picotls-dev-server`.
+
+The directories organization should be (for cmake to find the correct paths in the `CMakeLists.txt`)
+```
+<parent_dir>/CCF-bench
+<parent_dir>/ngtcp2
+```
 ### Experiment : QUIC protocol 2 VMs (w/ wolfssl)
 
 | VMs   |  latency  |
