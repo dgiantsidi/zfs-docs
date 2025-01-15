@@ -46,4 +46,5 @@ Instructions followed from the following references:
   - `cd ..`
   - `autoreconf -i`
   - `./configure --with-picotls PICOTLS_CFLAGS="-I$PWD/picotls/include/" PICOTLS_LIBS="-L$PWD/picotls -lpicotls-openssl -lpicotls-core" PKG_CONFIG_PATH=$PWD/nghttp3/build/lib/pkgconfig`
+  - `make -C third-party/`
   - `make`
