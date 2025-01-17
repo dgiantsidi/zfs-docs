@@ -35,15 +35,15 @@ The results have been verified with `picotls` too.
 
 **Quick stand-alone**
 
-`./examples/wsslserver 10.5.0.6 1800 server.key server.crt` or `ptlsserver`
+`./examples/wsslserver 10.5.0.6 6800 server.key server.crt` or `ptlsserver`
 
-`./examples/wsslclient 10.5.0.6 1800 https://10.5.0.6:1800 -d ./examples/text2.txt` or `ptlsclient`
+`./examples/wsslclient <server_ip> (e.g., 10.5.0.6) <port> (e.g., 6800) https://10.5.0.6:1800 -d ./examples/text2.txt` or `ptlsclient`
 
 **CCF integration**
 
 follower(s): `sudo -E LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:$(realpath ../../ngtcp2/lib/.libs):$(realpath ../../ngtcp2/nghttp3/build/lib) ./raft_driver <args>`
 
-primary: `sudo -E LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:$(realpath ../../ngtcp2/lib/.libs):$(realpath ../../ngtcp2/nghttp3/build/lib) ./raft_driver 10.5.0.7 1800 server.key server.crt`
+primary: `sudo -E LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:$(realpath ../../ngtcp2/lib/.libs):$(realpath ../../ngtcp2/nghttp3/build/lib) ./raft_driver 10.5.0.7 6800 server.key server.crt`
 
 
 
