@@ -57,6 +57,7 @@ Instructions followed from the following references:
   - `cd picotls && git checkout 402544bb65b35c3231a8912f25919de7e7922659`
   - `git submodule init && git submodule update`
   - `cmake . && make`
+  - `cd ..`
     
 3) Build `nghttp3`
   - `git clone --recursive https://github.com/ngtcp2/nghttp3`
