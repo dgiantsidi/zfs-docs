@@ -51,8 +51,13 @@ primary: `sudo -E LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:$(realpath ../../ngtcp2/lib
 
 Instructions followed from the following references:
 
-1) `git@github.com:dgiantsidi/ngtcp2.git && cd ngtcp2 && git submodule update --init && sudo apt-get update && sudo apt-get install libtool  libev-dev libssl-dev pkg-config`
-2)  Build `picotls` (for resolving OpenSSL conficts)
+1)
+```
+git clone git@github.com:dgiantsidi/ngtcp2.git && cd ngtcp2 && git submodule update --init
+&& sudo apt-get update && sudo apt-get install libtool  libev-dev libssl-dev pkg-config
+```
+2) `cd picotls`
+3)  Build `picotls` (for resolving OpenSSL conficts)
   - `git clone git@github.com:h2o/picotls.git`
   - `cd picotls && git checkout 402544bb65b35c3231a8912f25919de7e7922659`
   - `git submodule init && git submodule update`
