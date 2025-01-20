@@ -41,17 +41,17 @@ The results have been verified with `picotls` too.
   
 | VMs   |  latency  |
 |---|---|
-| R-VMs (acc)  | **latency**= 0.393 ms (stddev=0.014ms, QUIC lat=0.18ms, CCF lat=0.2ms)|
-| C-VMs   | **latency**= 1.12 ms (stddev=0.54ms, QUIC lat=0.4ms, CCF lat=fluctuations)|
+| R-VMs (acc)  | **latency**= 0.393 ms (stddev=0.014 ms, QUIC lat=0.18 ms, CCF lat=0.2 ms)|
+| C-VMs   | **latency**= 1.12 ms (stddev=0.54 ms, QUIC lat=0.4 ms, CCF lat=fluctuations)|
 
 
 **20/01/2025**
   
 | VMs   |  latency  |
 |---|---|
-| R-VMs (acc)  | **latency**= 0.943648 ms (stddev=0.441688ms)|
 | R-VMs (acc)  | **latency**= 0.22 ms|
-| C-VMs   | **latency**= 1.02ms|
+| R-VMs (w/o acc)  | **latency**= 0.943648 ms (stddev=0.441688 ms)|
+| C-VMs   | **latency**= 1.02 ms|
 
 
 The results have been verified with `picotls` too.
