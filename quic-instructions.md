@@ -35,14 +35,14 @@ The results have been verified with `picotls` too.
   
 | VMs   |  latency  |
 |---|---|
-| R-VMs (acc)  | **latency**= 232293 ns ( approx  0.23 ms) (std_dev = 15678.9 ns) |
+| R-VMs (acc)  | **latency**= 232293 ns ( approx  0.23 ms) (stddev = 15678.9 ns) |
 
 **17/01/2025**
   
 | VMs   |  latency  |
 |---|---|
-| R-VMs (acc)  | **latency**= 0.393 ms (stddev=0.014ms)|
-| C-VMs   | **latency**= 1.12 ms (stddev=0.54ms)|
+| R-VMs (acc)  | **latency**= 0.393 ms (stddev=0.014ms, QUIC lat=0.18ms, CCF lat=0.2ms)|
+| C-VMs   | **latency**= 1.12 ms (stddev=0.54ms), QUIC lat=0.4ms, CCF lat=fluctuations|
 
 
 **20/01/2025**
