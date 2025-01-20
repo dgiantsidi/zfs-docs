@@ -15,21 +15,40 @@ The directories organization should be (for cmake to find the correct paths in t
 ### Preliminary experiments 
 
 #### QUIC protocol (stand-alone) with 2 VMs (w/ wolfssl) 
+- 16/01/2025
 | VMs   |  latency  |
 |---|---|
 | R-VMs (acc)  | **latency**=107569 ns ( approx 0.107 ms)|
 
 The results have been verified with `picotls` too.
 
+
 #### CCF integration with 2 VMs (w/ picotls) 
 
 **Experimental setup: 3 VMs**
 - one for workload generation, runs `ptlsclient`
 - two for CCF
-
+  
+- 16/01/2025
 | VMs   |  latency  |
 |---|---|
 | R-VMs (acc)  | **latency**= 232293 ns ( approx  0.23 ms) (std_dev = 15678.9 ns) |
+
+- 17/01/2025
+| VMs   |  latency  |
+|---|---|
+| R-VMs (acc)  | **latency**= 0.393 ms (stddev=0.014ms)|
+| C-VMs   | **latency**= 1.12 ms (stddev=0.54ms)|
+
+
+- 20/01/2025
+| VMs   |  latency  |
+|---|---|
+| R-VMs (acc)  | **latency**= 0.22 ms|
+| C-VMs   | **latency**= 1.02ms|
+
+
+The results have been verified with `picotls` too.
 
 ### How to run
 
