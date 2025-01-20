@@ -49,6 +49,7 @@ The results have been verified with `picotls` too.
   
 | VMs   |  latency  |
 |---|---|
+| R-VMs (acc)  | **latency**= 0.943648 ms (stddev=0.441688ms)|
 | R-VMs (acc)  | **latency**= 0.22 ms|
 | C-VMs   | **latency**= 1.02ms|
 
