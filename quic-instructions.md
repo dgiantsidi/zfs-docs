@@ -20,7 +20,7 @@ The directories organization should be (for cmake to find the correct paths in t
   
 | VMs   |  latency  |
 |---|---|
-| R-VMs (acc)  | **latency**=107569 ns ( approx 0.107 ms)|
+| R-VMs (acc)  | **latency**=0.107 ms|
 
 The results have been verified with `picotls` too.
 
