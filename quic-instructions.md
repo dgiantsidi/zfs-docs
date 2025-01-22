@@ -55,6 +55,7 @@ The results have been verified with `picotls` too.
 
 
 The results have been verified with `picotls` too.
+With accelarated networking CCF and QUIC had no significant overhead for "large" data transfers (1K for QUIC and 816-1K for CCF).
 
 ### How to run
 
