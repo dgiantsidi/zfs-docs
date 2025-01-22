@@ -19,7 +19,7 @@ Instructions taken from: https://openzfs.github.io/openzfs-docs/Developer%20Reso
 
 1) `sudo make uninstall; sudo ldconfig; sudo depmod`
 
-2) `make clean`
+2) `sudo make clean`
 
 3) `pkill zed`
 
@@ -35,7 +35,7 @@ Instructions taken from: https://openzfs.github.io/openzfs-docs/Developer%20Reso
 
 # Instructions for running ZFS natively
 
-1) `sudo zpool create mypool /dev/sdb /dev/sdc /dev/sdd` 
+1) `sudo zpool create mypool /dev/sdb /dev/sdc /dev/sdd`. Note that you should first check with `lsblk` in which disk the OS mount point is. You should exclude that disk.
 
 
 
