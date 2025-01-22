@@ -32,6 +32,13 @@ Instructions taken from: https://openzfs.github.io/openzfs-docs/Developer%20Reso
 7) `sudo reboot`
 
 
+
+# Instructions for running ZFS natively
+
+1) `sudo zpool create mypool /dev/sdb /dev/sdc /dev/sdd` 
+
+
+
 # Instructions for attaching docker to ZFS
 
 1) `sudo systemctl stop docker` and `sudo systemctl stop docker.socket`
