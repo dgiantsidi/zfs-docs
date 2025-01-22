@@ -5,6 +5,8 @@
 
 `zil_commit()`:
  -  commit ZIL transactions (itxs) to stable storage
+ -  the in-memory ZIL representation is linked-lists of `itx_t` (defined in `zil.h`)
+ -  the on-disk ZIL representation is `lwb_t` (defined in `zil_impl.h`)
 
 `zil_alloc()`:
  -  allocates an in-memory structure (`kmem_zalloc()`) for the ZIL
