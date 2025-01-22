@@ -37,7 +37,7 @@ Instructions taken from: https://openzfs.github.io/openzfs-docs/Developer%20Reso
 
 1) `sudo zpool create new_pool /dev/sdb /dev/sdc /dev/sdd`. Note that you should first check with `lsblk` in which disk the OS mount point is. You should exclude that disk.
 
-2) `sudo zpool import new_pool -d /dev/sda /dev/sdb /dev/sdc`
+2) `sudo zpool import new_pool -d /dev/sda /dev/sdb /dev/sdc` FIXME!! @dimitra
 
 
 # Instructions for attaching docker to ZFS
