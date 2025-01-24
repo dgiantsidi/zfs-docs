@@ -43,6 +43,13 @@ Instructions taken from: https://openzfs.github.io/openzfs-docs/Developer%20Reso
    zpool destroy new_pool
    zpool list
    ```
+   
+3)
+   ```
+   sudo zfs unmount new_pool_3
+   sudo zfs mount new_pool_3
+   ```
+
 
 
 # Instructions for attaching docker to ZFS
