@@ -57,8 +57,15 @@ POSIX-syscall `write()` &#8594; `zpl_file.c:383:zpl_iter_write()` &#8594; `zpl_f
 # Data structures
 
 - `Metaslabs` are data structures used to track memory allocations by the `spa` (storage pool allocator).
-  
 -  The bookkeeping information for the allocator is represented in-memory as a ```collection of range trees```.
 -  The bookkeeping information for the allocator is represented on-disk as a ```space map```.
+
+## Space map
+
+-  A log of free or allocated space for a region. Records are appended as space becaomes freed/allocated from the region.
+-  `ms_tree` is a range tree that represents the available space that is allocatable.
+-  `ms_alloctree` contains all blocks that are allocated in a sync pass.
+-  `ms_freetree` contains all blocks that are freed in a sync pass.
+-  `metaslab_sync` all dirty metaslabs are synced; all dirty blocks from `ms_alloctree` and `ms_freetree` for the current (syncing) txg are written to the associated `space map`.
 
 
