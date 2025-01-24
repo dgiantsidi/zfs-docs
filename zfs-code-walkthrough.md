@@ -54,3 +54,11 @@ POSIX-syscall `fsync()` &#8594; `zfs_vnops.c:88:zfs_fsync()` &#8594; `zil.c:3568
 POSIX-syscall `write()` &#8594; `zpl_file.c:383:zpl_iter_write()` &#8594; `zpl_file.c:358:zpl_generic_write_checks()` &#8594; `zpl_file.c:256:zfs_io_flags()`  &#8594; `zfs_vnops.c:435:zfs_write()` 
 
 
+# Data structures
+
+- `Metaslabs` are data structures used to track memory allocations by the `spa` (storage pool allocator).
+  
+-  The bookkeeping information for the allocator is represented in-memory as a ```collection of range trees```.
+-  The bookkeeping information for the allocator is represented on-disk as a ```space map```.
+
+
