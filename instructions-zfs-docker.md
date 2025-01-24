@@ -10,7 +10,7 @@ Instructions taken from: https://openzfs.github.io/openzfs-docs/Developer%20Reso
 
 2) `sudo ./configure`,  add `--enable-debug` for printing out the messages with `zfs_dbgmsg()`. Also to enable printing you need to set the following: `echo 1 >/sys/module/zfs/parameters/zfs_dbgmsg_enable`. Printed lines will be shown with `cat /proc/spl/kstat/zfs/dbgmsg`.
 
-3) `sudo make -s -j$(nproc)`
+3) `sudo make -s -j$(nproc)`. **SOS**: do not tidy the code with `clang-format` as this re-orders some header files with alphanumerical order and breaks compilation.
 
 4) `sudo make install; sudo ldconfig; sudo depmod; sudo ./scripts/zfs.sh`
 
