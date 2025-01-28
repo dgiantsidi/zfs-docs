@@ -11,9 +11,9 @@ sudo apt install alien autoconf automake build-essential debhelper-compat dh-aut
 
 2) `sh autogen.sh`
 
-3) `sudo ./configure`,  add `--enable-debug` for printing out the messages with `zfs_dbgmsg()`. Also to enable printing you need to set the following: `echo 1 >/sys/module/zfs/parameters/zfs_dbgmsg_enable`. Printed lines will be shown with `cat /proc/spl/kstat/zfs/dbgmsg`.
+3) `./configure --enable-debug`,  add `--enable-debug` for printing out the messages with `zfs_dbgmsg()`. Also to enable printing you need to set the following: `echo 1 >/sys/module/zfs/parameters/zfs_dbgmsg_enable`. Printed lines will be shown with `cat /proc/spl/kstat/zfs/dbgmsg`.
 
-4) `sudo make -s -j$(nproc)`. **SOS**: do not tidy the code with `clang-format` as this re-orders some header files with alphanumerical order and breaks compilation.
+4) `make -s -j$(nproc)`. **SOS**: do not tidy the code with `clang-format` as this re-orders some header files with alphanumerical order and breaks compilation.
 
 5) `sudo make install && sudo ldconfig && sudo depmod && sudo ./scripts/zfs.sh`
 
