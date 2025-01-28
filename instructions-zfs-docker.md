@@ -29,15 +29,17 @@ sudo apt install alien autoconf automake build-essential debhelper-compat dh-aut
 make clean && export list="$(find -name .deps)" && for elem in $list; do sudo rm -rf $elem; done && sudo rm -rf __pycache__/ aclocal.m4 build/ config.log config.status  configure libtool stamp-h1 zfs_config.h.in zfs_config.h
 ```
 
-5) `pkill zed`
 
-6) `sudo modprobe -r zfs`
+## Obsolete cmds
+3) `pkill zed`
 
-7) `lsmod | grep zfs`
+4) `sudo modprobe -r zfs`
 
-8) `sudo depmod -a`
+5) `lsmod | grep zfs`
 
-9) `sudo reboot`
+6) `sudo depmod -a`
+
+7) `sudo reboot`
 
 
 
