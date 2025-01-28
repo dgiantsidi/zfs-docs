@@ -74,3 +74,5 @@ sudo apt install alien autoconf automake build-essential debhelper-compat dh-aut
 # 
 
 kernel version: `6.8.0-1021-azure #25-Ubuntu SMP`
+
+`sudo rm -rf __pycache__/ aclocal.m4 build/ config.log config.status  configure libtool stamp-h1 zfs_config.h.in zfs_config.h`
