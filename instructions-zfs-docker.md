@@ -22,7 +22,7 @@ sudo apt install alien autoconf automake build-essential debhelper-compat dh-aut
 
 1) `sudo make uninstall; sudo ldconfig; sudo depmod`
 
-2) `sudo make clean`, `export list="$(find --name .deps)"`, `for elem in $list; do sudo rm -rf $elem; done`
+2) `sudo make clean`, `export list="$(find -name .deps)"`, `for elem in $list; do sudo rm -rf $elem; done`
 
 3) `pkill zed`
 
