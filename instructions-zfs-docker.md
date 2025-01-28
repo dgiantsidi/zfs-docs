@@ -54,7 +54,6 @@ sudo apt install alien autoconf automake build-essential debhelper-compat dh-aut
    ```
 
 
-
 # Instructions for attaching docker to ZFS
 
 1) `sudo systemctl stop docker` and `sudo systemctl stop docker.socket`
@@ -68,3 +67,10 @@ sudo apt install alien autoconf automake build-essential debhelper-compat dh-aut
 5) `sudo systemctl start docker`
 
 6) `sudo docker info`
+
+
+
+
+# 
+
+kernel version: `6.8.0-1021-azure #25-Ubuntu SMP`
