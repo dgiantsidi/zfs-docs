@@ -20,19 +20,21 @@ sudo apt install alien autoconf automake build-essential debhelper-compat dh-aut
 
 # Uninstall and remove ZFS
 
-1) `sudo make uninstall; sudo ldconfig; sudo depmod`
+0) `sudo ./scripts/zfs.sh -u`
+   
+2) `sudo make uninstall; sudo ldconfig; sudo depmod`
 
-2) `sudo make clean`, `export list="$(find -name .deps)"`, `for elem in $list; do sudo rm -rf $elem; done`
+3) `sudo make clean`, `export list="$(find -name .deps)"`, `for elem in $list; do sudo rm -rf $elem; done`
 
-3) `pkill zed`
+4) `pkill zed`
 
-4) `sudo modprobe -r zfs`
+5) `sudo modprobe -r zfs`
 
-5) `lsmod | grep zfs`
+6) `lsmod | grep zfs`
 
-6) `sudo depmod -a`
+7) `sudo depmod -a`
 
-7) `sudo reboot`
+8) `sudo reboot`
 
 
 
