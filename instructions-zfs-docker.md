@@ -78,10 +78,11 @@ make clean && export list="$(find -name .deps)" && for elem in $list; do sudo rm
 
 
 
-# 
+# Notes
 
-kernel version: `6.8.0-1021-azure #25-Ubuntu SMP`
+kernel versions tested: `6.8.0-1021-azure #25-Ubuntu SMP`, `6.8.0-1020-azure #23-Ubuntu`
 
-`sudo rm -rf __pycache__/ aclocal.m4 build/ config.log config.status  configure libtool stamp-h1 zfs_config.h.in zfs_config.h`
-
-This commit works: `0dc17192b2173d7141cacc37e04d78ab4ce62307`
+RSA-key generation for git:
+```
+ssh-keygen -t rsa -b 4096 -C "dimitra.giantsidi@gmail.com" && eval "$(ssh-agent -s)" && ssh-add ~/.ssh/id_rsa && cat ~/.ssh/id_rsa.pub
+```
