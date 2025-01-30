@@ -15,7 +15,10 @@ sudo apt install alien autoconf automake build-essential debhelper-compat dh-aut
 
 4) `make -s -j$(nproc)`. **SOS**: do not tidy the code with `clang-format` as this re-orders some header files with alphanumerical order and breaks compilation.
 
-5) `sudo make install && sudo ldconfig && sudo depmod && sudo ./scripts/zfs.sh`
+5)
+```
+sudo make install && sudo ldconfig && sudo depmod && sudo ./scripts/zfs.sh
+```
 
 
 # Uninstall and remove ZFS
