@@ -25,7 +25,10 @@ sudo make install && sudo ldconfig && sudo depmod && sudo ./scripts/zfs.sh
 
 0) `sudo ./scripts/zfs.sh -u`
    
-2) `sudo make uninstall; sudo ldconfig; sudo depmod`
+2)
+```
+sudo make uninstall; sudo ldconfig; sudo depmod
+```
 
 3)
 ```
