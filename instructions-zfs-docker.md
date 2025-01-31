@@ -47,7 +47,7 @@ Instructions taken from: https://openzfs.github.io/openzfs-docs/Developer%20Reso
 
 
 ## Obsolete cmds
-3) ```sh
+4) ```sh
    pkill zed
    ```
 
@@ -55,15 +55,15 @@ Instructions taken from: https://openzfs.github.io/openzfs-docs/Developer%20Reso
    sudo modprobe -r zfs
    ```
 
-7) ```sh
+6) ```sh
    lsmod | grep zfs
    ```
 
-9) ```sh
+7) ```sh
    sudo depmod -a
    ```
 
-11) ```sh
+8) ```sh
     sudo reboot
     ```
 
@@ -71,15 +71,19 @@ Instructions taken from: https://openzfs.github.io/openzfs-docs/Developer%20Reso
 
 # Instructions for running ZFS natively
 
-1) `sudo zpool create new_pool /dev/sdb /dev/sdc /dev/sdd`. Note that you should first check with `lsblk` in which disk the OS mount point is. You should exclude that disk.
+1) ```sh
+   sudo zpool create new_pool /dev/sdb /dev/sdc /dev/sdd
+   ```
 
-2) ```sh
+   Note that you should first check with `lsblk` in which disk the OS mount point is. You should exclude that disk.
+
+3) ```sh
    zfs unmount -a
    zpool destroy new_pool
    zpool list
    ```
    
-3) ``` sh
+4) ``` sh
    sudo zfs unmount new_pool_3
    sudo zfs mount new_pool_3
    ```
@@ -95,21 +99,21 @@ Instructions taken from: https://openzfs.github.io/openzfs-docs/Developer%20Reso
    cp -au /var/lib/docker/ /var/lib/docker.bk
    ```
  
-7) ```sh
+5) ```sh
    sudo rm -rf /var/lib/docker
    ```
 
-9) ```sh
+6) ```sh
    sudo zpool create -f zpool-docker -m /var/lib/docker /dev/sda /dev/sdb /dev/sdc
    ``` 
 
 Note that you should first check with `lsblk` in which disk the OS mount point is.
 
-11) ```sh
+7) ```sh
     sudo systemctl start docker
     ```
 
-13) ```sh
+8) ```sh
     sudo docker info
     ```
 
