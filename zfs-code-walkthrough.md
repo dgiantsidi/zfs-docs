@@ -69,3 +69,6 @@ POSIX-syscall `write()` &#8594; `zpl_file.c:383:zpl_iter_write()` &#8594; `zpl_f
 -  `metaslab_sync` all dirty metaslabs are synced; all dirty blocks from `ms_alloctree` and `ms_freetree` for the current (syncing) txg are written to the associated `space map`.
 
 
+# Random notes (to be organized)
+
+Everything in ZFS (compression, encryption, checksum, dedup, etc) works over logical blocks (dataset recordsize, zvol volblocksize, etc), each pointed by a block pointer, actually including the checksum, compression and encryption parameters, etc.
