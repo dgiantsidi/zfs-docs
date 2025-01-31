@@ -73,15 +73,13 @@ Instructions taken from: https://openzfs.github.io/openzfs-docs/Developer%20Reso
 
 1) `sudo zpool create new_pool /dev/sdb /dev/sdc /dev/sdd`. Note that you should first check with `lsblk` in which disk the OS mount point is. You should exclude that disk.
 
-2)
-   ```
+2) ```sh
    zfs unmount -a
    zpool destroy new_pool
    zpool list
    ```
    
-3)
-   ```
+3) ``` sh
    sudo zfs unmount new_pool_3
    sudo zfs mount new_pool_3
    ```
@@ -89,17 +87,31 @@ Instructions taken from: https://openzfs.github.io/openzfs-docs/Developer%20Reso
 
 # Instructions for attaching docker to ZFS
 
-1) `sudo systemctl stop docker` and `sudo systemctl stop docker.socket`
+1) ```sh
+   sudo systemctl stop docker` and `sudo systemctl stop docker.socket`
+   ```
    
-2) `cp -au /var/lib/docker/ /var/lib/docker.bk`
+4) ```sh
+   cp -au /var/lib/docker/ /var/lib/docker.bk
+   ```
  
-3) `sudo rm -rf /var/lib/docker`
+7) ```sh
+   sudo rm -rf /var/lib/docker
+   ```
 
-4) `sudo zpool create -f zpool-docker -m /var/lib/docker /dev/sda /dev/sdb /dev/sdc`. Note that you should first check with `lsblk` in which disk the OS mount point is.
+9) ```sh
+   sudo zpool create -f zpool-docker -m /var/lib/docker /dev/sda /dev/sdb /dev/sdc
+   ``` 
 
-5) `sudo systemctl start docker`
+Note that you should first check with `lsblk` in which disk the OS mount point is.
 
-6) `sudo docker info`
+11) ```sh
+    sudo systemctl start docker
+    ```
+
+13) ```sh
+    sudo docker info
+    ```
 
 
 
