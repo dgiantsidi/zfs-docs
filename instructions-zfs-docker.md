@@ -33,29 +33,39 @@ Instructions taken from: https://openzfs.github.io/openzfs-docs/Developer%20Reso
 
 # Uninstall and remove ZFS
 
-0) `sudo ./scripts/zfs.sh -u`
+0) ```sh
+   sudo ./scripts/zfs.sh -u
+   ```
    
-2)
-```
-sudo make uninstall; sudo ldconfig; sudo depmod
-```
+2) ```sh 
+   sudo make uninstall; sudo ldconfig; sudo depmod
+   ```
 
-3)
-```
-make clean && export list="$(find -name .deps)" && for elem in $list; do sudo rm -rf $elem; done && sudo rm -rf __pycache__/ aclocal.m4 build/ config.log config.status  configure libtool stamp-h1 zfs_config.h.in zfs_config.h Makefile.in Makefile zfs.release
-```
+3) ```sh
+   make clean && export list="$(find -name .deps)" && for elem in $list; do sudo rm -rf $elem; done && sudo rm -rf __pycache__/ aclocal.m4 build/ config.log config.status  configure libtool stamp-h1 zfs_config.h.in zfs_config.h Makefile.in Makefile zfs.release
+   ```
 
 
 ## Obsolete cmds
-3) `pkill zed`
+3) ```sh
+   pkill zed
+   ```
 
-4) `sudo modprobe -r zfs`
+5) ```sh
+   sudo modprobe -r zfs
+   ```
 
-5) `lsmod | grep zfs`
+7) ```sh
+   lsmod | grep zfs
+   ```
 
-6) `sudo depmod -a`
+9) ```sh
+   sudo depmod -a
+   ```
 
-7) `sudo reboot`
+11) ```sh
+    sudo reboot
+    ```
 
 
 
