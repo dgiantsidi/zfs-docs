@@ -73,4 +73,4 @@ POSIX-syscall `write()` &#8594; `zpl_file.c:383:zpl_iter_write()` &#8594; `zpl_f
 
 Everything in ZFS (compression, encryption, checksum, dedup, etc) works over logical blocks (dataset recordsize, zvol volblocksize, etc), each pointed by a block pointer, actually including the checksum, compression and encryption parameters, etc.
 
-ZIL txg writes are not atomic: https://github.com/openzfs/zfs/discussions/17051. A txg might be spread into many lwbs which are written sequentially.
+ZIL txg writes are not atomic: https://github.com/openzfs/zfs/discussions/17051. A txg might be spread into many lwbs which are written sequentially. If the system crashes in the middle of a sync then only the written blocks will be replayed (they won't even be discarded). However, in the transaction group synchronization context due to CoW txg are atomic.
