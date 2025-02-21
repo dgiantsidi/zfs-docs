@@ -77,3 +77,7 @@ Everything in ZFS (compression, encryption, checksum, dedup, etc) works over log
 ## ZIL atomicity in respect transaction groups when `fsync()`
 
 ZIL txg writes are not atomic: https://github.com/openzfs/zfs/discussions/17051. A txg might be spread into many lwbs which are written sequentially. If the system crashes in the middle of a sync then only the written blocks will be replayed (they won't even be discarded). However, in the transaction group synchronization context due to CoW txgs are atomic.
+
+## ZIL + Uberblock consistency 
+
+Please check this: https://github.com/openzfs/zfs/discussions/17057
