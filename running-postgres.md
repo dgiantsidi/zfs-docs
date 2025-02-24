@@ -5,12 +5,18 @@ Instructions taken from https://github.com/parsa-epfl/cloudsuite/blob/main/docs/
 For TPCC workload:
 - Running the server:
   
-```sudo docker run --name postgresql-server --rm -it --privileged --cap-add sys_admin --cap-add sys_ptrace --net host cloudsuite/data-serving-relational:server```
+```sh 
+sudo docker run --name postgresql-server --rm -it --privileged --cap-add sys_admin --cap-add sys_ptrace --net host cloudsuite/data-serving-relational:server
+```
 
 - Running the loader:
 
-`sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --warmup --tpcc  --server-ip=127.0.0.1`
+```sh 
+sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --warmup --tpcc  --server-ip=127.0.0.1
+```
 
 - Running the workload:
 
-`sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --run --tpcc  --server-ip=127.0.0.1`
+```sh
+sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --run --tpcc  --server-ip=127.0.0.1
+```
