@@ -1,0 +1,83 @@
+azureuser@dimitra-zfs:~/zfs$ sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --run --tpcc  --server-ip=127.0.0.1
+args: ['--run', '--tpcc', '--server-ip=127.0.0.1']
+sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 8
+Report intermediate results every 10 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+Threads started!
+
+[ 10s ] thds: 8 tps: 669.66 qps: 20121.33 (r/w/o: 9138.32/9487.10/1495.92) lat (ms,95%): 22.28 err/s 79.90 reconn/s: 0.00
+[ 20s ] thds: 8 tps: 668.10 qps: 19945.04 (r/w/o: 9066.42/9388.62/1490.00) lat (ms,95%): 22.28 err/s 79.30 reconn/s: 0.00
+[ 30s ] thds: 8 tps: 668.10 qps: 20034.06 (r/w/o: 9101.23/9438.63/1494.20) lat (ms,95%): 21.89 err/s 82.90 reconn/s: 0.00
+[ 40s ] thds: 8 tps: 646.20 qps: 19499.00 (r/w/o: 8855.10/9206.50/1437.40) lat (ms,95%): 23.52 err/s 76.40 reconn/s: 0.00
+[ 50s ] thds: 8 tps: 673.30 qps: 20125.20 (r/w/o: 9149.20/9476.80/1499.20) lat (ms,95%): 21.89 err/s 80.00 reconn/s: 0.00
+[ 60s ] thds: 8 tps: 671.60 qps: 20138.10 (r/w/o: 9147.70/9492.60/1497.80) lat (ms,95%): 21.89 err/s 79.60 reconn/s: 0.00
+[ 70s ] thds: 8 tps: 651.30 qps: 19387.30 (r/w/o: 8802.10/9127.60/1457.60) lat (ms,95%): 22.69 err/s 80.60 reconn/s: 0.00
+[ 80s ] thds: 8 tps: 688.59 qps: 20489.71 (r/w/o: 9315.11/9636.21/1538.39) lat (ms,95%): 21.89 err/s 83.70 reconn/s: 0.00
+[ 90s ] thds: 8 tps: 642.70 qps: 19149.54 (r/w/o: 8689.17/9029.77/1430.61) lat (ms,95%): 23.52 err/s 75.50 reconn/s: 0.00
+[ 100s ] thds: 8 tps: 665.80 qps: 19714.01 (r/w/o: 8948.71/9278.71/1486.60) lat (ms,95%): 23.10 err/s 80.50 reconn/s: 0.00
+[ 110s ] thds: 8 tps: 632.60 qps: 18819.12 (r/w/o: 8561.91/8852.01/1405.20) lat (ms,95%): 24.83 err/s 73.00 reconn/s: 0.00
+[ 120s ] thds: 8 tps: 655.50 qps: 19320.44 (r/w/o: 8764.27/9101.77/1454.40) lat (ms,95%): 23.10 err/s 73.80 reconn/s: 0.00
+[ 130s ] thds: 8 tps: 658.00 qps: 19479.20 (r/w/o: 8846.70/9161.50/1471.00) lat (ms,95%): 23.52 err/s 81.10 reconn/s: 0.00
+[ 140s ] thds: 8 tps: 670.10 qps: 19961.66 (r/w/o: 9073.73/9400.53/1487.40) lat (ms,95%): 22.69 err/s 76.70 reconn/s: 0.00
+[ 150s ] thds: 8 tps: 628.00 qps: 18761.91 (r/w/o: 8517.10/8843.60/1401.20) lat (ms,95%): 24.38 err/s 74.80 reconn/s: 0.00
+[ 160s ] thds: 8 tps: 631.50 qps: 18916.60 (r/w/o: 8588.50/8922.10/1406.00) lat (ms,95%): 24.38 err/s 73.60 reconn/s: 0.00
+[ 170s ] thds: 8 tps: 619.20 qps: 18735.89 (r/w/o: 8512.30/8840.80/1382.80) lat (ms,95%): 25.28 err/s 74.90 reconn/s: 0.00
+[ 180s ] thds: 8 tps: 621.50 qps: 18583.70 (r/w/o: 8428.80/8761.50/1393.40) lat (ms,95%): 25.28 err/s 77.80 reconn/s: 0.00
+[ 190s ] thds: 8 tps: 615.99 qps: 18367.50 (r/w/o: 8339.21/8653.71/1374.59) lat (ms,95%): 25.74 err/s 73.70 reconn/s: 0.00
+[ 200s ] thds: 8 tps: 631.80 qps: 18641.71 (r/w/o: 8463.65/8761.85/1416.21) lat (ms,95%): 24.38 err/s 80.00 reconn/s: 0.00
+[ 210s ] thds: 8 tps: 627.10 qps: 18961.09 (r/w/o: 8605.24/8956.44/1399.41) lat (ms,95%): 23.95 err/s 75.10 reconn/s: 0.00
+[ 220s ] thds: 8 tps: 630.70 qps: 18921.11 (r/w/o: 8594.60/8918.30/1408.20) lat (ms,95%): 23.95 err/s 76.20 reconn/s: 0.00
+[ 230s ] thds: 8 tps: 549.10 qps: 16344.72 (r/w/o: 7427.06/7695.26/1222.39) lat (ms,95%): 29.19 err/s 64.70 reconn/s: 0.00
+[ 240s ] thds: 8 tps: 541.90 qps: 16064.93 (r/w/o: 7304.71/7551.41/1208.80) lat (ms,95%): 25.74 err/s 64.30 reconn/s: 0.00
+[ 250s ] thds: 8 tps: 532.40 qps: 16226.85 (r/w/o: 7370.22/7673.82/1182.80) lat (ms,95%): 28.16 err/s 62.00 reconn/s: 0.00
+[ 260s ] thds: 8 tps: 591.90 qps: 17679.20 (r/w/o: 8033.20/8323.60/1322.40) lat (ms,95%): 25.74 err/s 71.60 reconn/s: 0.00
+[ 270s ] thds: 8 tps: 595.40 qps: 17754.99 (r/w/o: 8064.99/8368.79/1321.20) lat (ms,95%): 24.83 err/s 67.50 reconn/s: 0.00
+[ 280s ] thds: 8 tps: 591.09 qps: 17562.03 (r/w/o: 7977.02/8263.42/1321.59) lat (ms,95%): 25.74 err/s 72.00 reconn/s: 0.00
+[ 290s ] thds: 8 tps: 575.20 qps: 17269.50 (r/w/o: 7848.50/8135.00/1286.00) lat (ms,95%): 26.68 err/s 69.50 reconn/s: 0.00
+[ 300s ] thds: 8 tps: 614.20 qps: 18251.54 (r/w/o: 8289.82/8594.32/1367.40) lat (ms,95%): 24.83 err/s 72.60 reconn/s: 0.00
+[ 310s ] thds: 8 tps: 581.80 qps: 17441.53 (r/w/o: 7929.86/8214.86/1296.81) lat (ms,95%): 26.68 err/s 68.90 reconn/s: 0.00
+[ 320s ] thds: 8 tps: 627.29 qps: 18492.00 (r/w/o: 8400.96/8689.06/1401.98) lat (ms,95%): 23.95 err/s 76.60 reconn/s: 0.00
+[ 330s ] thds: 8 tps: 577.60 qps: 17286.08 (r/w/o: 7857.49/8149.79/1278.80) lat (ms,95%): 26.68 err/s 64.50 reconn/s: 0.00
+[ 340s ] thds: 8 tps: 609.61 qps: 18168.23 (r/w/o: 8245.65/8563.15/1359.42) lat (ms,95%): 24.83 err/s 72.60 reconn/s: 0.00
+[ 350s ] thds: 8 tps: 599.79 qps: 17919.42 (r/w/o: 8144.52/8445.31/1329.59) lat (ms,95%): 25.28 err/s 67.70 reconn/s: 0.00
+[ 360s ] thds: 8 tps: 599.41 qps: 18019.18 (r/w/o: 8177.28/8515.49/1326.41) lat (ms,95%): 24.83 err/s 66.60 reconn/s: 0.00
+SQL statistics:
+    queries performed:
+        read:                            3045864
+        write:                           3159271
+        other:                           500540
+        total:                           6705675
+    transactions:                        224549 (623.72 per sec.)
+    queries:                             6705675 (18625.99 per sec.)
+    ignored errors:                      26702  (74.17 per sec.)
+    reconnects:                          0      (0.00 per sec.)
+
+General statistics:
+    total time:                          360.0168s
+    total number of events:              224549
+
+Latency (ms):
+         min:                                    0.57
+         avg:                                   12.82
+         max:                                  416.74
+         95th percentile:                       24.38
+         sum:                              2879704.21
+
+Threads fairness:
+    events (avg/stddev):           28068.6250/86.96
+    execution time (avg/stddev):   359.9630/0.00
