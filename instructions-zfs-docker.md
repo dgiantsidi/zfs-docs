@@ -92,7 +92,7 @@ Instructions taken from: https://openzfs.github.io/openzfs-docs/Developer%20Reso
 # Instructions for attaching docker to ZFS
 
 1) ```sh
-   sudo systemctl stop docker && sudo systemctl stop docker.socket`
+   sudo systemctl stop docker && sudo systemctl stop docker.socket
    ```
    
 4) ```sh
