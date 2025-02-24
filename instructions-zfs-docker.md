@@ -96,7 +96,7 @@ Instructions taken from: https://openzfs.github.io/openzfs-docs/Developer%20Reso
    ```
    
 4) ```sh
-   cp -au /var/lib/docker/ /var/lib/docker.bk
+   sudo cp -au /var/lib/docker/ /var/lib/docker.bk
    ```
  
 5) ```sh
