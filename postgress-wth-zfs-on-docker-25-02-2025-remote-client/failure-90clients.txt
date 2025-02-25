@@ -1,0 +1,132 @@
+azureuser@dimitra-ccf-1:~$ sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --run --tpcc  --server-ip=10.5.0.8 --threads 90
+args: ['--run', '--tpcc', '--server-ip=10.5.0.8', '--threads', '90']
+sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 90
+Report intermediate results every 10 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+Threads started!
+
+[ 10s ] thds: 90 tps: 1881.19 qps: 69598.20 (r/w/o: 30666.45/31092.62/7839.13) lat (ms,95%): 137.35 err/s 2036.48 reconn/s: 0.00
+[ 20s ] thds: 90 tps: 2088.40 qps: 76545.03 (r/w/o: 33692.17/34181.97/8670.89) lat (ms,95%): 118.92 err/s 2259.50 reconn/s: 0.00
+[ 30s ] thds: 90 tps: 2145.51 qps: 78824.85 (r/w/o: 34704.60/35175.70/8944.55) lat (ms,95%): 110.66 err/s 2338.01 reconn/s: 0.00
+[ 40s ] thds: 90 tps: 1970.91 qps: 72285.54 (r/w/o: 31797.01/32270.91/8217.63) lat (ms,95%): 114.72 err/s 2149.21 reconn/s: 0.00
+[ 50s ] thds: 90 tps: 2054.00 qps: 75607.14 (r/w/o: 33280.32/33754.22/8572.60) lat (ms,95%): 114.72 err/s 2242.70 reconn/s: 0.00
+[ 60s ] thds: 90 tps: 2254.90 qps: 82490.32 (r/w/o: 36338.52/36802.82/9348.98) lat (ms,95%): 106.75 err/s 2433.19 reconn/s: 0.00
+[ 70s ] thds: 90 tps: 2200.20 qps: 80827.57 (r/w/o: 35577.79/36124.79/9125.00) lat (ms,95%): 110.66 err/s 2373.80 reconn/s: 0.00
+[ 80s ] thds: 90 tps: 1962.29 qps: 71369.67 (r/w/o: 31421.90/31828.80/8118.97) lat (ms,95%): 127.81 err/s 2108.59 reconn/s: 0.00
+[ 90s ] thds: 90 tps: 1963.09 qps: 71435.92 (r/w/o: 31466.72/31845.62/8123.58) lat (ms,95%): 130.13 err/s 2108.99 reconn/s: 0.00
+[ 100s ] thds: 90 tps: 2019.81 qps: 74029.16 (r/w/o: 32581.06/33023.66/8424.44) lat (ms,95%): 121.08 err/s 2203.51 reconn/s: 0.00
+[ 110s ] thds: 90 tps: 2144.50 qps: 78671.33 (r/w/o: 34604.96/35123.06/8943.32) lat (ms,95%): 114.72 err/s 2340.00 reconn/s: 0.00
+[ 120s ] thds: 90 tps: 1969.49 qps: 72567.80 (r/w/o: 31989.98/32455.97/8121.84) lat (ms,95%): 123.28 err/s 2103.69 reconn/s: 0.00
+[ 130s ] thds: 90 tps: 1814.61 qps: 66646.29 (r/w/o: 29353.37/29748.47/7544.44) lat (ms,95%): 137.35 err/s 1968.71 reconn/s: 0.00
+[ 140s ] thds: 90 tps: 1810.09 qps: 66558.26 (r/w/o: 29303.46/29739.66/7515.14) lat (ms,95%): 137.35 err/s 1957.78 reconn/s: 0.00
+[ 150s ] thds: 90 tps: 2046.52 qps: 74766.66 (r/w/o: 32930.03/33348.94/8487.69) lat (ms,95%): 121.08 err/s 2210.92 reconn/s: 0.00
+[ 160s ] thds: 90 tps: 2064.10 qps: 76062.12 (r/w/o: 33475.62/33998.52/8587.98) lat (ms,95%): 118.92 err/s 2242.99 reconn/s: 0.00
+[ 170s ] thds: 90 tps: 2018.10 qps: 74291.12 (r/w/o: 32686.02/33209.12/8395.98) lat (ms,95%): 123.28 err/s 2191.19 reconn/s: 0.00
+[ 180s ] thds: 90 tps: 2057.71 qps: 75817.92 (r/w/o: 33403.03/33864.83/8550.06) lat (ms,95%): 118.92 err/s 2231.52 reconn/s: 0.00
+[ 190s ] thds: 90 tps: 2056.89 qps: 75726.54 (r/w/o: 33350.40/33820.00/8556.15) lat (ms,95%): 116.80 err/s 2233.79 reconn/s: 0.00
+[ 200s ] thds: 90 tps: 1986.00 qps: 72811.41 (r/w/o: 32048.16/32502.66/8260.59) lat (ms,95%): 127.81 err/s 2155.80 reconn/s: 0.00
+[ 210s ] thds: 90 tps: 1914.99 qps: 70124.79 (r/w/o: 30876.51/31269.11/7979.18) lat (ms,95%): 130.13 err/s 2084.49 reconn/s: 0.00
+[ 220s ] thds: 90 tps: 2035.22 qps: 74581.64 (r/w/o: 32808.18/33275.19/8498.27) lat (ms,95%): 121.08 err/s 2224.42 reconn/s: 0.00
+[ 230s ] thds: 90 tps: 1736.30 qps: 63360.94 (r/w/o: 27886.03/28271.93/7202.98) lat (ms,95%): 142.39 err/s 1875.30 reconn/s: 0.00
+FATAL: PQexec() failed: 7 new multixact has more than one updating member: 0 3[899755 (keysh), 899779 (nokeyupd), 899842 (nokeyupd)]
+FATAL: failed query was: UPDATE warehouse1
+                  SET w_ytd = w_ytd + 4724
+                WHERE w_id = 3
+FATAL: `thread_run' function failed: /usr/share/sysbench/tpcc_run.lua:268: SQL error, errno = 0, state = 'XX000': new multixact has more than one updating member: 0 3[899755 (keysh), 899779 (nokeyupd), 899842 (nokeyupd)]
