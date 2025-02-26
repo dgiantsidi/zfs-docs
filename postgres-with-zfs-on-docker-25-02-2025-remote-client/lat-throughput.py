@@ -75,7 +75,7 @@ plt.figure(figsize=(10, 6))
 #plt.errorbar(latency, throughput, xerr=latency_error, yerr=throughput_error, fmt='o', ecolor='r', capsize=5)
 plt.plot(latency_500us, throughput_500us, marker='o', label="fsync-delay-500us")
 plt.plot(latency_1ms, throughput_1ms, marker='X', label="fsync-delay-1ms")
-plt.plot(latency_default, throughput_default, marker='', label="default")
+plt.plot(latency_default, throughput_default, marker='^', label="default")
 
 
 # Add text on top of the data points
@@ -94,6 +94,8 @@ plt.xlabel('Latency (ms)')
 plt.ylabel('tps')
 
 # Show grid
+plt.legend(loc="upper left")
+
 plt.grid(True)
 plt.savefig('latency_throughput_plot.png')
 
