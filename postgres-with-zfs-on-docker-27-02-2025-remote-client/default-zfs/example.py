@@ -35,7 +35,7 @@ def ssh_and_run_commands(host, username, key_filename, cmd1, cmd2, clients):
     print(f"Error of cmd1: {cmd1_error}")
 
 
-    iostat_cmd = "iostat 2 >> iostat_output_" + clients + "clients_default_zfs.txt"
+    iostat_cmd = "iostat 10 >> iostat_output_" + clients + "clients_default_zfs.txt"
     iostat_process = run_cmd_background(iostat_cmd)
 
     # Run cmd2
@@ -47,6 +47,7 @@ def ssh_and_run_commands(host, username, key_filename, cmd1, cmd2, clients):
     stderr = session.makefile_stderr('rb', -1)
     stdout.channel.recv_exit_status()  # Wait for cmd1 to complete
     iostat_process.terminate()
+    exec_command("sudo pkill iostat")
 
     # Capture and print stdout and stderr for cmd1
     cmd2_output = stdout.read().decode()
