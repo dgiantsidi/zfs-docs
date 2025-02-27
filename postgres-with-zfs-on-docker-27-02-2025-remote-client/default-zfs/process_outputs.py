@@ -60,8 +60,8 @@ def main():
     cpu_system = [entry["%system"] for entry in cpu_data]
     cpu_idle = [entry["%idle"] for entry in cpu_data]
     time_intervals = list(range(1, len(cpu_user) + 1))
-    time_intervals_text = list(range(1, len(cpu_user) + 1))
-    time_intervals_text = [ (x+1) for x in time_intervals_text]
+    time_intervals_text = list(range(0, len(cpu_user)*2, 2))
+    
 
     # Extract TPS data for sda, sdb, and sdc
     tps_sda = [entry["tps"] for entry in device_data if entry["Device"] == "sda"]

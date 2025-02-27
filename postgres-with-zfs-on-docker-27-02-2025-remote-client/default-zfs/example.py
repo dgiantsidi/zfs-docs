@@ -55,7 +55,6 @@ def ssh_and_run_commands(host, username, key_filename, cmd1, cmd2, clients):
     print(f"Output of cmd2: {cmd2_output}")
     print(f"Error of cmd2: {cmd2_error}")
     ssh.close()
-    iostat_process.terminate()
 
 
     return copy_out2
