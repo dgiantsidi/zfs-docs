@@ -71,9 +71,9 @@ def main():
     # Plot CPU utilization
     plt.figure(figsize=(12, 6))
     plt.subplot(2, 1, 1)
-    plt.plot(time_intervals, cpu_user, label="%user")
-    plt.plot(time_intervals, cpu_system, label="%system")
-    plt.plot(time_intervals, cpu_idle, label="%idle")
+    plt.plot(time_intervals_text, cpu_user, label="%user")
+    plt.plot(time_intervals_text, cpu_system, label="%system")
+    plt.plot(time_intervals_text, cpu_idle, label="%idle")
     plt.xlabel("Time Interval")
     plt.ylabel("CPU Utilization (%)")
     plt.title("CPU Utilization Over Time")
@@ -81,14 +81,14 @@ def main():
 
     # Plot TPS for sda, sdb, and sdc
     plt.subplot(2, 1, 2)
-    plt.plot(time_intervals, tps_sda, label="sda")
-    plt.plot(time_intervals, tps_sdb, label="sdb")
-    plt.plot(time_intervals, tps_sdc, label="sdc")
+    plt.plot(time_intervals_text, tps_sda, label="sda")
+    plt.plot(time_intervals_text, tps_sdb, label="sdb")
+    plt.plot(time_intervals_text, tps_sdc, label="sdc")
     plt.xlabel("Time Interval")
     plt.ylabel("TPS")
     plt.title("TPS for sda/sdb/sdc Over Time")
     plt.legend()
-    plt.xticks(time_intervals, time_intervals_text)  # Set custom x-axis labels
+    #plt.xticks(time_intervals, time_intervals_text)  # Set custom x-axis labels
 
     # Show the plots
     plt.tight_layout()
