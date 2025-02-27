@@ -13,7 +13,7 @@ def run_cmd_background(cmd):
     return subprocess.Popen(cmd, shell=True)
 
 # Function to SSH into another machine and run commands
-def ssh_and_run_commands(host, username, key_filename, cmd1, cmd2):
+def ssh_and_run_commands(host, username, key_filename, cmd1, cmd2, clients):
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     ssh.connect(host, username=username, key_filename=key_filename)
@@ -35,6 +35,8 @@ def ssh_and_run_commands(host, username, key_filename, cmd1, cmd2):
     print(f"Error of cmd1: {cmd1_error}")
 
 
+    iostat_cmd = "iostat 10 >> iostat_output_" + clients + "clients_default_zfs.txt"
+    iostat_process = run_cmd_background(iostat_cmd)
 
     # Run cmd2
     transport = ssh.get_transport()
@@ -52,7 +54,8 @@ def ssh_and_run_commands(host, username, key_filename, cmd1, cmd2):
     print(f"Output of cmd2: {cmd2_output}")
     print(f"Error of cmd2: {cmd2_error}")
     ssh.close()
-    
+    iostat_process.terminate()
+
 
     return copy_out2
 
@@ -82,7 +85,7 @@ def main(args):
     cmd2 = "sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --run --tpcc  --server-ip=10.5.0.8 --threads " + nthreads
 
 
-    output2 = ssh_and_run_commands(host, username, key_filename, cmd1, cmd2)
+    output2 = ssh_and_run_commands(host, username, key_filename, cmd1, cmd2, nthreads)
 
 
     #paramiko.util.log_to_file("paramiko.log")
@@ -90,6 +93,7 @@ def main(args):
     # Kill the initial command process
     execute_command(killing_cmd)
     print("docker killed")
+    time.sleep(5)
 
     print(output2)
 

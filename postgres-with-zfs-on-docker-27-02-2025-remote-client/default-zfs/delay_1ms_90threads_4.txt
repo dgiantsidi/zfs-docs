@@ -1,0 +1,139 @@
+args: ['--run', '--tpcc', '--server-ip=10.5.0.8', '--threads', '90']
+sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 90
+Report intermediate results every 10 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+Threads started!
+
+[ 10s ] thds: 90 tps: 573.96 qps: 19334.49 (r/w/o: 8625.82/8839.40/1869.27) lat (ms,95%): 173.58 err/s 350.48 reconn/s: 0.00
+[ 20s ] thds: 90 tps: 415.50 qps: 13105.66 (r/w/o: 5901.83/6073.83/1130.00) lat (ms,95%): 164.45 err/s 151.50 reconn/s: 0.00
+[ 30s ] thds: 90 tps: 467.50 qps: 14881.31 (r/w/o: 6716.55/6942.55/1222.21) lat (ms,95%): 134.90 err/s 146.60 reconn/s: 0.00
+[ 40s ] thds: 90 tps: 399.30 qps: 12257.44 (r/w/o: 5523.12/5709.02/1025.30) lat (ms,95%): 139.85 err/s 114.90 reconn/s: 0.00
+[ 50s ] thds: 90 tps: 386.80 qps: 11463.86 (r/w/o: 5190.34/5330.44/943.09) lat (ms,95%): 112.67 err/s 86.40 reconn/s: 0.00
+[ 60s ] thds: 90 tps: 890.01 qps: 29933.89 (r/w/o: 13336.37/13589.48/3008.04) lat (ms,95%): 164.45 err/s 617.51 reconn/s: 0.00
+[ 70s ] thds: 90 tps: 432.40 qps: 13637.67 (r/w/o: 6135.34/6306.34/1195.99) lat (ms,95%): 134.90 err/s 168.40 reconn/s: 0.00
+[ 80s ] thds: 90 tps: 446.00 qps: 13594.58 (r/w/o: 6126.29/6307.09/1161.20) lat (ms,95%): 132.49 err/s 137.40 reconn/s: 0.00
+[ 90s ] thds: 90 tps: 384.50 qps: 11800.87 (r/w/o: 5321.09/5504.99/974.80) lat (ms,95%): 127.81 err/s 104.80 reconn/s: 0.00
+[ 100s ] thds: 90 tps: 496.70 qps: 15378.45 (r/w/o: 6923.82/7126.92/1327.70) lat (ms,95%): 127.81 err/s 169.70 reconn/s: 0.00
+[ 110s ] thds: 90 tps: 1262.30 qps: 44020.79 (r/w/o: 19520.24/19803.84/4696.71) lat (ms,95%): 147.61 err/s 1092.20 reconn/s: 0.00
+[ 120s ] thds: 90 tps: 1898.72 qps: 68515.71 (r/w/o: 30188.97/30557.07/7769.67) lat (ms,95%): 132.49 err/s 1998.12 reconn/s: 0.00
+[ 130s ] thds: 90 tps: 2273.95 qps: 82968.00 (r/w/o: 36497.86/36974.55/9495.58) lat (ms,95%): 106.75 err/s 2487.94 reconn/s: 0.00
+[ 140s ] thds: 90 tps: 2151.83 qps: 78634.40 (r/w/o: 34623.88/35111.79/8898.72) lat (ms,95%): 112.67 err/s 2308.63 reconn/s: 0.00
+[ 150s ] thds: 90 tps: 2114.31 qps: 76806.81 (r/w/o: 33783.68/34185.68/8837.45) lat (ms,95%): 112.67 err/s 2318.41 reconn/s: 0.00
+[ 160s ] thds: 90 tps: 2330.11 qps: 85346.91 (r/w/o: 37574.69/38055.39/9716.82) lat (ms,95%): 104.84 err/s 2539.01 reconn/s: 0.00
+[ 170s ] thds: 90 tps: 2175.59 qps: 79084.10 (r/w/o: 34822.57/35255.56/9005.97) lat (ms,95%): 108.68 err/s 2341.79 reconn/s: 0.00
+[ 180s ] thds: 90 tps: 2221.31 qps: 81296.04 (r/w/o: 35787.65/36259.15/9249.24) lat (ms,95%): 106.75 err/s 2416.11 reconn/s: 0.00
+[ 190s ] thds: 90 tps: 2129.38 qps: 77018.51 (r/w/o: 33860.75/34257.15/8900.61) lat (ms,95%): 116.80 err/s 2332.28 reconn/s: 0.00
+[ 200s ] thds: 90 tps: 1867.21 qps: 68479.00 (r/w/o: 30187.19/30574.89/7716.92) lat (ms,95%): 132.49 err/s 2000.21 reconn/s: 0.00
+[ 210s ] thds: 90 tps: 2063.60 qps: 75459.55 (r/w/o: 33238.08/33632.88/8588.59) lat (ms,95%): 114.72 err/s 2241.50 reconn/s: 0.00
+FATAL: PQexec() failed: 7 new multixact has more than one updating member: 0 2[506283 (nokeyupd), 506429 (nokeyupd)]
+FATAL: failed query was: UPDATE warehouse1
+	          SET w_ytd = w_ytd + 68 
+	        WHERE w_id = 5
+FATAL: PQexec() failed: 7 new multixact has more than one updating member: 0 2[506283 (nokeyupd), 506428 (nokeyupd)]
+FATAL: failed query was: UPDATE warehouse1
+	          SET w_ytd = w_ytd + 2436 
+	        WHERE w_id = 5
+FATAL: `thread_run' function failed: /usr/share/sysbench/tpcc_run.lua:268: SQL error, errno = 0, state = 'XX000': new multixact has more than one updating member: 0 2[506283 (nokeyupd), 506429 (nokeyupd)]
+FATAL: `thread_run' function failed: /usr/share/sysbench/tpcc_run.lua:268: SQL error, errno = 0, state = 'XX000': new multixact has more than one updating member: 0 2[506283 (nokeyupd), 506428 (nokeyupd)]
+FATAL: PQexec() failed: 7 new multixact has more than one updating member: 0 2[506283 (nokeyupd), 506426 (nokeyupd)]
+FATAL: failed query was: UPDATE warehouse1
+	          SET w_ytd = w_ytd + 3191 
+	        WHERE w_id = 5
+FATAL: `thread_run' function failed: /usr/share/sysbench/tpcc_run.lua:268: SQL error, errno = 0, state = 'XX000': new multixact has more than one updating member: 0 2[506283 (nokeyupd), 506426 (nokeyupd)]
