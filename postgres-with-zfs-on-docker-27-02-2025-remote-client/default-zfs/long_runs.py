@@ -13,7 +13,7 @@ def run_cmd_background(cmd):
     return subprocess.Popen(cmd, shell=True)
 
 # Function to SSH into another machine and run commands
-def ssh_and_run_commands(host, username, key_filename, cmd1, cmd2, clients):
+def ssh_and_run_commands(host, username, key_filename, cmd1, cmd2, cmd3, clients):
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     ssh.connect(host, username=username, key_filename=key_filename)
@@ -38,35 +38,36 @@ def ssh_and_run_commands(host, username, key_filename, cmd1, cmd2, clients):
     transport = ssh.get_transport()
     session = transport.open_session()
     session.get_pty()  # Request a pseudo-terminal
-    session.exec_command(cmd2 + " --time 300")
+    session.exec_command(cmd2)
     stdout = session.makefile('rb', -1)
     stderr = session.makefile_stderr('rb', -1)
     stdout.channel.recv_exit_status()  # Wait for cmd1 to complete
     
     time.sleep(30)
 
-    iostat_cmd = "iostat 10 >> iostat_output_" + clients + "clients_default_zfs.txt"
+    iostat_cmd = "iostat 10 >> long_runs_iostat_output_" + clients + "clients_default_zfs.txt"
     iostat_process = run_cmd_background(iostat_cmd)
 
-    # Run cmd2
+    # Run cmd3
     transport = ssh.get_transport()
     session = transport.open_session()
     session.get_pty()  # Request a pseudo-terminal
-    session.exec_command(cmd2 + " -- time 600")
+    session.exec_command(cmd3)
     stdout = session.makefile('rb', -1)
     stderr = session.makefile_stderr('rb', -1)
     stdout.channel.recv_exit_status()  # Wait for cmd1 to complete
-    
-    # Capture and print stdout and stderr for cmd1
-    cmd2_output = stdout.read().decode()
-    cmd2_error = stderr.read().decode()
-    copy_out2 = cmd2_output
-    print(f"Output of cmd2: {cmd2_output}")
-    print(f"Error of cmd2: {cmd2_error}")
-    ssh.close()
     iostat_process.terminate()
+    execute_command("sudo pkill iostat")
 
-    return copy_out2
+    # Capture and print stdout and stderr for cmd1
+    cmd3_output = stdout.read().decode()
+    cmd3_error = stderr.read().decode()
+    copy_out3 = cmd3_output
+    print(f"Output of cmd2: {cmd3_output}")
+    print(f"Error of cmd2: {cmd3_error}")
+    ssh.close()
+
+    return copy_out3
 
 # Function to take arguments from the input
 def main(args):
@@ -91,10 +92,11 @@ def main(args):
     username = "azureuser"
     key_filename = "/home/azureuser/dimitra_ccf_1_key"
     cmd1 = "sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --warmup --tpcc  --server-ip=10.5.0.8"
-    cmd2 = "sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --run --tpcc  --server-ip=10.5.0.8 --threads " + nthreads
+    cmd2 = "sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --run --tpcc  --server-ip=10.5.0.8   --time 300 --threads " + nthreads
+    cmd3 = "sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --run --tpcc  --server-ip=10.5.0.8   --time 600 --threads " + nthreads
 
 
-    output2 = ssh_and_run_commands(host, username, key_filename, cmd1, cmd2, nthreads)
+    output2 = ssh_and_run_commands(host, username, key_filename, cmd1, cmd2, cmd3, nthreads)
 
 
     #paramiko.util.log_to_file("paramiko.log")
