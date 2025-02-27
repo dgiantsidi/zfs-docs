@@ -73,23 +73,23 @@ clients = [
 # Create a plot
 plt.figure(figsize=(10, 6))
 #plt.errorbar(latency, throughput, xerr=latency_error, yerr=throughput_error, fmt='o', ecolor='r', capsize=5)
-plt.plot(latency_500us, throughput_500us, marker='o', label="fsync-delay-500us")
-plt.plot(latency_1ms, throughput_1ms, marker='X', label="fsync-delay-1ms")
-plt.plot(latency_default, throughput_default, marker='^', label="default")
+plt.plot(throughput_500us, latency_500us,  marker='o', label="fsync-delay-500us")
+plt.plot(throughput_1ms, latency_1ms, marker='X', label="fsync-delay-1ms")
+plt.plot( throughput_default, latency_default, marker='^', label="default")
 
 
 # Add text on top of the data points
 for i in range(len(latency_500us)):
-    plt.text(latency_500us[i], throughput_500us[i], f'({clients[i]})', fontsize=9, ha='right')
+    plt.text(throughput_500us[i], latency_500us[i], f'({clients[i]})', fontsize=9, ha='right')
 
 for i in range(len(latency_1ms)):
-    plt.text(latency_1ms[i], throughput_1ms[i], f'({clients[i]})', fontsize=9, ha='right')
+    plt.text(throughput_1ms[i],latency_1ms[i],  f'({clients[i]})', fontsize=9, ha='right')
 
 for i in range(len(latency_default)):
-    plt.text(latency_default[i], throughput_default[i], f'({clients[i]})', fontsize=9, ha='right')
+    plt.text( throughput_default[i], latency_default[i], f'({clients[i]})', fontsize=9, ha='right')
 
 # Add title and labels
-plt.title('Latency vs Throughput (10 W)')
+plt.title('Throughput vs latency (TPC-C with 10 W over postgres)')
 plt.xlabel('Latency (ms)')
 plt.ylabel('tps')
 
