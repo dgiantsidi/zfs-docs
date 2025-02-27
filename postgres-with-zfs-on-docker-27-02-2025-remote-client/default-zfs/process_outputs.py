@@ -59,6 +59,9 @@ def main():
     cpu_user = [entry["%user"] for entry in cpu_data]
     cpu_system = [entry["%system"] for entry in cpu_data]
     cpu_idle = [entry["%idle"] for entry in cpu_data]
+    time_intervals = list(range(1, len(cpu_user) + 1))
+    time_intervals_text = list(range(1, len(cpu_user) + 1))
+    time_intervals_text = [ (x+1) for x in time_intervals_text]
 
     # Extract TPS data for sda, sdb, and sdc
     tps_sda = [entry["tps"] for entry in device_data if entry["Device"] == "sda"]
@@ -68,9 +71,9 @@ def main():
     # Plot CPU utilization
     plt.figure(figsize=(12, 6))
     plt.subplot(2, 1, 1)
-    plt.plot(cpu_user, label="%user")
-    plt.plot(cpu_system, label="%system")
-    plt.plot(cpu_idle, label="%idle")
+    plt.plot(time_intervals, cpu_user, label="%user")
+    plt.plot(time_intervals, cpu_system, label="%system")
+    plt.plot(time_intervals, cpu_idle, label="%idle")
     plt.xlabel("Time Interval")
     plt.ylabel("CPU Utilization (%)")
     plt.title("CPU Utilization Over Time")
@@ -78,13 +81,14 @@ def main():
 
     # Plot TPS for sda, sdb, and sdc
     plt.subplot(2, 1, 2)
-    plt.plot(tps_sda, label="sda")
-    plt.plot(tps_sdb, label="sdb")
-    plt.plot(tps_sdc, label="sdc")
+    plt.plot(time_intervals, tps_sda, label="sda")
+    plt.plot(time_intervals, tps_sdb, label="sdb")
+    plt.plot(time_intervals, tps_sdc, label="sdc")
     plt.xlabel("Time Interval")
     plt.ylabel("TPS")
     plt.title("TPS for sda/sdb/sdc Over Time")
     plt.legend()
+    plt.xticks(time_intervals, time_intervals_text)  # Set custom x-axis labels
 
     # Show the plots
     plt.tight_layout()
