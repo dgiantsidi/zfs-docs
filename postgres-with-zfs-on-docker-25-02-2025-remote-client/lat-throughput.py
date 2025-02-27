@@ -90,8 +90,8 @@ for i in range(len(latency_default)):
 
 # Add title and labels
 plt.title('Throughput vs latency (TPC-C with 10 W over postgres)')
-plt.xlabel('Latency (ms)')
-plt.ylabel('tps')
+plt.xlabel('tps')
+plt.ylabel('Latency (ms)')
 
 # Show grid
 plt.legend(loc="upper left")
