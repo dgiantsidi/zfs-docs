@@ -47,7 +47,7 @@ def ssh_and_run_commands(host, username, key_filename, cmd1, cmd2, clients):
     stderr = session.makefile_stderr('rb', -1)
     stdout.channel.recv_exit_status()  # Wait for cmd1 to complete
     iostat_process.terminate()
-    exec_command("sudo pkill iostat")
+    execute_command("sudo pkill iostat")
 
     # Capture and print stdout and stderr for cmd1
     cmd2_output = stdout.read().decode()
