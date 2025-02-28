@@ -45,42 +45,44 @@ def parse_file(file_path):
 
     return cpu_data, device_data
 
-# Parse the input file
-cpu_data, device_data = parse_file("output.txt")
+def main():
+    file_path = input("Enter the filename: ")
+    # Parse the input file
+    cpu_data, device_data = parse_file(file_path)
 
-# Extract CPU utilization data
-cpu_user = [entry["%user"] for entry in cpu_data]
-cpu_system = [entry["%system"] for entry in cpu_data]
-cpu_idle = [entry["%idle"] for entry in cpu_data]
+    # Extract CPU utilization data
+    cpu_user = [entry["%user"] for entry in cpu_data]
+    cpu_system = [entry["%system"] for entry in cpu_data]
+    cpu_idle = [entry["%idle"] for entry in cpu_data]
 
-# Extract TPS data for sda, sdb, and sdc
-tps_sda = [entry["tps"] for entry in device_data if entry["Device"] == "sda"]
-tps_sdb = [entry["tps"] for entry in device_data if entry["Device"] == "sdb"]
-tps_sdc = [entry["tps"] for entry in device_data if entry["Device"] == "sdc"]
+    # Extract TPS data for sda, sdb, and sdc
+    tps_sda = [entry["tps"] for entry in device_data if entry["Device"] == "sda"]
+    tps_sdb = [entry["tps"] for entry in device_data if entry["Device"] == "sdb"]
+    tps_sdc = [entry["tps"] for entry in device_data if entry["Device"] == "sdc"]
 
-# Plot CPU utilization
-plt.figure(figsize=(12, 6))
-plt.subplot(2, 1, 1)
-plt.plot(cpu_user, label="%user")
-plt.plot(cpu_system, label="%system")
-plt.plot(cpu_idle, label="%idle")
-plt.xlabel("Time Interval")
-plt.ylabel("CPU Utilization (%)")
-plt.title("CPU Utilization Over Time")
-plt.legend()
+    # Plot CPU utilization
+    plt.figure(figsize=(12, 6))
+    plt.subplot(2, 1, 1)
+    plt.plot(cpu_user, label="%user")
+    plt.plot(cpu_system, label="%system")
+    plt.plot(cpu_idle, label="%idle")
+    plt.xlabel("Time Interval")
+    plt.ylabel("CPU Utilization (%)")
+    plt.title("CPU Utilization Over Time")
+    plt.legend()
 
-# Plot TPS for sda, sdb, and sdc
-plt.subplot(2, 1, 2)
-plt.plot(tps_sda, label="sda")
-plt.plot(tps_sdb, label="sdb")
-plt.plot(tps_sdc, label="sdc")
-plt.xlabel("Time Interval")
-plt.ylabel("TPS")
-plt.title("TPS for sda/sdb/sdc Over Time")
-plt.legend()
+    # Plot TPS for sda, sdb, and sdc
+    plt.subplot(2, 1, 2)
+    plt.plot(tps_sda, label="sda")
+    plt.plot(tps_sdb, label="sdb")
+    plt.plot(tps_sdc, label="sdc")
+    plt.xlabel("Time Interval")
+    plt.ylabel("TPS")
+    plt.title("TPS for sda/sdb/sdc Over Time")
+    plt.legend()
 
-# Show the plots
-plt.tight_layout()
-plt.show()
-plt.grid(True)
-plt.savefig("resources_util.png")
+    # Show the plots
+    plt.tight_layout()
+    plt.show()
+    plt.grid(True)
+    plt.savefig(filepath + ".png")
