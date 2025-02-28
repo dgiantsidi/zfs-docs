@@ -108,7 +108,7 @@ def main(args):
 
     print(output2)
 
-    output_fname = "delay_500us_"+ nthreads+"threads_"+iteration + ".txt"
+    output_fname = "delay_1ms_"+ nthreads+"threads_"+iteration + ".txt"
     with open(output_fname, 'w') as file:
         file.write(output2)
 
