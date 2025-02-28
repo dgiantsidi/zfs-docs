@@ -45,6 +45,7 @@ def parse_file(file_path):
                     "kB_reads/s": float(parts[2]),
                     "kB_wrtn/s": float(parts[3]),
                 })
+                print("Device:" + parts[0] + ", tps:" + str(float(parts[1])) + ", kB_reads/s:" + str(float(parts[2])) + ", kB_wrtn/s:" + str(float(parts[3])))
 
     return cpu_data, device_data
 
@@ -109,6 +110,9 @@ def main():
     plt.plot(time_intervals_text, writespers_sdd, label="sdd (kB_wrtn/s)")
     plt.plot(time_intervals_text, writespers_sde, label="sde (kB_wrtn/s)")
     plt.plot(time_intervals_text, writespers_sdc, label="sdc (kB_wrtn/s)")
+    print(readspers_sdc)
+    print(readspers_sde)
+    print(readspers_sdd)
     plt.xlabel("Time Interval")
     #plt.ylabel("Reads (KB) and writes (KB)")
     plt.title("Reads/Writes (KBs/s) sdd/sde/sdc Over Time")
