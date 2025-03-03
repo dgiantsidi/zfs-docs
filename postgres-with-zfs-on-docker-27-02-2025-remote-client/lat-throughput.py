@@ -54,6 +54,22 @@ throughput_default = [
     1842.54
 ]
 
+latency_ext4 = [
+    10.46, 
+    14.78,
+    26.96,
+    30.52,
+    0
+]
+
+throughput_ext4 = [
+    955.69,
+    1352.83,
+    1854.7,
+    1965.87,
+    0
+]
+
 clients = [
     10,
     20,
@@ -76,7 +92,9 @@ plt.figure(figsize=(10, 6))
 #plt.errorbar(latency, throughput, xerr=latency_error, yerr=throughput_error, fmt='o', ecolor='r', capsize=5)
 plt.plot(throughput_500us, latency_500us,  marker='o', label="fsync-delay-500us")
 plt.plot(throughput_1ms, latency_1ms, marker='X', label="fsync-delay-1ms")
-plt.plot( throughput_default, latency_default, marker='^', label="default")
+plt.plot( throughput_default, latency_default, marker='^', label="zfs-default")
+plt.plot( throughput_ext4, latency_ext4, marker='1', label="ext4")
+
 
 
 # Add text on top of the data points
