@@ -39,12 +39,13 @@ x_axis_seq_sync_writes = [
 
 
 # Create a plot
+# Create a plot
 plt.figure(figsize=(10, 6))
 #plt.errorbar(latency, throughput, xerr=latency_error, yerr=throughput_error, fmt='o', ecolor='r', capsize=5)
-plt.plot(throughput_ext4_seq_sync_write, x_axis_seq_sync_writes,  marker='o', label="ext4")
-plt.plot(throughput_zfs_default_seq_sync_write, x_axis_seq_sync_writes,  marker='o', label="zfs-default")
-plt.plot(throughput_zfs_500us_seq_sync_write, x_axis_seq_sync_writes,  marker='o', label="zil-delay-500us")
-plt.plot(throughput_zfs_1ms_seq_sync_write, x_axis_seq_sync_writes,  marker='o', label="zil-delay-1ms")
+plt.bar(x_axis_seq_sync_writes, throughput_ext4_seq_sync_write, label="ext4")
+plt.bar(x_axis_seq_sync_writes,  throughput_zfs_default_seq_sync_write,   label="zfs-default")
+plt.bar(x_axis_seq_sync_writes, throughput_zfs_500us_seq_sync_write,    label="zil-delay-500us")
+plt.bar(x_axis_seq_sync_writes,  throughput_zfs_1ms_seq_sync_write,  label="zil-delay-1ms")
 
 
 
