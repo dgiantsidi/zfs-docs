@@ -36,21 +36,25 @@ x_axis_seq_sync_writes = [
     "8K_32Jobs",
     "1m_32Jobs",
 ]
+n = len(throughput_ext4_seq_sync_write)
+x = np.arange(n)
+width = 0.2
 
 
 # Create a plot
 plt.figure(figsize=(10, 6))
 #plt.errorbar(latency, throughput, xerr=latency_error, yerr=throughput_error, fmt='o', ecolor='r', capsize=5)
-plt.bar(x_axis_seq_sync_writes, throughput_ext4_seq_sync_write, label="ext4")
-plt.bar(x_axis_seq_sync_writes,  throughput_zfs_default_seq_sync_write,   label="zfs-default")
-plt.bar(x_axis_seq_sync_writes, throughput_zfs_500us_seq_sync_write,    label="zil-delay-500us")
-plt.bar(x_axis_seq_sync_writes,  throughput_zfs_1ms_seq_sync_write,  label="zil-delay-1ms")
+plt.bar(x-2*width, throughput_ext4_seq_sync_write, width=width, label="ext4")
+plt.bar(x-width, throughput_zfs_default_seq_sync_write, width=width, label="zfs-default")
+plt.bar(x, throughput_zfs_500us_seq_sync_write, width=width, label="zil-delay-500us")
+plt.bar(x+width,  throughput_zfs_1ms_seq_sync_write, width=width, label="zil-delay-1ms")
 
 
 
 # Add title and labels
 plt.title('fio')
-plt.xlabel('KiB/s (Max: 750 MB/s)')
+plt.ylabel('KiB/s (Max: 750 MB/s)')
+plt.xticks(x, x_axis_seq_sync_writes)
 
 
 # Show grid
