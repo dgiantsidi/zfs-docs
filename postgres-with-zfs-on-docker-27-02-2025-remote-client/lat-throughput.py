@@ -107,6 +107,9 @@ for i in range(len(latency_1ms)):
 for i in range(len(latency_default)):
     plt.text( throughput_default[i], latency_default[i], f'({clients[i]})', fontsize=9, ha='right')
 
+for i in range(len(latency_ext4)):
+    plt.text( throughput_ext4[i], latency_ext4[i], f'({clients[i]})', fontsize=9, ha='right')   
+
 # Add title and labels
 plt.title('Throughput vs latency (TPC-C with 10 W over postgres)')
 plt.xlabel('tps')
