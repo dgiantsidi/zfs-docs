@@ -1,0 +1,265 @@
+Running benchmark with: /dev/sdc /dev/sdb /dev/sda
+/dev/sdc: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sdb: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: calling ioctl to re-read partition table: Success
+/dev/sdc: calling ioctl to re-read partition table: Success
+/dev/sdb: calling ioctl to re-read partition table: Success
+removed all registered handlers
+[!] Running Sequential Sync Write
+[!] BS: 8k
+[!] Num jobs: 16
+/dev/sdc: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sdb: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: calling ioctl to re-read partition table: Success
+/dev/sdc: calling ioctl to re-read partition table: Success
+/dev/sdb: calling ioctl to re-read partition table: Success
+removed all registered handlers
+[!] Running Sequential Sync Write
+[!] BS: 1m
+[!] Num jobs: 16
+/dev/sdc: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sdb: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: calling ioctl to re-read partition table: Success
+/dev/sdc: calling ioctl to re-read partition table: Success
+/dev/sdb: calling ioctl to re-read partition table: Success
+removed all registered handlers
+[!] Running Sequential Sync Write
+[!] BS: 8k
+[!] Num jobs: 32
+/dev/sdc: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sdb: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: calling ioctl to re-read partition table: Success
+/dev/sdc: calling ioctl to re-read partition table: Success
+/dev/sdb: calling ioctl to re-read partition table: Success
+removed all registered handlers
+[!] Running Sequential Sync Write
+[!] BS: 1m
+[!] Num jobs: 32
+/dev/sdc: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sdb: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: calling ioctl to re-read partition table: Success
+/dev/sdc: calling ioctl to re-read partition table: Success
+/dev/sdb: calling ioctl to re-read partition table: Success
+removed all registered handlers
+[!] Running Sequential Async Write
+[!] BS: 8k
+[!] Num jobs: 16
+/dev/sdc: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sdb: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: calling ioctl to re-read partition table: Success
+/dev/sdc: calling ioctl to re-read partition table: Success
+/dev/sdb: calling ioctl to re-read partition table: Success
+removed all registered handlers
+[!] Running Sequential Async Write
+[!] BS: 1m
+[!] Num jobs: 16
+/dev/sdc: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sdb: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: calling ioctl to re-read partition table: Success
+/dev/sdc: calling ioctl to re-read partition table: Success
+/dev/sdb: calling ioctl to re-read partition table: Success
+removed all registered handlers
+[!] Running Sequential Async Write
+[!] BS: 8k
+[!] Num jobs: 32
+/dev/sdc: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sdb: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: calling ioctl to re-read partition table: Success
+/dev/sdc: calling ioctl to re-read partition table: Success
+/dev/sdb: calling ioctl to re-read partition table: Success
+removed all registered handlers
+[!] Running Sequential Async Write
+[!] BS: 1m
+[!] Num jobs: 32
+/dev/sdc: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sdb: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: calling ioctl to re-read partition table: Success
+/dev/sdc: calling ioctl to re-read partition table: Success
+/dev/sdb: calling ioctl to re-read partition table: Success
+removed all registered handlers
+[!] Running Random Sync Write
+[!] BS: 8k
+[!] Num jobs: 32
+/dev/sdc: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sdb: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: calling ioctl to re-read partition table: Success
+/dev/sdc: calling ioctl to re-read partition table: Success
+/dev/sdb: calling ioctl to re-read partition table: Success
+removed all registered handlers
+[!] Running Random Sync Write
+[!] BS: 8k
+[!] Num jobs: 128
+/dev/sdc: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sdb: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: calling ioctl to re-read partition table: Success
+/dev/sdc: calling ioctl to re-read partition table: Success
+/dev/sdb: calling ioctl to re-read partition table: Success
+removed all registered handlers
+[!] Running Random Async Write
+[!] BS: 8k
+[!] Num jobs: 32
+/dev/sdc: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sdb: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: calling ioctl to re-read partition table: Success
+/dev/sdc: calling ioctl to re-read partition table: Success
+/dev/sdb: calling ioctl to re-read partition table: Success
+removed all registered handlers
+[!] Running Random Async Write
+[!] BS: 8k
+[!] Num jobs: 128
+/dev/sdc: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdc: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sdb: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sdb: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: 8 bytes were erased at offset 0x00000200 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 8 bytes were erased at offset 0x7fffffe00 (gpt): 45 46 49 20 50 41 52 54
+/dev/sda: 2 bytes were erased at offset 0x000001fe (PMBR): 55 aa
+/dev/sda: calling ioctl to re-read partition table: Success
+/dev/sdc: calling ioctl to re-read partition table: Success
+/dev/sdb: calling ioctl to re-read partition table: Success
+[!] Running Sequential Sync Write
+[!] BS: 8k
+[!] Num jobs: 16
+[!] Throughput (KiB/s): 25830, 
+[!] IOPS: 3228.788561, 
+[!] Running Sequential Sync Write
+[!] BS: 1m
+[!] Num jobs: 16
+[!] Throughput (KiB/s): 747409, 
+[!] IOPS: 729.891857, 
+[!] Running Sequential Sync Write
+[!] BS: 8k
+[!] Num jobs: 32
+[!] Throughput (KiB/s): 39729, 
+[!] IOPS: 4966.234459, 
+[!] Running Sequential Sync Write
+[!] BS: 1m
+[!] Num jobs: 32
+[!] Throughput (KiB/s): 742435, 
+[!] IOPS: 725.034974, 
+[!] Running Sequential Async Write
+[!] BS: 8k
+[!] Num jobs: 16
+[!] Throughput (KiB/s): 754355, 
+[!] IOPS: 94294.404480, 
+[!] Running Sequential Async Write
+[!] BS: 1m
+[!] Num jobs: 16
+[!] Throughput (KiB/s): 744833, 
+[!] IOPS: 727.376807, 
+[!] Running Sequential Async Write
+[!] BS: 8k
+[!] Num jobs: 32
+[!] Throughput (KiB/s): 640078, 
+[!] IOPS: 80009.831633, 
+[!] Running Sequential Async Write
+[!] BS: 1m
+[!] Num jobs: 32
+[!] Throughput (KiB/s): 746295, 
+[!] IOPS: 728.803828, 
+[!] Running Random Sync Write
+[!] BS: 8k
+[!] Num jobs: 32
+[!] Throughput (KiB/s): 24329, 
+[!] IOPS: 3041.197940, 
+[!] Running Random Sync Write
+[!] BS: 8k
+[!] Num jobs: 128
+[!] Throughput (KiB/s): 59038, 
+[!] IOPS: 7379.757382, 
+[!] Running Random Async Write
+[!] BS: 8k
+[!] Num jobs: 32
+[!] Throughput (KiB/s): 105550, 
+[!] IOPS: 13193.814893, 
+[!] Running Random Async Write
+[!] BS: 8k
+[!] Num jobs: 128
+[!] Throughput (KiB/s): 113237, 
+[!] IOPS: 14154.706944, 

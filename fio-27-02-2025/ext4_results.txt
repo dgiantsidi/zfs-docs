@@ -1,0 +1,316 @@
+Running benchmark with: /dev/sdc /dev/sdb /dev/sda
+Discarding device blocks:        0/25140480                 done                            
+Creating filesystem with 25140480 4k blocks and 6291456 inodes
+Filesystem UUID: 3ff287e1-7bad-445c-91c8-37abbcd5038f
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables:   0/768       done                            
+Writing inode tables:   0/768       done                            
+Creating journal (131072 blocks): done
+Writing superblocks and filesystem accounting information:   0/768       done
+
+/dev/sdc: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sdb: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sda: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+mdadm: Defaulting to version 1.2 metadata
+mdadm: array /dev/md0 started.
+Discarding device blocks:        0/25140480                 done                            
+Creating filesystem with 25140480 4k blocks and 6291456 inodes
+Filesystem UUID: f718a0a0-4820-4481-afc5-d75208b029fe
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables:   0/768       done                            
+Writing inode tables:   0/768       done                            
+Creating journal (131072 blocks): done
+Writing superblocks and filesystem accounting information:   0/768       done
+
+[!] Running Sequential Sync Write
+[!] BS: 8k
+[!] Num jobs: 16
+/dev/sdc: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sdb: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sda: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+mdadm: Defaulting to version 1.2 metadata
+mdadm: array /dev/md0 started.
+Discarding device blocks:        0/25140480                 done                            
+Creating filesystem with 25140480 4k blocks and 6291456 inodes
+Filesystem UUID: fbfab226-e5c1-4504-b732-324d50495b46
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables:   0/768       done                            
+Writing inode tables:   0/768       done                            
+Creating journal (131072 blocks): done
+Writing superblocks and filesystem accounting information:   0/768       done
+
+[!] Running Sequential Sync Write
+[!] BS: 1m
+[!] Num jobs: 16
+/dev/sdc: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sdb: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sda: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+mdadm: Defaulting to version 1.2 metadata
+mdadm: array /dev/md0 started.
+Discarding device blocks:        0/25140480                 done                            
+Creating filesystem with 25140480 4k blocks and 6291456 inodes
+Filesystem UUID: 0b88ca47-c00b-478a-b70d-869d92324ad6
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables:   0/768       done                            
+Writing inode tables:   0/768       done                            
+Creating journal (131072 blocks): done
+Writing superblocks and filesystem accounting information:   0/768       done
+
+[!] Running Sequential Sync Write
+[!] BS: 8k
+[!] Num jobs: 32
+/dev/sdc: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sdb: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sda: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+mdadm: Defaulting to version 1.2 metadata
+mdadm: array /dev/md0 started.
+Discarding device blocks:        0/25140480                 done                            
+Creating filesystem with 25140480 4k blocks and 6291456 inodes
+Filesystem UUID: f75127dd-a329-4f8a-85f6-45a36f793825
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables:   0/768       done                            
+Writing inode tables:   0/768       done                            
+Creating journal (131072 blocks): done
+Writing superblocks and filesystem accounting information:   0/768       done
+
+[!] Running Sequential Sync Write
+[!] BS: 1m
+[!] Num jobs: 32
+/dev/sdc: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sdb: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sda: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+mdadm: Defaulting to version 1.2 metadata
+mdadm: array /dev/md0 started.
+Discarding device blocks:        0/25140480                 done                            
+Creating filesystem with 25140480 4k blocks and 6291456 inodes
+Filesystem UUID: 5aa588af-64cb-417e-9d64-a533bf5700ee
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables:   0/768       done                            
+Writing inode tables:   0/768       done                            
+Creating journal (131072 blocks): done
+Writing superblocks and filesystem accounting information:   0/768       done
+
+[!] Running Sequential Async Write
+[!] BS: 8k
+[!] Num jobs: 16
+/dev/sdc: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sdb: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sda: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+mdadm: Defaulting to version 1.2 metadata
+mdadm: array /dev/md0 started.
+Discarding device blocks:        0/25140480                 done                            
+Creating filesystem with 25140480 4k blocks and 6291456 inodes
+Filesystem UUID: 487f500a-cd22-44a6-b4aa-2df3bfc334a5
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables:   0/768       done                            
+Writing inode tables:   0/768       done                            
+Creating journal (131072 blocks): done
+Writing superblocks and filesystem accounting information:   0/768       done
+
+[!] Running Sequential Async Write
+[!] BS: 1m
+[!] Num jobs: 16
+/dev/sdc: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sdb: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sda: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+mdadm: Defaulting to version 1.2 metadata
+mdadm: array /dev/md0 started.
+Discarding device blocks:        0/25140480                 done                            
+Creating filesystem with 25140480 4k blocks and 6291456 inodes
+Filesystem UUID: 4c870a00-498f-49e9-a95e-c29f7aed0cbe
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables:   0/768       done                            
+Writing inode tables:   0/768       done                            
+Creating journal (131072 blocks): done
+Writing superblocks and filesystem accounting information:   0/768       done
+
+[!] Running Sequential Async Write
+[!] BS: 8k
+[!] Num jobs: 32
+/dev/sdc: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sdb: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sda: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+mdadm: Defaulting to version 1.2 metadata
+mdadm: array /dev/md0 started.
+Discarding device blocks:        0/25140480                 done                            
+Creating filesystem with 25140480 4k blocks and 6291456 inodes
+Filesystem UUID: b29070c8-222f-4cfc-82c6-b47569f5e161
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables:   0/768       done                            
+Writing inode tables:   0/768       done                            
+Creating journal (131072 blocks): done
+Writing superblocks and filesystem accounting information:   0/768       done
+
+[!] Running Sequential Async Write
+[!] BS: 1m
+[!] Num jobs: 32
+/dev/sdc: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sdb: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sda: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+mdadm: Defaulting to version 1.2 metadata
+mdadm: array /dev/md0 started.
+Discarding device blocks:        0/25140480 3145728/25140480                 done                            
+Creating filesystem with 25140480 4k blocks and 6291456 inodes
+Filesystem UUID: 99b59426-17a4-4237-aed9-a21670a75fbe
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables:   0/768       done                            
+Writing inode tables:   0/768       done                            
+Creating journal (131072 blocks): done
+Writing superblocks and filesystem accounting information:   0/768       done
+
+[!] Running Random Sync Write
+[!] BS: 8k
+[!] Num jobs: 32
+/dev/sdc: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sdb: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sda: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+mdadm: Defaulting to version 1.2 metadata
+mdadm: array /dev/md0 started.
+Discarding device blocks:        0/25140480                 done                            
+Creating filesystem with 25140480 4k blocks and 6291456 inodes
+Filesystem UUID: f9c89716-7c61-43bc-bd07-215b99b73570
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables:   0/768       done                            
+Writing inode tables:   0/768       done                            
+Creating journal (131072 blocks): done
+Writing superblocks and filesystem accounting information:   0/768       done
+
+[!] Running Random Sync Write
+[!] BS: 8k
+[!] Num jobs: 128
+/dev/sdc: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sdb: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sda: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+mdadm: Defaulting to version 1.2 metadata
+mdadm: array /dev/md0 started.
+Discarding device blocks:        0/25140480                 done                            
+Creating filesystem with 25140480 4k blocks and 6291456 inodes
+Filesystem UUID: ec7397c0-2a33-4025-a662-4eddedb1e944
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables:   0/768       done                            
+Writing inode tables:   0/768       done                            
+Creating journal (131072 blocks): done
+Writing superblocks and filesystem accounting information:   0/768       done
+
+[!] Running Random Async Write
+[!] BS: 8k
+[!] Num jobs: 32
+/dev/sdc: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sdb: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sda: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+mdadm: Defaulting to version 1.2 metadata
+mdadm: array /dev/md0 started.
+Discarding device blocks:        0/25140480 7864320/25140480                 done                            
+Creating filesystem with 25140480 4k blocks and 6291456 inodes
+Filesystem UUID: ee9e38db-7e33-4572-a55f-6975ca3715a9
+Superblock backups stored on blocks: 
+	32768, 98304, 163840, 229376, 294912, 819200, 884736, 1605632, 2654208, 
+	4096000, 7962624, 11239424, 20480000, 23887872
+
+Allocating group tables:   0/768       done                            
+Writing inode tables:   0/768       done                            
+Creating journal (131072 blocks): done
+Writing superblocks and filesystem accounting information:   0/768       done
+
+[!] Running Random Async Write
+[!] BS: 8k
+[!] Num jobs: 128
+/dev/sdc: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sdb: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+/dev/sda: 4 bytes were erased at offset 0x00001000 (linux_raid_member): fc 4e 2b a9
+[!] Running Sequential Sync Write
+[!] BS: 8k
+[!] Num jobs: 16
+[!] Throughput (KiB/s): 19338, 
+[!] IOPS: 2417.341599, 
+[!] Running Sequential Sync Write
+[!] BS: 1m
+[!] Num jobs: 16
+[!] Throughput (KiB/s): 735718, 
+[!] IOPS: 718.475073, 
+[!] Running Sequential Sync Write
+[!] BS: 8k
+[!] Num jobs: 32
+[!] Throughput (KiB/s): 34937, 
+[!] IOPS: 4367.151047, 
+[!] Running Sequential Sync Write
+[!] BS: 1m
+[!] Num jobs: 32
+[!] Throughput (KiB/s): 723037, 
+[!] IOPS: 706.091100, 
+[!] Running Sequential Async Write
+[!] BS: 8k
+[!] Num jobs: 16
+[!] Throughput (KiB/s): 183605, 
+[!] IOPS: 22950.701522, 
+[!] Running Sequential Async Write
+[!] BS: 1m
+[!] Num jobs: 16
+[!] Throughput (KiB/s): 752075, 
+[!] IOPS: 734.448955, 
+[!] Running Sequential Async Write
+[!] BS: 8k
+[!] Num jobs: 32
+[!] Throughput (KiB/s): 183647, 
+[!] IOPS: 22955.916691, 
+[!] Running Sequential Async Write
+[!] BS: 1m
+[!] Num jobs: 32
+[!] Throughput (KiB/s): 752114, 
+[!] IOPS: 734.486854, 
+[!] Running Random Sync Write
+[!] BS: 8k
+[!] Num jobs: 32
+[!] Throughput (KiB/s): 28933, 
+[!] IOPS: 3616.671666, 
+[!] Running Random Sync Write
+[!] BS: 8k
+[!] Num jobs: 128
+[!] Throughput (KiB/s): 86534, 
+[!] IOPS: 10816.768582, 
+[!] Running Random Async Write
+[!] BS: 8k
+[!] Num jobs: 32
+[!] Throughput (KiB/s): 182423, 
+[!] IOPS: 22802.881416, 
+[!] Running Random Async Write
+[!] BS: 8k
+[!] Num jobs: 128
+[!] Throughput (KiB/s): 182925, 
+[!] IOPS: 22865.670244, 
