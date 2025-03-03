@@ -39,7 +39,6 @@ x_axis_seq_sync_writes = [
 
 
 # Create a plot
-# Create a plot
 plt.figure(figsize=(10, 6))
 #plt.errorbar(latency, throughput, xerr=latency_error, yerr=throughput_error, fmt='o', ecolor='r', capsize=5)
 plt.bar(x_axis_seq_sync_writes, throughput_ext4_seq_sync_write, label="ext4")
@@ -50,7 +49,7 @@ plt.bar(x_axis_seq_sync_writes,  throughput_zfs_1ms_seq_sync_write,  label="zil-
 
 
 # Add title and labels
-plt.title('fio)')
+plt.title('fio')
 plt.xlabel('KiB/s (Max: 750 MB/s)')
 
 
