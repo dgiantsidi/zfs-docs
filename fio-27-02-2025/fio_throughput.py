@@ -52,7 +52,7 @@ plt.bar(x+width,  throughput_zfs_1ms_seq_sync_write, width=width, label="zil-del
 
 
 # Add title and labels
-plt.title('fio')
+plt.title('fio (sequential synchronous writes)')
 plt.ylabel('KiB/s (Max: 750 MB/s)')
 plt.xticks(x, x_axis_seq_sync_writes)
 
