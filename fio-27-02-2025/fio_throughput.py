@@ -183,3 +183,59 @@ plt.legend(loc="upper left")
 
 plt.grid(True)
 plt.savefig('rand_sync_writes_fio_throughput_plot.png')
+
+
+## Random asynchronous writes
+
+throughput_ext4_rand_async_write = [
+  182423,
+  182925
+]
+
+throughput_zfs_default_rand_async_write = [
+  105651,
+  113250
+
+]
+
+throughput_zfs_500us_rand_async_write = [
+  105550,
+  113237
+]
+
+throughput_zfs_1ms_rand_async_write = [
+  104704,
+  114623
+]
+
+x_axis_rand_async_writes = [
+    "8K_32Jobs",
+    "8K_128Jobs"
+]
+
+n = len(throughput_ext4_rand_async_write)
+x = np.arange(n)
+width = 0.2
+
+
+# Create a plot
+plt.figure(figsize=(10, 6))
+#plt.errorbar(latency, throughput, xerr=latency_error, yerr=throughput_error, fmt='o', ecolor='r', capsize=5)
+plt.bar(x-2*width, throughput_ext4_rand_async_write, width=width, label="ext4")
+plt.bar(x-width, throughput_zfs_default_rand_async_write, width=width, label="zfs-default")
+plt.bar(x, throughput_zfs_500us_rand_async_write, width=width, label="zil-delay-500us")
+plt.bar(x+width,  throughput_zfs_1ms_rand_async_write, width=width, label="zil-delay-1ms")
+
+
+
+# Add title and labels
+plt.title('fio (random synchronous writes)')
+plt.ylabel('KiB/s (Max: 750 MB/s)')
+plt.xticks(x, x_axis_rand_async_writes)
+
+
+# Show grid
+plt.legend(loc="upper left")
+
+plt.grid(True)
+plt.savefig('rand_async_writes_fio_throughput_plot.png')
