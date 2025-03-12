@@ -89,3 +89,7 @@ Rely on usleep_range [(docu)](https://www.kernel.org/doc/Documentation/timers/ti
 ## Read-path 
 
 Documentation: https://openzfs.org/wiki/Documentation/ZFS_I/O
+
+## Testing
+
+https://github.com/openzfs/zfs/blob/master/tests/README.md
