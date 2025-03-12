@@ -85,3 +85,7 @@ Please check this: https://github.com/openzfs/zfs/discussions/17057
 ## ZFS timers accuracy
 
 Rely on usleep_range [(docu)](https://www.kernel.org/doc/Documentation/timers/timers-howto.txt) for small intervals (e.g., 100 microseconds) and busy waits. It seems to be precise, relys on reading wall clock time.
+
+## Read-path 
+
+Documentation: https://openzfs.org/wiki/Documentation/ZFS_I/O
