@@ -74,23 +74,27 @@ POSIX-syscall `write()` &#8594; `zpl_file.c:383:zpl_iter_write()` &#8594; `zpl_f
 Everything in ZFS (compression, encryption, checksum, dedup, etc) works over logical blocks (dataset recordsize, zvol volblocksize, etc), each pointed by a block pointer, actually including the checksum, compression and encryption parameters, etc.
 
 
-## ZIL atomicity in respect transaction groups when `fsync()`
+### ZIL atomicity in respect transaction groups when `fsync()`
 
 ZIL txg writes are not atomic: https://github.com/openzfs/zfs/discussions/17051. A txg might be spread into many lwbs which are written sequentially. If the system crashes in the middle of a sync then only the written blocks will be replayed (they won't even be discarded). However, in the transaction group synchronization context due to CoW txgs are atomic.
 
-## ZIL + Uberblock consistency 
+### ZIL + Uberblock consistency 
 
 Please check this: https://github.com/openzfs/zfs/discussions/17057
 
-## ZFS timers accuracy
+### ZFS timers accuracy
 
 Rely on usleep_range [(docu)](https://www.kernel.org/doc/Documentation/timers/timers-howto.txt) for small intervals (e.g., 100 microseconds) and busy waits. It seems to be precise, relys on reading wall clock time.
 
-## Read/write-path 
+### Read/write-path 
 
 Documentation: https://openzfs.org/wiki/Documentation/ZFS_I/O
 Video: https://openzfs.org/wiki/Documentation/Read_Write_Lecture
 
-## Testing
+### Testing
 
 https://github.com/openzfs/zfs/blob/master/tests/README.md
+
+
+### Sync/async writes ordering in ZIL
+https://github.com/openzfs/zfs/discussions/17149#discussioncomment-12504498
