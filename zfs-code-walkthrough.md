@@ -95,6 +95,24 @@ Video: https://openzfs.org/wiki/Documentation/Read_Write_Lecture
 
 https://github.com/openzfs/zfs/blob/master/tests/README.md
 
+```sh
+sudo zpool create -f poolc /dev/sdc
+sudo zfs create poolc/fs
+sudo ./examples/example_fsync_large poolc dimitra-13
+sudo ./examples/example_fsync_large poolc dimitra-12
+sudo ./examples/example_fsync_large poolc/fs dimitra-12
+sudo ./examples/example_fsync_large poolc/fs dimitra-13
+sudo ./examples/example_fsync_large poolc/fs dimitra-14
+sudo zpool freeze poolc
+sudo ./examples/example_fsync_large poolc/fs dimitra-16
+sudo ./examples/example_fsync_large poolc/fs dimitra-17
+sudo ./examples/example_fsync_large poolc dimitra-17
+sudo ./examples/example_fsync_large poolc dimitra-18
+sudo ./examples/example_fsync_large poolc dimitra-19
+
+sudo zpool export poolc
+sudo zpool import poolc
+```
 
 ### Sync/async writes ordering in ZIL
 https://github.com/openzfs/zfs/discussions/17149#discussioncomment-12504498
