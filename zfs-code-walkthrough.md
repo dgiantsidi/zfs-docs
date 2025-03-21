@@ -1,4 +1,4 @@
-# Documentation of ZFS codebase
+# Documentation of ZFS codebase (tag: zfs-2.2.4)
 
 `zil_sync()`:
 -  called in syncing context to free committed log blocks and update log header
