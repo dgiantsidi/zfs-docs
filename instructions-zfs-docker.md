@@ -123,7 +123,7 @@ Note that you should first check with `lsblk` in which disk the OS mount point i
 # Notes
 
 kernel versions tested: `6.8.0-1021-azure #25-Ubuntu SMP`, `6.8.0-1020-azure #23-Ubuntu`
-zfs-version: `tag: 2.2.4`
+zfs-version: `tag: 2.2.4-1`
 
 RSA-key generation for git:
 ```
