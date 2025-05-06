@@ -119,3 +119,4 @@ https://github.com/openzfs/zfs/discussions/17149#discussioncomment-12504498
 
 ### ZIL checksumming and ordering
 https://github.com/openzfs/zfs/discussions/17232#discussioncomment-13017574
+https://www.youtube.com/watch?v=qkA5HhfzsvM
