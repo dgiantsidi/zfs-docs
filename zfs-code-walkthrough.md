@@ -116,3 +116,6 @@ sudo zpool import poolc
 
 ### Sync/async writes ordering in ZIL
 https://github.com/openzfs/zfs/discussions/17149#discussioncomment-12504498
+
+### ZIL checksumming and ordering
+https://github.com/openzfs/zfs/discussions/17232#discussioncomment-13017574
