@@ -108,7 +108,7 @@ def main(args):
 
     print(output2)
 
-    output_fname = "default_zfs_"+ nthreads+"threads_"+iteration + ".txt"
+    output_fname = "default_extfs_"+ nthreads+"threads_"+iteration + ".txt"
     with open(output_fname, 'w') as file:
         file.write(output2)
 
