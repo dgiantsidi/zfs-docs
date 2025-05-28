@@ -119,6 +119,42 @@ Note that you should first check with `lsblk` in which disk the OS mount point i
 
 
 
+# Instructions for attaching docker to ext4
+
+1) ```sh
+   sudo systemctl stop docker && sudo systemctl stop docker.socket
+   ```
+   
+Cleanup:
+
+2) ```sh
+    sudo umount /var/lib/docker
+    sudo rm -rf /var/lib/docker
+    sudo mdadm --stop /dev/md0
+    sudo mdadm --zero-superblock /dev/md0
+    sudo wipefs -a /dev/sda /dev/sdb /dev/sdc
+``` 
+
+3) ```sh
+    sudo export DISKS="/dev/sda /dev/sdb /dev/sdc
+    sudo mdadm --create --verbose /dev/md0 --level=0 --raid-devices=$(echo "$DISKS" | awk '{print NF}') $DISKS
+    sudo mkdir -p /var/lib/docker
+    sudo mkfs.ext4 -F /dev/md0
+    sudo mount /dev/md0 /var/lib/docker
+```
+
+Note that you should first check with `lsblk` in which disk the OS mount point is.
+
+7) ```sh
+    sudo systemctl start docker
+    ```
+
+8) ```sh
+    sudo docker info
+    ```
+
+
+
 
 # Notes
 
