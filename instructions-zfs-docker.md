@@ -77,13 +77,13 @@ Instructions taken from: https://openzfs.github.io/openzfs-docs/Developer%20Reso
 
    Note that you should first check with `lsblk` in which disk the OS mount point is. You should exclude that disk.
 
-3) ```sh
+2) ```sh
    zfs unmount -a
    zpool destroy new_pool
    zpool list
    ```
    
-4) ``` sh
+3) ``` sh
    sudo zfs unmount new_pool_3
    sudo zfs mount new_pool_3
    ```
@@ -95,25 +95,25 @@ Instructions taken from: https://openzfs.github.io/openzfs-docs/Developer%20Reso
    sudo systemctl stop docker && sudo systemctl stop docker.socket
    ```
    
-4) ```sh
+2) ```sh
    sudo cp -au /var/lib/docker/ /var/lib/docker.bk
    ```
  
-5) ```sh
+3) ```sh
    sudo rm -rf /var/lib/docker
    ```
 
-6) ```sh
+4) ```sh
    sudo zpool create -f zpool-docker -m /var/lib/docker /dev/sda /dev/sdb /dev/sdc
    ``` 
 
 Note that you should first check with `lsblk` in which disk the OS mount point is.
 
-7) ```sh
+5) ```sh
     sudo systemctl start docker
     ```
 
-8) ```sh
+6) ```sh
     sudo docker info
     ```
 
@@ -124,32 +124,38 @@ Note that you should first check with `lsblk` in which disk the OS mount point i
 1) ```sh
    sudo systemctl stop docker && sudo systemctl stop docker.socket
    ```
-   
-Cleanup:
-
-2) ```sh
-    sudo umount /var/lib/docker
-    sudo rm -rf /var/lib/docker
-    sudo mdadm --stop /dev/md0
-    sudo mdadm --zero-superblock /dev/md0
-    sudo wipefs -a /dev/sda /dev/sdb /dev/sdc
-``` 
-
-3) ```sh
-    sudo export DISKS="/dev/sda /dev/sdb /dev/sdc
-    sudo mdadm --create --verbose /dev/md0 --level=0 --raid-devices=$(echo "$DISKS" | awk '{print NF}') $DISKS
-    sudo mkdir -p /var/lib/docker
-    sudo mkfs.ext4 -F /dev/md0
-    sudo mount /dev/md0 /var/lib/docker
-```
 
 Note that you should first check with `lsblk` in which disk the OS mount point is.
 
-7) ```sh
+2) ```sh
+   sudo export DISKS="/dev/sda /dev/sdb /dev/sdc
+   ```
+   
+Cleanup:
+
+3) ```sh
+   sudo umount /var/lib/docker
+   sudo rm -rf /var/lib/docker
+   sudo mdadm --stop /dev/md0
+   sudo mdadm --zero-superblock /dev/md0
+   sudo wipefs -a /dev/sda /dev/sdb /dev/sdc
+   ``` 
+
+Construct the RAID and mount docker:
+
+4) ```sh 
+   sudo mdadm --create --verbose /dev/md0 --level=0 --raid-devices=$(echo "$DISKS" | awk '{print NF}') $DISKS
+   sudo mkdir -p /var/lib/docker
+   sudo mkfs.ext4 -F /dev/md0
+   sudo mount /dev/md0 /var/lib/docker
+   ```
+
+
+4) ```sh
     sudo systemctl start docker
     ```
 
-8) ```sh
+5) ```sh
     sudo docker info
     ```
 
