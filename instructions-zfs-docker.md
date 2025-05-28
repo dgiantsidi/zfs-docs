@@ -72,22 +72,29 @@ Instructions taken from: https://openzfs.github.io/openzfs-docs/Developer%20Reso
 # Instructions for running ZFS natively
 
 1) ```sh
-   sudo zpool create new_pool /dev/sdb /dev/sdc /dev/sdd
+   sudo zpool create <pool_name> /dev/sdb /dev/sdc /dev/sdd
    ```
 
    Note that you should first check with `lsblk` in which disk the OS mount point is. You should exclude that disk.
 
 2) ```sh
    zfs unmount -a
-   zpool destroy new_pool
+   zpool destroy <pool_name>
    zpool list
    ```
    
 3) ``` sh
-   sudo zfs unmount new_pool_3
-   sudo zfs mount new_pool_3
+   sudo zfs unmount <pool_name>
+   sudo zfs mount <pool_name>
    ```
 
+4) Testing the ZIL
+   ```sh
+   sudo zpool freeze <pool_name>
+   <execute cmds that write data> // the data will be directly flushed to the ZIL
+   sudo zpool export <pool_name>
+   sudo zpool import <pool_name>
+   ```
 
 # Instructions for attaching docker to ZFS
 
