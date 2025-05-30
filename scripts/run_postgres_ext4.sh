@@ -59,6 +59,21 @@ start_docker() {
     echo "Docker started successfully."
 }
 
+run_postgres() {
+    echo "Running PostgreSQL container ..."
+    serialized_date=$(date +%Y%m%d_%H%M)
+
+    mkdir -p $(pwd)/ext4_${serialized_date}
+
+    BASE_DIR_EXT4="/home/azureuser/zfs-docs/postgres-experiments-22-05-remote-client/ext4"
+    cp ${BASE_DIR_EXT4}/long_runs.py .
+    python3 long_runs.py 10 1
+ 
+}
+
 stop_docker
 mount_docker
 start_docker
+
+run_postgres
+stop_docker
