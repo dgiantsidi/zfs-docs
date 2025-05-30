@@ -24,7 +24,7 @@ find_disks() {
     echo $DISKS
 }
 
-cleanup_docker() {
+cleanup_docker_ext4() {
     find_disks
     echo "disks are: $DISKS"
     sudo umount /var/lib/docker
@@ -34,21 +34,63 @@ cleanup_docker() {
     sudo wipefs -a $DISKS
 }
 
-stop_docker() {
+mount_docker_zfs() {
+    CUR_DIR=$(pwd)
+    ZFS_DIR="/home/azureuser/original_zfs"
+    cd ${ZFS_DIR}
+    sh autogen.sh && ./configure && make -s -j
+    sudo make install && sudo ldconfig && sudo depmod && sudo ./scripts/zfs.sh
+    cd ${CUR_DIR}
+    sudo zpool create -f zpool-docker -m /var/lib/docker ${DISKS}
+    sudo systemctl start docker
+}
+
+
+unmount_zfs() {
+    CUR_DIR=$(pwd)
+    ZFS_DIR="/home/azureuser/original_zfs"
+    cd ${ZFS_DIR}
+
+    sudo ./scripts/zfs.sh -u
+    sudo make uninstall; sudo ldconfig; sudo depmod
+    make clean && export list="$(find -name .deps)" && for elem in $list; do sudo rm -rf $elem; done && sudo rm -rf __pycache__/ aclocal.m4 build/ config.log config.status  configure libtool stamp-h1 zfs_config.h.in zfs_config.h Makefile.in Makefile zfs.release configure~ zfs_config.h.in~
+    cd ${CUR_DIR}
+    sudo wipefs -a $DISKS
+
+}
+
+cleanup_docker_zfs() {
+    find_disks
+    echo "disks are: $DISKS"
+    sudo zpool destroy /var/lib/docker
+    sudo rm -rf /var/lib/docker
+    sudo wipefs -a $DISKS
+    unmount_zfs
+}
+
+
+stop_docker_ext4() {
     echo "Stopping docker ..."
     sudo systemctl stop docker && sudo systemctl stop docker.socket
     sudo systemctl stop docker && sudo systemctl stop docker.socket
-    cleanup_docker
+    cleanup_docker_ext4
 }
 
-mount_docker() {
+stop_docker_zfs() {
+    echo "Stopping docker ..."
+    sudo systemctl stop docker && sudo systemctl stop docker.socket
+    sudo systemctl stop docker && sudo systemctl stop docker.socket
+    cleanup_docker_zfs
+}
+
+mount_docker_ext4() {
     sudo mdadm --create --verbose /dev/md0 --level=0 --raid-devices=$(echo "$DISKS" | awk '{print NF}') $DISKS
     sudo mkdir -p /var/lib/docker
     sudo mkfs.ext4 -F /dev/md0
     sudo mount /dev/md0 /var/lib/docker
 }
 
-start_docker() {
+start_docker_ext4() {
     sudo systemctl start docker
     if ! sudo docker info | grep -q "Backing Filesystem: extfs"; then
         echo "Error: Backing Filesystem is not extfs. Aborting."
@@ -59,7 +101,7 @@ start_docker() {
     echo "Docker started successfully."
 }
 
-run_postgres() {
+run_postgres_ext4() {
     echo "Running PostgreSQL container ..."
     serialized_date=$(date +%Y%m%d_%H%M)
 
@@ -67,13 +109,31 @@ run_postgres() {
 
     BASE_DIR_EXT4="/home/azureuser/zfs-docs/postgres-experiments-22-05-remote-client/ext4"
     cp ${BASE_DIR_EXT4}/long_runs.py .
-    python3 long_runs.py 10 1
+    #python3 long_runs.py 10 1
  
 }
 
-stop_docker
-mount_docker
-start_docker
+run_postgres_zfs() {
+    echo "Running PostgreSQL container ..."
+    serialized_date=$(date +%Y%m%d_%H%M)
 
-run_postgres
-stop_docker
+    mkdir -p $(pwd)/zfs_${serialized_date}
+
+    BASE_DIR_EXT4="/home/azureuser/zfs-docs/postgres-experiments-22-05-remote-client/zfs"
+    cp ${BASE_DIR_EXT4}/long_runs.py .
+    #python3 long_runs.py 10 1
+ 
+}
+
+
+stop_docker_ext4
+
+mount_docker_ext4
+start_docker_ext4
+run_postgres_ext4
+
+stop_docker_ext4
+
+mount_docker_zfs
+run_postgres_zfs
+unmount_zfs
