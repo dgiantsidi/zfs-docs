@@ -45,7 +45,7 @@ def ssh_and_run_commands(host, username, key_filename, cmd1, cmd2, cmd3, clients
     
     time.sleep(30)
 
-    iostat_cmd = "iostat 10 >> long_runs_iostat_output_" + clients + "clients_ext4.txt"
+    iostat_cmd = "iostat 10 >> long_runs_iostat_output_" + clients + "clients_zfs.txt"
     iostat_process = run_cmd_background(iostat_cmd)
 
     # Run cmd3
@@ -108,7 +108,7 @@ def main(args):
 
     print(output2)
 
-    output_fname = "default_extfs_"+ nthreads+"threads_"+iteration + ".txt"
+    output_fname = "default_zfs_"+ nthreads+"threads_"+iteration + ".txt"
     with open(output_fname, 'w') as file:
         file.write(output2)
 

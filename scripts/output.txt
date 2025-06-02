@@ -1,1 +1,415 @@
 timestamp    message 
+1748887593   ffff8a9363dca8c0 metaslab.c:1691:spa_set_allocator(): spa allocator: dynamic
+1748887593   ffff8a96344728c0 vdev.c:184:vdev_dbgmsg(): disk vdev '/dev/sde1': probe done, cant_read=0 cant_write=0
+1748887593   ffff8a96344728c0 vdev.c:184:vdev_dbgmsg(): disk vdev '/dev/sdc1': probe done, cant_read=0 cant_write=0
+1748887593   ffff8a96344728c0 vdev.c:184:vdev_dbgmsg(): disk vdev '/dev/sdd1': probe done, cant_read=0 cant_write=0
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 create pool version 5000; software version zfs-2.3.2-0-g92f430b00; uts dimitra-zfs 6.11.0-1015-azure #15~24.04.1-Ubuntu SMP Thu May  1 02:52:08 UTC 2025 x86_64
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@async_destroy=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@empty_bpobj=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@lz4_compress=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@multi_vdev_crash_dump=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@spacemap_histogram=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@enabled_txg=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@hole_birth=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@extensible_dataset=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@embedded_data=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@bookmarks=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@filesystem_limits=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@large_blocks=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@large_dnode=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@sha512=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@skein=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@edonr=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@userobj_accounting=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@encryption=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@project_quota=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@device_removal=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@obsolete_counts=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@zpool_checkpoint=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@spacemap_v2=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@allocation_classes=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@resilver_defer=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@bookmark_v2=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@redaction_bookmarks=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@redacted_datasets=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@bookmark_written=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@log_spacemap=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@livelist=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@device_rebuild=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@zstd_compress=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@draid=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@zilsaxattr=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@head_errlog=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@blake3=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@block_cloning=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@vdev_zaps_v2=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@redaction_list_spill=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@raidz_expansion=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@fast_dedup=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@longname=enabled
+1748887593   ffff8a9363dca8c0 spa_history.c:307:spa_history_log_sync(): txg 4 set feature@large_microzap=enabled
+1748887593   ffff8a9363dca8c0 mmp.c:240:mmp_thread_start(): MMP thread started pool 'zpool-docker' gethrtime 19961825851910
+1748887593   ffff8a937155a8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 0, ms_id 0, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961826 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 1000000040000000, new_weight 740000000000001
+1748887593   ffff8a937155a8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 1, ms_id 0, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961826 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 1000000040000000, new_weight 740000000000001
+1748887593   ffff8a937155a8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 2, ms_id 0, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961826 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 1000000040000000, new_weight 740000000000001
+1748887593   ffff8a937155a8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 0, ms_id 1, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961826 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 100000003f7df7e0, new_weight 740000000000001
+1748887593   ffff8a967de48000 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 1, ms_id 1, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961826 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 100000003f7df7e0, new_weight 740000000000001
+1748887593   ffff8a967de48000 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 2, ms_id 1, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961826 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 100000003f7df7e0, new_weight 740000000000001
+1748887593   ffff8a967de48000 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 2, ms_id 2, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961826 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 100000003efbefbf, new_weight 740000000000001
+1748887593   ffff8a967de48000 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 0, ms_id 2, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961826 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 100000003efbefbf, new_weight 740000000000001
+1748887593   ffff8a9465768000 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 0, ms_id 3, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961837 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 100000003e79e79f, new_weight 740000000000001
+1748887593   ffff8a9484350000 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 1, ms_id 2, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961837 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 100000003efbefbf, new_weight 740000000000001
+1748887593   ffff8a967de48000 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 1, ms_id 3, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961837 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 100000003e79e79f, new_weight 740000000000001
+1748887593   ffff8a937155a8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 1, ms_id 4, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961837 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 100000003df7df7e, new_weight 740000000000001
+1748887593   ffff8a967de4d180 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 2, ms_id 3, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961843 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 100000003e79e79f, new_weight 740000000000001
+1748887593   ffff8a9549cda8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 0, ms_id 4, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a9549cda8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 0, ms_id 5, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a9549cda8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 0, ms_id 6, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a9549cda8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 0, ms_id 7, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a9549cda8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 0, ms_id 8, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a9549cda8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 0, ms_id 9, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a9549cda8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 0, ms_id 10, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a9549cda8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 0, ms_id 11, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a9549cda8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 1, ms_id 5, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a9549cda8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 1, ms_id 6, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a9549cda8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 1, ms_id 7, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a9549cda8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 1, ms_id 8, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a9549cda8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 0, ms_id 12, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a9549cda8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 0, ms_id 13, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a9549cda8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 1, ms_id 9, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a9549cda8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 1, ms_id 11, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a94a6d10000 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 1, ms_id 10, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a9549cda8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 1, ms_id 12, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a94a6d10000 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 1, ms_id 13, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a9549cda8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 1, ms_id 14, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a94a6d10000 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 2, ms_id 4, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a9549cda8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 2, ms_id 5, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a94a6d10000 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 2, ms_id 7, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a9549cda8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 2, ms_id 8, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a962ca85180 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 2, ms_id 6, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a94a6d10000 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 2, ms_id 9, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a962ca85180 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 2, ms_id 11, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a9549cda8c0 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 2, ms_id 10, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a94a6d10000 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 2, ms_id 12, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a962ca85180 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 4, spa zpool-docker, vdev_id 2, ms_id 13, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19961863 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887593   ffff8a97279f0000 spa_history.c:298:spa_history_log_sync(): txg 5 set zpool-docker (id 54) mountpoint=/var/lib/docker
+1748887593   ffff8a97279f0000 spa_history.c:294:spa_history_log_sync(): command: zpool create -f zpool-docker -m /var/lib/docker /dev/sdc /dev/sdd /dev/sde
+1748887599   ffff8a94a6d10000 metaslab.c:2504:metaslab_load_impl(): metaslab_load: txg 11, spa zpool-docker, vdev_id 1, ms_id 15, smp_length 0, unflushed_allocs 0, unflushed_frees 0, freed 0, defer 0 + 0, unloaded time 19967805 ms, loading_time 0 ms, ms_max_size 536870912, max size error 536870912, old_weight 740000000000001, new_weight 740000000000001
+1748887602   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 1 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 14; err=0
+1748887602   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 11 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 15; err=0
+1748887602   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 2 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 16; err=0
+1748887603   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 3 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 17; err=0
+1748887603   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 3 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 18; err=0
+1748887603   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 1 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 28; err=0
+1748887603   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 29; err=0
+1748887603   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 30; err=0
+1748887604   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 31; err=0
+1748887604   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 32; err=0
+1748887604   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 33; err=0
+1748887604   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 34; err=0
+1748887604   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 3 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 35; err=0
+1748887604   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 3 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 36; err=0
+1748887604   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 37; err=0
+1748887604   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 3 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 38; err=0
+1748887604   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 39; err=0
+1748887604   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 40; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 41; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 42; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 43; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 44; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 45; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 46; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 47; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 48; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 12 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 49; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 50; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 51; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 52; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 53; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 54; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 55; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 2 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 56; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 57; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 58; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 59; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 13 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 60; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 13 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 61; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 12 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 62; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 12 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 63; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 64; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 65; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 12 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 66; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 67; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 68; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 69; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 13 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 70; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 13 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 71; err=0
+1748887605   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 72; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 12 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 73; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 13 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 74; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 14 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 75; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 17 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 76; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 77; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 15 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 78; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 14 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 79; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 80; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 81; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 11 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 82; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 83; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 84; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 85; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 86; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 87; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 88; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 89; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 11 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 90; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 91; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 13 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 92; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 93; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 15 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 94; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 14 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 95; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 12 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 96; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 97; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 12 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 98; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 99; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 100; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 101; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 102; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 103; err=0
+1748887606   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 104; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 105; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 106; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 11 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 107; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 108; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 13 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 109; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 13 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 110; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 111; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 13 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 112; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 13 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 113; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 12 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 114; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 12 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 115; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 12 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 116; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 13 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 117; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 12 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 118; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 119; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 120; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 121; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 122; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 15 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 123; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 124; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 125; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 126; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 3 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 127; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 128; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 3 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 129; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 130; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 131; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 132; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 133; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 134; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 13 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 135; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 11 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 136; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 137; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 138; err=0
+1748887607   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 139; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 140; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 141; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 11 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 142; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 12 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 143; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 12 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 144; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 145; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 146; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 147; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 148; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 149; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 11 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 150; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 151; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 152; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 153; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 154; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 155; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 156; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 157; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 13 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 158; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 14 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 159; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 15 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 160; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 13 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 161; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 162; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 163; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 164; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 165; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 166; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 167; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 168; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 11 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 169; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 170; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 171; err=0
+1748887608   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 172; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 173; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 174; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 3 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 175; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 3 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 176; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 3 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 177; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 178; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 179; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 180; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 181; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 182; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 18 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 183; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 13 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 184; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 185; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 12 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 186; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 187; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 14 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 188; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 14 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 189; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 15 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 190; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 14 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 191; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 13 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 192; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 14 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 193; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 14 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 194; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 13 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 195; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 12 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 196; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 197; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 11 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 198; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 199; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 11 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 200; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 201; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 202; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 12 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 203; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 15 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 204; err=0
+1748887609   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 205; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 11 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 206; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 207; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 12 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 208; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 13 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 209; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 13 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 210; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 211; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 212; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 213; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 214; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 215; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 216; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 217; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 218; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 11 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 219; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 220; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 221; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 222; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 12 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 223; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 224; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 225; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 226; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 227; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 228; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 229; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 230; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 231; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 12 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 232; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 233; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 234; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 235; err=0
+1748887610   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 236; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 237; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 238; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 239; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 3 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 240; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 241; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 12 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 242; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 243; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 244; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 245; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 11 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 246; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 247; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 11 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 248; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 12 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 249; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 11 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 250; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 251; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 252; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 253; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 254; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 255; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 256; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 257; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 258; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 259; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 260; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 12 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 261; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 262; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 263; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 264; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 265; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 266; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 267; err=0
+1748887611   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 11 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 268; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 269; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 270; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 271; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 272; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 273; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 274; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 275; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 276; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 277; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 278; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 279; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 280; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 281; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 282; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 283; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 284; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 11 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 285; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 286; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 287; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 288; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 289; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 290; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 291; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 292; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 293; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 294; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 295; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 296; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 11 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 297; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 298; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 299; err=0
+1748887612   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 300; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 301; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 302; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 10 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 303; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 304; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 305; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 306; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 307; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 308; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 3 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 309; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 310; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 311; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 312; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 313; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 314; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 315; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 316; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 317; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 318; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 8 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 319; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 3 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 320; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 321; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 322; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 323; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 324; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 325; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 326; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 3 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 327; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 328; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 329; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 330; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 331; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 7 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 332; err=0
+1748887613   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 333; err=0
+1748887614   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 5 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 334; err=0
+1748887614   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 3 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 335; err=0
+1748887614   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 4 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 336; err=0
+1748887614   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 11 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 337; err=0
+1748887614   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 6 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 338; err=0
+1748887619   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 9 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 339; err=0
+1748887636   ffff8a97279f0000 dsl_scan.c:3853:dsl_process_async_destroys(): freed 13 blocks in 0ms from free_bpobj/bptree on zpool-docker in txg 343; err=0

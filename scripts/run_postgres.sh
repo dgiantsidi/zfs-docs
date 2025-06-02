@@ -183,13 +183,13 @@ run_postgres_shielded_zfs() {
 }
 
 
-stop_docker_ext4
+#stop_docker_ext4
 
-mount_docker_ext4
-start_docker_ext4
-run_postgres_ext4
+#mount_docker_ext4
+#start_docker_ext4
+#run_postgres_ext4
 
-stop_docker_ext4
+#stop_docker_ext4
 
 mount_docker_zfs
 run_postgres_zfs
