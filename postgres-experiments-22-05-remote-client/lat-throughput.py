@@ -41,14 +41,14 @@ latency_shielded_zfs = [
     13.16,
     18,
     31.99,
-    40.18
+    37.75
 ]
 
 throughput_shielded_zfs =[
     759.62,
     1111,
     1562.86,
-    1493.08
+    1589.42
 ]
 
 

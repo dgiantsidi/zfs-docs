@@ -46,6 +46,7 @@ def ssh_and_run_commands(host, username, key_filename, cmd1, cmd2, cmd3, clients
     stdout.channel.recv_exit_status()  # Wait for cmd1 to complete
     
     time.sleep(30)
+    print ("starting the experiment phase");
 
     iostat_cmd = "iostat 10 >> long_runs_iostat_output_" + clients + "clients_shielded_zfs.txt"
     iostat_process = run_cmd_background(iostat_cmd)
