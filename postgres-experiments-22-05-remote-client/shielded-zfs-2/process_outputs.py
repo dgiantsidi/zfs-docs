@@ -1,4 +1,5 @@
 import matplotlib.pyplot as plt
+import sys
 
 # Function to parse the input file and extract CPU and device data
 def parse_file(file_path):
@@ -40,13 +41,19 @@ def parse_file(file_path):
                 parts = line.split()
                 device_data.append({
                     "Device": parts[0],
-                    "tps": float(parts[1])
+                    "tps": float(parts[1]),
+                    "kB_reads/s": float(parts[2]),
+                    "kB_wrtn/s": float(parts[3]),
                 })
 
     return cpu_data, device_data
 
 def main():
-    file_path = input("Enter the filename: ")
+    if len(sys.argv) != 2:
+        print("Usage: python script.py <filename>")
+        sys.exit(1)
+
+    file_path = sys.argv[1]
     # Parse the input file
     cpu_data, device_data = parse_file(file_path)
 
@@ -54,35 +61,65 @@ def main():
     cpu_user = [entry["%user"] for entry in cpu_data]
     cpu_system = [entry["%system"] for entry in cpu_data]
     cpu_idle = [entry["%idle"] for entry in cpu_data]
+    time_intervals = list(range(1, len(cpu_user) + 1))
+    time_intervals_text = list(range(0, len(cpu_user)*10, 10))
+    
 
-    # Extract TPS data for sda, sdb, and sdc
-    tps_sda = [entry["tps"] for entry in device_data if entry["Device"] == "sda"]
-    tps_sdb = [entry["tps"] for entry in device_data if entry["Device"] == "sdb"]
+    # Extract TPS data for sdc, sdd, and sde
     tps_sdc = [entry["tps"] for entry in device_data if entry["Device"] == "sdc"]
+    tps_sdd = [entry["tps"] for entry in device_data if entry["Device"] == "sdd"]
+    tps_sde = [entry["tps"] for entry in device_data if entry["Device"] == "sde"]
+
+    # Extract kB_read/s  kB_wrtn/s data for sdc, sdd, and sdc
+    readspers_sdc = [entry["kB_reads/s"] for entry in device_data if entry["Device"] == "sdc"]
+    readspers_sdd = [entry["kB_reads/s"] for entry in device_data if entry["Device"] == "sdd"]
+    readspers_sde = [entry["kB_reads/s"] for entry in device_data if entry["Device"] == "sde"]
+    writespers_sdc = [entry["kB_wrtn/s"] for entry in device_data if entry["Device"] == "sdc"]
+    writespers_sdd = [entry["kB_wrtn/s"] for entry in device_data if entry["Device"] == "sdd"]
+    writespers_sde = [entry["kB_wrtn/s"] for entry in device_data if entry["Device"] == "sde"]
 
     # Plot CPU utilization
-    plt.figure(figsize=(12, 6))
-    plt.subplot(2, 1, 1)
-    plt.plot(cpu_user, label="%user")
-    plt.plot(cpu_system, label="%system")
-    plt.plot(cpu_idle, label="%idle")
+    plt.figure(figsize=(12, 12))
+    plt.subplot(3, 1, 1)
+    plt.plot(time_intervals_text, cpu_user, label="%user")
+    plt.plot(time_intervals_text, cpu_system, label="%system")
+    plt.plot(time_intervals_text, cpu_idle, label="%idle")
     plt.xlabel("Time Interval")
     plt.ylabel("CPU Utilization (%)")
     plt.title("CPU Utilization Over Time")
     plt.legend()
 
-    # Plot TPS for sda, sdb, and sdc
-    plt.subplot(2, 1, 2)
-    plt.plot(tps_sda, label="sda")
-    plt.plot(tps_sdb, label="sdb")
-    plt.plot(tps_sdc, label="sdc")
+    # Plot TPS for sdc, sdd, and sde
+    plt.subplot(3, 1, 2)
+    plt.plot(time_intervals_text, tps_sdc, label="sdc")
+    plt.plot(time_intervals_text, tps_sdd, label="sdd")
+    plt.plot(time_intervals_text, tps_sde, label="sde")
     plt.xlabel("Time Interval")
     plt.ylabel("TPS")
-    plt.title("TPS for sda/sdb/sdc Over Time")
+    plt.title("TPS for sdc/sdd/sde Over Time")
+    plt.legend()
+    #plt.xticks(time_intervals, time_intervals_text)  # Set custom x-axis labels
+
+    
+    # Plot TPS for sdc, sdd, and sde
+    plt.subplot(3, 1, 3)
+    plt.plot(time_intervals_text, readspers_sdc, label="sde (kB_reads/s)")
+    plt.plot(time_intervals_text, readspers_sdd, label="sdd (kB_reads/s)")
+    plt.plot(time_intervals_text, readspers_sde, label="sde (kB_reads/s)")
+    plt.plot(time_intervals_text, writespers_sdc, label="sdc (kB_wrtn/s)")
+    plt.plot(time_intervals_text, writespers_sdd, label="sdd (kB_wrtn/s)")
+    plt.plot(time_intervals_text, writespers_sde, label="sde (kB_wrtn/s)")
+    plt.xlabel("Time Interval")
+    #plt.ylabel("Reads (KB) and writes (KB)")
+    plt.title("Reads/Writes (KBs/s) sdc/sdd/sde Over Time")
     plt.legend()
 
     # Show the plots
     plt.tight_layout()
     plt.show()
     plt.grid(True)
-    plt.savefig(filepath + ".png")
+    plt.savefig(file_path + ".png")
+
+     #Run the main function
+if __name__ == "__main__":
+    main()
