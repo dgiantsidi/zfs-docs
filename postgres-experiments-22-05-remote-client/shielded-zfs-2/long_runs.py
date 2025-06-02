@@ -34,6 +34,8 @@ def ssh_and_run_commands(host, username, key_filename, cmd1, cmd2, cmd3, clients
     print(f"Output of cmd1: {cmd1_output}")
     print(f"Error of cmd1: {cmd1_error}")
 
+    print ("starting warmup phase");
+
     # Run cmd2 (warmup)
     transport = ssh.get_transport()
     session = transport.open_session()

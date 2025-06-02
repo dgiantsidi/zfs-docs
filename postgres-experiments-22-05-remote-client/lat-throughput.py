@@ -40,14 +40,14 @@ throughput_default_zfs = [
 latency_shielded_zfs = [
     13.16,
     18,
-    30.47,
+    31.99,
     40.18
 ]
 
 throughput_shielded_zfs =[
     759.62,
     1111,
-    1640.61,
+    1562.86,
     1493.08
 ]
 
