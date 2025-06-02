@@ -45,6 +45,7 @@ def parse_file(file_path):
                     "kB_reads/s": float(parts[2]),
                     "kB_wrtn/s": float(parts[3]),
                 })
+                print("Device:" + parts[0] + ", tps:" + str(float(parts[1])) + ", kB_reads/s:" + str(float(parts[2])) + ", kB_wrtn/s:" + str(float(parts[3])))
 
     return cpu_data, device_data
 
@@ -65,18 +66,18 @@ def main():
     time_intervals_text = list(range(0, len(cpu_user)*10, 10))
     
 
-    # Extract TPS data for sdc, sdd, and sde
-    tps_sdc = [entry["tps"] for entry in device_data if entry["Device"] == "sdc"]
+    # Extract TPS data for sdd, sde, and sdc
     tps_sdd = [entry["tps"] for entry in device_data if entry["Device"] == "sdd"]
     tps_sde = [entry["tps"] for entry in device_data if entry["Device"] == "sde"]
+    tps_sdc = [entry["tps"] for entry in device_data if entry["Device"] == "sdc"]
 
-    # Extract kB_read/s  kB_wrtn/s data for sdc, sdd, and sdc
-    readspers_sdc = [entry["kB_reads/s"] for entry in device_data if entry["Device"] == "sdc"]
+    # Extract kB_read/s  kB_wrtn/s data for sdd, sde, and sdc
     readspers_sdd = [entry["kB_reads/s"] for entry in device_data if entry["Device"] == "sdd"]
     readspers_sde = [entry["kB_reads/s"] for entry in device_data if entry["Device"] == "sde"]
-    writespers_sdc = [entry["kB_wrtn/s"] for entry in device_data if entry["Device"] == "sdc"]
+    readspers_sdc = [entry["kB_reads/s"] for entry in device_data if entry["Device"] == "sdc"]
     writespers_sdd = [entry["kB_wrtn/s"] for entry in device_data if entry["Device"] == "sdd"]
     writespers_sde = [entry["kB_wrtn/s"] for entry in device_data if entry["Device"] == "sde"]
+    writespers_sdc = [entry["kB_wrtn/s"] for entry in device_data if entry["Device"] == "sdc"]
 
     # Plot CPU utilization
     plt.figure(figsize=(12, 12))
@@ -89,29 +90,32 @@ def main():
     plt.title("CPU Utilization Over Time")
     plt.legend()
 
-    # Plot TPS for sdc, sdd, and sde
+    # Plot TPS for sdd, sde, and sdc
     plt.subplot(3, 1, 2)
-    plt.plot(time_intervals_text, tps_sdc, label="sdc")
     plt.plot(time_intervals_text, tps_sdd, label="sdd")
     plt.plot(time_intervals_text, tps_sde, label="sde")
+    plt.plot(time_intervals_text, tps_sdc, label="sdc")
     plt.xlabel("Time Interval")
     plt.ylabel("TPS")
-    plt.title("TPS for sdc/sdd/sde Over Time")
+    plt.title("TPS for sdd/sde/sdc Over Time")
     plt.legend()
     #plt.xticks(time_intervals, time_intervals_text)  # Set custom x-axis labels
 
     
-    # Plot TPS for sdc, sdd, and sde
+    # Plot TPS for sdd, sde, and sdc
     plt.subplot(3, 1, 3)
-    plt.plot(time_intervals_text, readspers_sdc, label="sde (kB_reads/s)")
     plt.plot(time_intervals_text, readspers_sdd, label="sdd (kB_reads/s)")
     plt.plot(time_intervals_text, readspers_sde, label="sde (kB_reads/s)")
-    plt.plot(time_intervals_text, writespers_sdc, label="sdc (kB_wrtn/s)")
+    plt.plot(time_intervals_text, readspers_sdc, label="sdc (kB_reads/s)")
     plt.plot(time_intervals_text, writespers_sdd, label="sdd (kB_wrtn/s)")
     plt.plot(time_intervals_text, writespers_sde, label="sde (kB_wrtn/s)")
+    plt.plot(time_intervals_text, writespers_sdc, label="sdc (kB_wrtn/s)")
+    print(readspers_sdc)
+    print(readspers_sde)
+    print(readspers_sdd)
     plt.xlabel("Time Interval")
     #plt.ylabel("Reads (KB) and writes (KB)")
-    plt.title("Reads/Writes (KBs/s) sdc/sdd/sde Over Time")
+    plt.title("Reads/Writes (KBs/s) sdd/sde/sdc Over Time")
     plt.legend()
 
     # Show the plots
