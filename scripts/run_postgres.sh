@@ -164,7 +164,7 @@ run_postgres_zfs() {
     
     BASE_DIR_EXT4="/home/azureuser/zfs-docs/postgres-experiments-22-05-remote-client/zfs"
     cp ${BASE_DIR_EXT4}/long_runs.py .
-    python3 long_runs.py 10 11
+    #python3 long_runs.py 10 11
     cd ../
  
 }
