@@ -13,11 +13,11 @@ def run_cmd_background(cmd):
     return subprocess.Popen(cmd, shell=True)
 
 # Function to SSH into another machine and run commands
-def ssh_and_run_commands(host, username, key_filename, cmd1, cmd2, cmd3, clients):
+def ssh_and_run_commands(host, username, key_filename, cmd1, cmd2, cmd3, clients, filesystem):
     ssh = paramiko.SSHClient()
     ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
     ssh.connect(host, username=username, key_filename=key_filename)
-    print ("starting loading phase");
+    print ("start the loading phase ...");
 
     # Run cmd1 (loading)
     transport = ssh.get_transport()
@@ -34,6 +34,7 @@ def ssh_and_run_commands(host, username, key_filename, cmd1, cmd2, cmd3, clients
     print(f"Output of cmd1: {cmd1_output}")
     print(f"Error of cmd1: {cmd1_error}")
 
+    print ("start the warm up phase ...");
     # Run cmd2 (warmup)
     transport = ssh.get_transport()
     session = transport.open_session()
@@ -44,8 +45,9 @@ def ssh_and_run_commands(host, username, key_filename, cmd1, cmd2, cmd3, clients
     stdout.channel.recv_exit_status()  # Wait for cmd1 to complete
     
     time.sleep(30)
+    print ("start the experiment phase ...");
 
-    iostat_cmd = "iostat 10 >> long_runs_iostat_output_" + clients + "clients_ext4.txt"
+    iostat_cmd = "iostat 10 >> long_runs_iostat_output_" + filesystem + "_" + clients + "clients.txt"
     iostat_process = run_cmd_background(iostat_cmd)
 
     # Run cmd3
@@ -75,6 +77,7 @@ def main(args):
     print("Arguments:", args)
     nthreads = args[0]
     iteration = args[1]
+    filesystem = args[3]
     # Run initial command in the background
     initial_cmd = "sudo docker run --name postgresql-server --rm -it --privileged --cap-add sys_admin --cap-add sys_ptrace --net host cloudsuite/data-serving-relational:server"
     killing_cmd = "sudo docker kill postgresql-server"
@@ -92,11 +95,11 @@ def main(args):
     username = "azureuser"
     key_filename = "/home/azureuser/dimitra_ccf_1_key"
     cmd1 = "sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --warmup --tpcc  --server-ip=10.5.0.8"
-    cmd2 = "sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --run --tpcc  --server-ip=10.5.0.8   --time 300 --threads " + nthreads
-    cmd3 = "sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --run --tpcc  --server-ip=10.5.0.8   --time 600 --threads " + nthreads
+    cmd2 = "sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --run --tpcc  --server-ip=10.5.0.8   --time 150 --threads " + nthreads
+    cmd3 = "sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --run --tpcc  --server-ip=10.5.0.8   --time 300 --threads " + nthreads
 
 
-    output2 = ssh_and_run_commands(host, username, key_filename, cmd1, cmd2, cmd3, nthreads)
+    output2 = ssh_and_run_commands(host, username, key_filename, cmd1, cmd2, cmd3, nthreads, filesystem)
 
 
     #paramiko.util.log_to_file("paramiko.log")
@@ -108,7 +111,7 @@ def main(args):
 
     print(output2)
 
-    output_fname = "default_extfs_"+ nthreads+"threads_"+iteration + ".txt"
+    output_fname = "results_"+ filesystem + "_"+ nthreads+"threads_"+iteration + ".txt"
     with open(output_fname, 'w') as file:
         file.write(output2)
 

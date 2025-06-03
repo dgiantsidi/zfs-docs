@@ -24,8 +24,12 @@ find_disks() {
     echo $DISKS
 }
 
+execute_command() {
+    python3 long_runs.py $1 $2 $3
+
+}
+
 cleanup_docker_ext4() {
-    find_disks
     echo "disks are: $DISKS"
     sudo umount /var/lib/docker
     sudo rm -rf /var/lib/docker
@@ -35,7 +39,6 @@ cleanup_docker_ext4() {
 }
 
 mount_docker_zfs() {
-    find_disks
     CUR_DIR=$(pwd)
     ZFS_DIR="/home/azureuser/original_zfs"
     cd ${ZFS_DIR}
@@ -47,7 +50,6 @@ mount_docker_zfs() {
 }
 
 mount_docker_shielded_zfs() {
-    find_disks
     CUR_DIR=$(pwd)
     ZFS_DIR="/home/azureuser/zfs"
     cd ${ZFS_DIR}
@@ -92,20 +94,19 @@ unmount_zfs() {
 }
 
 cleanup_docker_shielded_zfs() {
-    find_disks
     echo "disks are: $DISKS"
     sudo zpool destroy zpool-docker
-    sudo rm -rf /var/lib/docker
     unmount_shielded_zfs
+    sudo rm -rf /var/lib/docker
 }
 
 cleanup_docker_zfs() {
-    find_disks
     echo "disks are: $DISKS"
     sudo zpool destroy /var/lib/docker
     sudo rm -rf /var/lib/docker
-    sudo wipefs -a $DISKS
     unmount_zfs
+    sudo wipefs -a $DISKS
+
 }
 
 
@@ -124,7 +125,6 @@ stop_docker_zfs() {
 }
 
 mount_docker_ext4() {
-    find_disks
     sudo mdadm --create --verbose /dev/md0 --level=0 --raid-devices=$(echo "$DISKS" | awk '{print NF}') $DISKS
     sudo mkdir -p /var/lib/docker
     sudo mkfs.ext4 -F /dev/md0
@@ -139,7 +139,7 @@ start_docker_ext4() {
         exit 1
     fi
 
-    echo "Docker started successfully."
+    echo "docker started successfully.."
 }
 
 run_postgres_ext4() {
@@ -149,9 +149,12 @@ run_postgres_ext4() {
     mkdir -p ${CUR_DIR}
     cd ${CUR_DIR}
 
-    BASE_DIR_EXT4="/home/azureuser/zfs-docs/postgres-experiments-22-05-remote-client/ext4"
+    BASE_DIR_EXT4="/home/azureuser/zfs-docs/scripts"
     cp ${BASE_DIR_EXT4}/long_runs.py .
-    python3 long_runs.py 10 11
+    #execute_command 10 11 ext4
+    #execute_command 20 11 ext4 
+    execute_command 60 11 ext4
+    #execute_command 50 11 ext4
     cd ../
 }
 
@@ -162,9 +165,12 @@ run_postgres_zfs() {
     mkdir -p ${CUR_DIR}
     cd ${CUR_DIR}
     
-    BASE_DIR_EXT4="/home/azureuser/zfs-docs/postgres-experiments-22-05-remote-client/zfs"
+    BASE_DIR_EXT4="/home/azureuser/zfs-docs/scripts"
     cp ${BASE_DIR_EXT4}/long_runs.py .
-    #python3 long_runs.py 10 11
+    #execute_command 10 11 zfs
+    #execute_command 20 11 zfs
+    execute_command 60 11 zfs
+    execute_command 50 11 zfs
     cd ../
  
 }
@@ -175,28 +181,57 @@ run_postgres_shielded_zfs() {
     CUR_DIR=$(pwd)/shielded_zfs_${serialized_date}
     mkdir -p ${CUR_DIR}
     cd ${CUR_DIR}
-    BASE_DIR_EXT4="/home/azureuser/zfs-docs/postgres-experiments-22-05-remote-client/zfs"
+    BASE_DIR_EXT4="/home/azureuser/zfs-docs/scripts"
     cp ${BASE_DIR_EXT4}/long_runs.py .
-    python3 long_runs.py 10 11
+    #execute_command 10 11 shielded_zfs
+    #execute_command 20 11 shielded_zfs
+    execute_command 60 11 shielded_zfs
+    execute_command 50 11 shielded_zfs
     cd ../
  
 }
 
 
-#stop_docker_ext4
+find_disks
+echo "Start .."
+stop_docker_ext4
+sleep 20
 
-#mount_docker_ext4
-#start_docker_ext4
-#run_postgres_ext4
+echo "Mount docker at ext4 .."
+mount_docker_ext4
+sleep 20
 
-#stop_docker_ext4
+echo "Start docker at ext4 .."
+start_docker_ext4
+sleep 20
+echo "Run experiment (ext4) .."
+run_postgres_ext4
+sleep 20
 
-mount_docker_zfs
-run_postgres_zfs
+stop_docker_ext4
+sleep 20
+
 stop_docker_zfs
 
+echo "Mount docker at zfs .."
+mount_docker_zfs
+sleep 20
 
+echo "Run experiment (zfs) .."
+run_postgres_zfs
+sleep 20
 
+stop_docker_zfs
+sleep 20
+
+echo "Mount docker (shielded zfs) .."
 mount_docker_shielded_zfs
+sleep 20
+
+echo "Run experiment (shielded zfs) .."
 run_postgres_shielded_zfs
+sleep 20
+
+echo "Stop docker (shielded zfs) .."
 stop_docker_shielded_zfs
+sleep 20
