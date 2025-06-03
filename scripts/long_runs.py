@@ -77,7 +77,7 @@ def main(args):
     print("Arguments:", args)
     nthreads = args[0]
     iteration = args[1]
-    filesystem = args[3]
+    filesystem = args[2]
     # Run initial command in the background
     initial_cmd = "sudo docker run --name postgresql-server --rm -it --privileged --cap-add sys_admin --cap-add sys_ptrace --net host cloudsuite/data-serving-relational:server"
     killing_cmd = "sudo docker kill postgresql-server"
