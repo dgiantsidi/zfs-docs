@@ -2,6 +2,7 @@
 
 
 DISKS=""
+RESULTS_DIR=""
 
 find_disks() {
     # Check if the directory exists
@@ -22,6 +23,16 @@ find_disks() {
         echo "/dev/disk/azure does not exist on this system."
     fi
     echo $DISKS
+}
+
+setup_folder() {
+    # Create a results directory if it doesn't exist
+    serialized_date=$(date +%Y%m%d_%H%M)
+    RESULTS_DIR=$(pwd)/results_${serialized_date}
+    if [ ! -d ${RESULTS_DIR} ]; then
+        mkdir -p ${RESULTS_DIR}
+    fi
+    echo "Results directory is set to: $RESULTS_DIR"
 }
 
 execute_command() {
@@ -145,32 +156,33 @@ start_docker_ext4() {
 run_postgres_ext4() {
     echo "Running PostgreSQL container ..."
     serialized_date=$(date +%Y%m%d_%H%M)
-    CUR_DIR=$(pwd)/ext4_${serialized_date}
+    CUR_DIR=${RESULTS_DIR}/ext4
     mkdir -p ${CUR_DIR}
     cd ${CUR_DIR}
 
     BASE_DIR_EXT4="/home/azureuser/zfs-docs/scripts"
     cp ${BASE_DIR_EXT4}/long_runs.py .
-    #execute_command 10 11 ext4
-    #execute_command 20 11 ext4 
-    execute_command 60 11 ext4
-    #execute_command 50 11 ext4
+    execute_command 10 1 ext4
+    execute_command 20 1 ext4 
+    execute_command 60 1 ext4
+    execute_command 50 1 ext4
     cd ../
 }
 
 run_postgres_zfs() {
     echo "Running PostgreSQL container ..."
     serialized_date=$(date +%Y%m%d_%H%M)
-    CUR_DIR=$(pwd)/zfs_${serialized_date}
+    CUR_DIR=${RESULTS_DIR}/zfs
     mkdir -p ${CUR_DIR}
     cd ${CUR_DIR}
     
     BASE_DIR_EXT4="/home/azureuser/zfs-docs/scripts"
     cp ${BASE_DIR_EXT4}/long_runs.py .
-    #execute_command 10 11 zfs
-    #execute_command 20 11 zfs
-    execute_command 60 11 zfs
-    execute_command 50 11 zfs
+    sudo cat /proc/spl/kstat/zfs/dbgmsg > output.txt
+    execute_command 10 1 zfs
+    execute_command 20 1 zfs
+    execute_command 60 1 zfs
+    execute_command 50 1 zfs
     cd ../
  
 }
@@ -178,21 +190,23 @@ run_postgres_zfs() {
 run_postgres_shielded_zfs() {
     echo "Running PostgreSQL container ..."
     serialized_date=$(date +%Y%m%d_%H%M)
-    CUR_DIR=$(pwd)/shielded_zfs_${serialized_date}
+    CUR_DIR=${RESULTS_DIR}/shielded_zfs
     mkdir -p ${CUR_DIR}
     cd ${CUR_DIR}
     BASE_DIR_EXT4="/home/azureuser/zfs-docs/scripts"
     cp ${BASE_DIR_EXT4}/long_runs.py .
-    #execute_command 10 11 shielded_zfs
-    #execute_command 20 11 shielded_zfs
-    execute_command 60 11 shielded_zfs
-    execute_command 50 11 shielded_zfs
+    sudo cat /proc/spl/kstat/zfs/dbgmsg > output.txt
+    execute_command 10 1 shielded_zfs
+    execute_command 20 1 shielded_zfs
+    execute_command 60 1 shielded_zfs
+    execute_command 50 1 shielded_zfs
     cd ../
  
 }
 
 
 find_disks
+setup_folder
 echo "Start .."
 stop_docker_ext4
 sleep 20
