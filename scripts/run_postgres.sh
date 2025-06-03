@@ -211,7 +211,7 @@ sleep 20
 stop_docker_ext4
 sleep 20
 
-stop_docker_zfs
+#stop_docker_zfs
 
 echo "Mount docker at zfs .."
 mount_docker_zfs
@@ -220,6 +220,8 @@ sleep 20
 echo "Run experiment (zfs) .."
 run_postgres_zfs
 sleep 20
+
+echo "Stop docker (zfs) .."
 
 stop_docker_zfs
 sleep 20
