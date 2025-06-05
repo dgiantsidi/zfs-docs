@@ -121,3 +121,18 @@ https://github.com/openzfs/zfs/discussions/17149#discussioncomment-12504498
 https://github.com/openzfs/zfs/discussions/17232#discussioncomment-13017574
 
 https://www.youtube.com/watch?v=qkA5HhfzsvM
+
+
+### ZFS read-write consistency
+
+https://github.com/openzfs/zfs/discussions/17422
+
+I also explored very briefly the implementation of brtfs and ext4 as part of the linux codebase. It seems to me that they both take locks (per-inode->global among threads/processes) to execute writes/reads. (ofc, I might miss something but it feels like they also serialize writes and reads in the common case at the very least)
+ 
+brtfs:
+write: https://github.com/btrfs/linux/blob/5abc7438f1e9d62e91ad775cc83c9594c48d2282/fs/btrfs/file.c#L1346
+read:https://github.com/btrfs/linux/blob/5abc7438f1e9d62e91ad775cc83c9594c48d2282/fs/btrfs/direct-io.c#L1028
+ 
+ext4:
+write: https://github.com/btrfs/linux/blob/5abc7438f1e9d62e91ad775cc83c9594c48d2282/fs/ext4/file.c#L294C2-L294C12
+read: https://github.com/btrfs/linux/blob/5abc7438f1e9d62e91ad775cc83c9594c48d2282/fs/ext4/file.c#L74
