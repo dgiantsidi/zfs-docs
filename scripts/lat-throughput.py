@@ -117,7 +117,8 @@ plt.errorbar(throughput_ext4, latency_ext4, xerr=throughput_ext4_stdev, yerr=lat
 
 # Add text on top of the data points
 for i in range(len(throughput_shielded_zfs)):
-    plt.text(throughput_shielded_zfs[i], latency_shielded_zfs[i], f'({clients[i]})', fontsize=9, ha='right')
+    plt.text(throughput_shielded_zfs[i], latency_shielded_zfs[i], f'({clients[i]}, ±{latency_shielded_zfs_stdev[i]:.2f}ms, ±{throughput_shielded_zfs_stdev[i]:.1f} TPS)',fontsize=9, ha='right'
+)
 
 for i in range(len(throughput_default_zfs)):
     plt.text(throughput_default_zfs[i], latency_default_zfs[i],  f'({clients[i]})', fontsize=9, ha='right')
