@@ -140,7 +140,7 @@ latency slowdown %:
 """
 
 # Add statistics text box
-plt.gcf().text(0.02, 0.6, stats_text, fontsize=9, va='center', bbox=dict(facecolor='white', alpha=1))
+plt.gcf().text(0.1, 0.6, stats_text, fontsize=9, va='center', bbox=dict(facecolor='white', alpha=1))
 
 
 
