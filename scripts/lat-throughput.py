@@ -126,6 +126,24 @@ for i in range(len(throughput_default_zfs)):
 for i in range(len(throughput_ext4)):
     plt.text(throughput_ext4[i], latency_ext4[i], f'({clients[i]})', fontsize=9, ha='right')
  
+
+
+stats_text = f"""
+tps slowdown %:
+ - zfs w.r.t. ext4: 7-12% 
+ - shielded-zfs w.r.t. zfs: 3-5%
+
+latency slowdown %:
+ - zfs w.r.t. ext4: 7-13% 
+ - shielded-zfs w.r.t. zfs: 3-5%
+
+"""
+
+# Add statistics text box
+plt.gcf().text(0.02, 0.5, stats_text, fontsize=10, va='center', bbox=dict(facecolor='white', alpha=0.5))
+
+
+
 title = f'TPC-C with 10 W over postgres ({date_string})'
 # Add title and labels
 plt.title(title)
