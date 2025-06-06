@@ -61,11 +61,57 @@ throughput_shielded_zfs =[
 
 
 
+# Example standard deviations
+latency_ext4_stdev = [
+    2.109802518,
+    2.188825789,
+    2.68418827,
+    2.381419395
+]
+
+throughput_ext4_stdev = [
+    140.4561807,
+    169.8792352,
+    188.9855772,
+    154.845375
+]
+
+latency_default_zfs_stdev = [
+    2.474947811,
+    2.260905055,
+    2.546479596,
+    2.429284874
+]
+
+throughput_default_zfs_stdev = [
+    137.9327528,
+    155.5306509,
+    142.5215317,
+    125.7470596
+]
+
+latency_shielded_zfs_stdev = [
+    2.27428377,
+    2.087125216,
+    1.875053333,
+    2.335842104
+]
+
+throughput_shielded_zfs_stdev = [
+    118.7437624,
+    131.7191272,
+    95.67615847,
+    116.1841103
+]
+
+
+
+
 # Create a plot
 plt.figure(figsize=(10, 6))
-plt.plot(throughput_shielded_zfs, latency_shielded_zfs, marker='X', label="shielded-zfs (no CCF)")
-plt.plot(throughput_default_zfs, latency_default_zfs, marker='^', label="zfs-default")
-plt.plot(throughput_ext4, latency_ext4, marker='1', label="ext4")
+plt.errorbar(throughput_shielded_zfs, latency_shielded_zfs, xerr=throughput_shielded_zfs_stdev, yerr=latency_shielded_zfs_stdev, marker='X', label="shielded-zfs (no CCF)")
+plt.errorbar(throughput_default_zfs, latency_default_zfs, xerr=throughput_default_zfs_stdev, yerr=latency_default_zfs_stdev, marker='^', label="zfs-default")
+plt.errorbar(throughput_ext4, latency_ext4, xerr=throughput_ext4_stdev, yerr=latency_ext4_stdev, marker='1', label="ext4")
 
 
 
