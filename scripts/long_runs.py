@@ -91,12 +91,13 @@ def main(args):
 
 
     # SSH into another machine and run commands
-    host = "dimitra-ccf-1"
+    host = "10.5.0.7" #"dimitra-ccf-1"
     username = "azureuser"
+    my_ip = "10.7.0.4"
     key_filename = "/home/azureuser/dimitra_ccf_1_key"
-    cmd1 = "sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --warmup --tpcc  --server-ip=10.5.0.8"
-    cmd2 = "sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --run --tpcc  --server-ip=10.5.0.8   --time 150 --threads " + nthreads
-    cmd3 = "sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --run --tpcc  --server-ip=10.5.0.8   --time 300 --threads " + nthreads
+    cmd1 = "sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --warmup --tpcc  --server-ip=10.7.0.4"
+    cmd2 = "sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --run --tpcc  --server-ip=10.7.0.4   --time 150 --threads " + nthreads
+    cmd3 = "sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --run --tpcc  --server-ip=10.7.0.4   --time 300 --threads " + nthreads
 
 
     output2 = ssh_and_run_commands(host, username, key_filename, cmd1, cmd2, cmd3, nthreads, filesystem)
