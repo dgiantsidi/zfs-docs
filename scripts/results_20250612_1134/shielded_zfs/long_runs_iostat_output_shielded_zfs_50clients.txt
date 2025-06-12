@@ -1,0 +1,373 @@
+Linux 6.11.0-1015-azure (zfs) 	06/12/25 	_x86_64_	(32 CPU)
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+           2.42    0.00    1.10    0.51    0.00   95.97
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00         14          0          0
+sda              53.29         2.43      4197.49       452.67     179677  310829292   33520644
+sdb              53.08         1.98      4123.14       452.67     146562  305323041   33520640
+sdc              53.20         2.02      4226.64       452.67     149232  312987781   33520640
+sdd             100.46        19.33      5122.10      4630.10    1431474  379297586  342864044
+sde               0.31         1.14       279.93     16992.16      84473   20728828 1258289156
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          16.38    0.00   19.41    0.25    0.00   63.96
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             466.20         0.00     72649.20         0.00          0     726492          0
+sdb             518.60         0.00     60169.60         0.00          0     601696          0
+sdc             492.10         0.00     64731.60         0.00          0     647316          0
+sdd               0.20         0.00         0.80         0.00          0          8          0
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          19.42    0.00   23.42    0.29    0.00   56.86
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             530.40         0.00     82289.20         0.00          0     822892          0
+sdb             589.40         0.00     72480.40         0.00          0     724804          0
+sdc             568.90         0.00     80124.40         0.00          0     801244          0
+sdd               0.30         0.00         1.20         0.00          0         12          0
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          20.59    0.00   23.64    0.30    0.00   55.47
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             486.30         0.00     73841.60         0.00          0     738416          0
+sdb             528.20         0.00     65216.80         0.00          0     652168          0
+sdc             508.40         0.00     66814.40         0.00          0     668144          0
+sdd               1.70         0.00        11.20         2.00          0        112         20
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          18.47    0.00   21.69    0.27    0.00   59.57
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             510.20         0.00     78216.00         0.00          0     782160          0
+sdb             535.50         0.00     72899.20         0.00          0     728992          0
+sdc             535.00         0.00     73222.00         0.00          0     732220          0
+sdd               0.20         0.00         0.80         0.00          0          8          0
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          18.32    0.00   21.87    0.27    0.00   59.54
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             534.60         0.00     82748.80         0.00          0     827488          0
+sdb             549.60         0.00     72231.20         0.00          0     722312          0
+sdc             565.30         0.00     74295.60         0.00          0     742956          0
+sdd               0.30         0.00         1.20         0.00          0         12          0
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          20.07    0.00   22.53    0.26    0.00   57.14
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             492.40         0.00     72437.60         0.00          0     724376          0
+sdb             516.10         0.00     63520.40         0.00          0     635204          0
+sdc             523.90         0.00     69047.20         0.00          0     690472          0
+sdd               1.40         0.00         9.20         2.00          0         92         20
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          18.35    0.00   24.56    0.35    0.00   56.74
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             530.70         0.00     98178.40         0.00          0     981784          0
+sdb             598.70         0.00     86956.40         0.00          0     869564          0
+sdc             585.30         0.00     85925.20         0.00          0     859252          0
+sdd               0.20         0.00         0.80         0.00          0          8          0
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          16.52    0.00   23.56    0.31    0.00   59.61
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             583.90         0.00     97676.40         0.00          0     976764          0
+sdb             623.10         0.00     80550.00         0.00          0     805500          0
+sdc             595.10         0.00     87062.80         0.00          0     870628          0
+sdd               3.50         0.00        19.60         0.00          0        196          0
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          18.68    0.00   22.78    0.31    0.00   58.23
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             540.60         0.00     88077.20         0.00          0     880772          0
+sdb             582.20         0.00     73290.40         0.00          0     732904          0
+sdc             566.60         0.00     88166.40         0.00          0     881664          0
+sdd               4.40         0.00        37.60         2.40          0        376         24
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          20.55    0.00   24.10    0.29    0.00   55.06
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             505.30         0.00     81693.20         0.00          0     816932          0
+sdb             518.60         0.00     75601.20         0.00          0     756012          0
+sdc             501.90         0.00     73652.80         0.00          0     736528          0
+sdd               0.20         0.00         0.80         0.00          0          8          0
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          19.86    0.00   23.85    0.30    0.00   55.98
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             497.20         0.00     83286.80         0.00          0     832868          0
+sdb             541.10         0.00     72971.20         0.00          0     729712          0
+sdc             523.70         0.00     77538.80         0.00          0     775388          0
+sdd               0.40         0.00         1.60         0.00          0         16          0
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          17.96    0.00   21.36    0.25    0.00   60.43
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             544.60         0.00     80562.00         0.00          0     805620          0
+sdb             554.40         0.00     77125.60         0.00          0     771256          0
+sdc             560.50         0.00     80200.40         0.00          0     802004          0
+sdd               2.60         0.00        18.40         2.00          0        184         20
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          19.72    0.00   25.81    0.38    0.00   54.09
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             563.10         0.00     92988.40         0.00          0     929884          0
+sdb             584.00         0.00     91066.40         0.00          0     910664          0
+sdc             581.30         0.00     91605.60         0.00          0     916056          0
+sdd               0.20         0.00         0.80         0.00          0          8          0
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          19.09    0.00   26.31    0.46    0.00   54.15
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             622.50         0.00    106960.40         0.00          0    1069604          0
+sdb             657.60         0.00     94986.40         0.00          0     949864          0
+sdc             643.30         0.00    110484.80         0.00          0    1104848          0
+sdd               0.30         0.00         1.20         0.00          0         12          0
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          18.70    0.00   26.93    0.44    0.00   53.93
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             630.50         0.00     97268.00         0.00          0     972680          0
+sdb             630.30         0.00    111027.60         0.00          0    1110276          0
+sdc             618.60         0.00    112671.60         0.00          0    1126716          0
+sdd               2.60         0.00        18.40         5.60          0        184         56
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          19.10    0.00   24.48    0.40    0.00   56.02
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             564.60         0.00     99699.20         0.00          0     996992          0
+sdb             626.00         0.00     93062.40         0.00          0     930624          0
+sdc             613.20         0.00     99510.40         0.00          0     995104          0
+sdd               0.30         0.00         1.20         0.00          0         12          0
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          18.60    0.00   26.35    0.56    0.00   54.49
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             708.00         0.00    113476.00         0.00          0    1134760          0
+sdb             704.20         0.00    102234.80         0.00          0    1022348          0
+sdc             709.40         0.00     99984.00         0.00          0     999840          0
+sdd               0.30         0.00         1.20         0.00          0         12          0
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          16.18    0.00   24.18    0.38    0.00   59.26
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             626.30         0.00    101340.40         0.00          0    1013404          0
+sdb             636.00         0.00    102801.20         0.00          0    1028012          0
+sdc             638.60         0.00    100451.20         0.00          0    1004512          0
+sdd               1.40         0.00         9.60         2.00          0         96         20
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          19.26    0.00   25.36    0.43    0.00   54.95
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             615.20         0.00     95930.80         0.00          0     959308          0
+sdb             639.70         0.00     97484.00         0.00          0     974840          0
+sdc             601.10         0.00     85652.80         0.00          0     856528          0
+sdd               0.20         0.00         0.80         0.00          0          8          0
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          17.33    0.00   23.18    0.39    0.00   59.09
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             600.90         0.00     90865.20         0.00          0     908652          0
+sdb             588.20         0.00     97600.80         0.00          0     976008          0
+sdc             617.40         0.00     87190.00         0.00          0     871900          0
+sdd               0.30         0.00         1.20         0.00          0         12          0
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          18.78    0.00   23.79    0.45    0.00   56.98
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             562.80         0.00     83202.80         0.00          0     832028          0
+sdb             555.10         0.00     94666.40         0.00          0     946664          0
+sdc             579.00         0.00     83738.80         0.00          0     837388          0
+sdd               2.60         0.00        17.60         2.00          0        176         20
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          19.29    0.00   22.52    0.41    0.00   57.79
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             523.10         0.00     68464.00         0.00          0     684640          0
+sdb             533.10         0.00     81536.80         0.00          0     815368          0
+sdc             509.60         0.00     71992.80         0.00          0     719928          0
+sdd               4.20         0.00        18.80         0.00          0        188          0
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          19.98    0.00   22.86    0.39    0.00   56.78
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             513.10         0.00     62957.60         0.00          0     629576          0
+sdb             509.70         0.00     84590.40         0.00          0     845904          0
+sdc             541.80         0.00     65544.40         0.00          0     655444          0
+sdd               0.30         0.00         1.20         0.00          0         12          0
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          18.33    0.00   21.65    0.40    0.00   59.61
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             581.30         0.00     79909.60         0.00          0     799096          0
+sdb             526.10         0.00     88151.20         0.00          0     881512          0
+sdc             590.30         0.00     77858.80         0.00          0     778588          0
+sdd               0.80         0.00         6.80         2.40          0         68         24
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          19.01    0.00   25.33    0.55    0.00   55.12
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             670.00         0.00     91359.20         0.00          0     913592          0
+sdb             634.10         0.00     99666.80         0.00          0     996668          0
+sdc             661.00         0.00    100733.60         0.00          0    1007336          0
+sdd               0.80         0.00         3.60         0.00          0         36          0
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          19.19    0.00   24.92    0.54    0.00   55.35
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             638.80         0.00     92403.20         0.00          0     924032          0
+sdb             606.30         0.00     96772.40         0.00          0     967724          0
+sdc             613.30         0.00    101863.20         0.00          0    1018632          0
+sdd               0.30         0.00         1.20         0.00          0         12          0
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          16.62    0.00   25.11    0.63    0.00   57.64
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             692.90         0.00    105803.60         0.00          0    1058036          0
+sdb             664.60         0.00    112034.40         0.00          0    1120344          0
+sdc             689.50         0.00    109278.80         0.00          0    1092788          0
+sdd               1.00         0.00         7.20         2.00          0         72         20
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          18.62    0.00   22.87    0.46    0.00   58.05
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             601.50         0.00     93154.80         0.00          0     931548          0
+sdb             588.90         0.00     88421.60         0.00          0     884216          0
+sdc             600.30         0.00     88314.00         0.00          0     883140          0
+sdd               1.00         0.00         4.00         0.00          0         40          0
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          19.23    0.00   23.54    0.43    0.00   56.80
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             572.50         0.00     89976.80         0.00          0     899768          0
+sdb             551.60         0.00     88273.60         0.00          0     882736          0
+sdc             580.60         0.00     87570.80         0.00          0     875708          0
+sdd               0.40         0.00         1.60         0.00          0         16          0
+sde               0.00         0.00         0.00         0.00          0          0          0
+
+
+avg-cpu:  %user   %nice %system %iowait  %steal   %idle
+          19.43    0.00   23.79    0.45    0.00   56.33
+
+Device             tps    kB_read/s    kB_wrtn/s    kB_dscd/s    kB_read    kB_wrtn    kB_dscd
+loop0             0.00         0.00         0.00         0.00          0          0          0
+sda             617.60         0.00     92799.60         0.00          0     927996          0
+sdb             553.80         0.00     87418.40         0.00          0     874184          0
+sdc             587.00         0.00     88250.00         0.00          0     882500          0
+sdd               1.00         0.00         6.80         2.00          0         68         20
+sde               0.00         0.00         0.00         0.00          0          0          0
+
