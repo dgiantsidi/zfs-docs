@@ -1,0 +1,119 @@
+args: ['--run', '--tpcc', '--server-ip=10.7.0.4', '--time', '300', '--threads', '50']
+sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 50
+Report intermediate results every 10 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+Threads started!
+
+[ 10s ] thds: 50 tps: 2283.47 qps: 78053.17 (r/w/o: 34777.88/35615.33/7659.96) lat (ms,95%): 52.89 err/s 1550.01 reconn/s: 0.00
+[ 20s ] thds: 50 tps: 2450.02 qps: 83746.90 (r/w/o: 37320.81/38239.72/8186.37) lat (ms,95%): 47.47 err/s 1655.91 reconn/s: 0.00
+[ 30s ] thds: 50 tps: 2325.77 qps: 79754.92 (r/w/o: 35531.62/36406.30/7816.99) lat (ms,95%): 50.11 err/s 1594.78 reconn/s: 0.00
+[ 40s ] thds: 50 tps: 2318.21 qps: 78865.55 (r/w/o: 35134.66/35973.26/7757.63) lat (ms,95%): 51.02 err/s 1573.11 reconn/s: 0.00
+[ 50s ] thds: 50 tps: 2358.62 qps: 80490.34 (r/w/o: 35857.33/36710.94/7922.07) lat (ms,95%): 51.02 err/s 1615.71 reconn/s: 0.00
+[ 60s ] thds: 50 tps: 2467.29 qps: 84594.97 (r/w/o: 37731.25/38608.55/8255.17) lat (ms,95%): 46.63 err/s 1673.99 reconn/s: 0.00
+[ 70s ] thds: 50 tps: 2408.79 qps: 81890.50 (r/w/o: 36480.81/37347.51/8062.18) lat (ms,95%): 50.11 err/s 1633.10 reconn/s: 0.00
+[ 80s ] thds: 50 tps: 2552.72 qps: 87577.94 (r/w/o: 39052.63/39974.84/8550.47) lat (ms,95%): 45.79 err/s 1736.21 reconn/s: 0.00
+[ 90s ] thds: 50 tps: 2334.39 qps: 79968.71 (r/w/o: 35649.98/36529.68/7789.05) lat (ms,95%): 51.02 err/s 1573.89 reconn/s: 0.00
+[ 100s ] thds: 50 tps: 2115.19 qps: 72227.66 (r/w/o: 32171.45/32956.14/7100.07) lat (ms,95%): 59.99 err/s 1446.89 reconn/s: 0.00
+[ 110s ] thds: 50 tps: 2280.29 qps: 78067.80 (r/w/o: 34798.21/35647.81/7621.78) lat (ms,95%): 53.85 err/s 1542.60 reconn/s: 0.00
+[ 120s ] thds: 50 tps: 2312.33 qps: 79596.51 (r/w/o: 35475.70/36395.11/7725.69) lat (ms,95%): 50.11 err/s 1564.22 reconn/s: 0.00
+[ 130s ] thds: 50 tps: 2080.00 qps: 71424.70 (r/w/o: 31827.35/32624.25/6973.09) lat (ms,95%): 57.87 err/s 1416.10 reconn/s: 0.00
+[ 140s ] thds: 50 tps: 2324.10 qps: 79683.26 (r/w/o: 35475.77/36389.17/7818.32) lat (ms,95%): 54.83 err/s 1595.90 reconn/s: 0.00
+[ 150s ] thds: 50 tps: 2361.49 qps: 80744.17 (r/w/o: 35968.70/36867.90/7907.58) lat (ms,95%): 51.94 err/s 1604.70 reconn/s: 0.00
+[ 160s ] thds: 50 tps: 2367.91 qps: 81210.95 (r/w/o: 36203.86/37069.06/7938.03) lat (ms,95%): 50.11 err/s 1612.91 reconn/s: 0.00
+[ 170s ] thds: 50 tps: 2307.49 qps: 79189.68 (r/w/o: 35318.61/36176.91/7694.16) lat (ms,95%): 51.94 err/s 1553.19 reconn/s: 0.00
+[ 180s ] thds: 50 tps: 2477.01 qps: 84630.00 (r/w/o: 37722.18/38611.38/8296.44) lat (ms,95%): 47.47 err/s 1684.11 reconn/s: 0.00
+[ 190s ] thds: 50 tps: 2482.78 qps: 84536.43 (r/w/o: 37681.54/38565.64/8289.24) lat (ms,95%): 47.47 err/s 1677.09 reconn/s: 0.00
+[ 200s ] thds: 50 tps: 2327.69 qps: 79368.38 (r/w/o: 35351.01/36175.31/7842.06) lat (ms,95%): 51.94 err/s 1604.79 reconn/s: 0.00
+[ 210s ] thds: 50 tps: 2392.13 qps: 81426.79 (r/w/o: 36282.54/37158.15/7986.10) lat (ms,95%): 51.94 err/s 1614.82 reconn/s: 0.00
+[ 220s ] thds: 50 tps: 2225.89 qps: 76345.44 (r/w/o: 34031.49/34860.49/7453.45) lat (ms,95%): 54.83 err/s 1512.69 reconn/s: 0.00
+[ 230s ] thds: 50 tps: 2214.98 qps: 75844.94 (r/w/o: 33819.96/34631.96/7393.03) lat (ms,95%): 52.89 err/s 1492.99 reconn/s: 0.00
+[ 240s ] thds: 50 tps: 2227.43 qps: 76213.07 (r/w/o: 33968.22/34766.83/7478.01) lat (ms,95%): 53.85 err/s 1523.42 reconn/s: 0.00
+[ 250s ] thds: 50 tps: 2176.67 qps: 74923.53 (r/w/o: 33404.91/34227.20/7291.42) lat (ms,95%): 55.82 err/s 1480.68 reconn/s: 0.00
+[ 260s ] thds: 50 tps: 2244.41 qps: 76887.40 (r/w/o: 34248.52/35122.03/7516.85) lat (ms,95%): 53.85 err/s 1525.51 reconn/s: 0.00
+[ 270s ] thds: 50 tps: 2121.71 qps: 73361.51 (r/w/o: 32694.28/33571.39/7095.84) lat (ms,95%): 57.87 err/s 1438.71 reconn/s: 0.00
+[ 280s ] thds: 50 tps: 2079.88 qps: 71061.96 (r/w/o: 31706.76/32407.75/6947.45) lat (ms,95%): 58.92 err/s 1406.29 reconn/s: 0.00
+[ 290s ] thds: 50 tps: 2003.81 qps: 68890.32 (r/w/o: 30704.29/31476.69/6709.34) lat (ms,95%): 66.84 err/s 1361.11 reconn/s: 0.00
+[ 300s ] thds: 50 tps: 2286.00 qps: 78072.43 (r/w/o: 34766.41/35607.31/7698.70) lat (ms,95%): 51.94 err/s 1574.80 reconn/s: 0.00
+SQL statistics:
+    queries performed:
+        read:                            10511907
+        write:                           10767489
+        other:                           2307850
+        total:                           23587246
+    transactions:                        689135 (2296.88 per sec.)
+    queries:                             23587246 (78616.11 per sec.)
+    ignored errors:                      468419 (1561.24 per sec.)
+    reconnects:                          0      (0.00 per sec.)
+
+General statistics:
+    total time:                          300.0303s
+    total number of events:              689135
+
+Latency (ms):
+         min:                                    0.82
+         avg:                                   21.77
+         max:                                  622.27
+         95th percentile:                       52.89
+         sum:                             14999525.87
+
+Threads fairness:
+    events (avg/stddev):           13782.7000/241.07
+    execution time (avg/stddev):   299.9905/0.01
+
