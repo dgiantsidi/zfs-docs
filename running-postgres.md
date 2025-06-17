@@ -20,3 +20,10 @@ sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-servi
 ```sh
 sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --run --tpcc  --server-ip=127.0.0.1
 ```
+
+
+To increase the warehouses:
+
+```sh
+sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --run --tpcc --scale=<NUM_OF_WAREHOUSES>  --server-ip=127.0.0.1
+```
