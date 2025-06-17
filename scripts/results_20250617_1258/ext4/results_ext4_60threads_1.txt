@@ -1,0 +1,93 @@
+args: ['--run', '--tpcc', '--server-ip=10.7.0.4', '--time', '300', '--threads', '60']
+sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 60
+Report intermediate results every 10 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+Threads started!
+
+[ 10s ] thds: 60 tps: 2331.26 qps: 81332.14 (r/w/o: 36081.00/36852.05/8399.09) lat (ms,95%): 65.65 err/s 1869.89 reconn/s: 0.00
+[ 20s ] thds: 60 tps: 2497.31 qps: 87610.37 (r/w/o: 38939.61/39771.91/8898.85) lat (ms,95%): 58.92 err/s 1968.01 reconn/s: 0.00
+[ 30s ] thds: 60 tps: 2435.89 qps: 85185.50 (r/w/o: 37855.72/38620.72/8709.06) lat (ms,95%): 59.99 err/s 1933.99 reconn/s: 0.00
+[ 40s ] thds: 60 tps: 2375.32 qps: 82623.34 (r/w/o: 36706.68/37428.09/8488.57) lat (ms,95%): 64.47 err/s 1881.91 reconn/s: 0.00
+[ 50s ] thds: 60 tps: 2347.58 qps: 81337.35 (r/w/o: 36106.96/36828.65/8401.74) lat (ms,95%): 63.32 err/s 1866.39 reconn/s: 0.00
+[ 60s ] thds: 60 tps: 2511.30 qps: 87415.12 (r/w/o: 38805.55/39584.65/9024.91) lat (ms,95%): 57.87 err/s 2016.40 reconn/s: 0.00
+[ 70s ] thds: 60 tps: 2315.02 qps: 80164.26 (r/w/o: 35595.45/36275.35/8293.46) lat (ms,95%): 63.32 err/s 1843.51 reconn/s: 0.00
+[ 80s ] thds: 60 tps: 2447.97 qps: 85869.91 (r/w/o: 38156.96/38932.35/8780.60) lat (ms,95%): 58.92 err/s 1957.68 reconn/s: 0.00
+[ 90s ] thds: 60 tps: 2335.91 qps: 81642.96 (r/w/o: 36253.71/37017.01/8372.25) lat (ms,95%): 64.47 err/s 1863.91 reconn/s: 0.00
+[ 100s ] thds: 60 tps: 2265.82 qps: 79026.12 (r/w/o: 35113.17/35815.98/8096.96) lat (ms,95%): 65.65 err/s 1793.71 reconn/s: 0.00
+[ 110s ] thds: 60 tps: 2313.59 qps: 81118.28 (r/w/o: 36003.06/36789.36/8325.87) lat (ms,95%): 63.32 err/s 1862.59 reconn/s: 0.00
+[ 120s ] thds: 60 tps: 2389.28 qps: 83608.04 (r/w/o: 37140.95/37910.35/8556.74) lat (ms,95%): 63.32 err/s 1902.09 reconn/s: 0.00
+[ 130s ] thds: 60 tps: 2188.19 qps: 76491.27 (r/w/o: 33981.90/34716.00/7793.38) lat (ms,95%): 70.55 err/s 1719.99 reconn/s: 0.00
+[ 140s ] thds: 60 tps: 2110.93 qps: 73563.11 (r/w/o: 32670.25/33345.36/7547.50) lat (ms,95%): 75.82 err/s 1676.02 reconn/s: 0.00
+[ 150s ] thds: 60 tps: 2312.49 qps: 81039.02 (r/w/o: 35987.18/36730.78/8321.07) lat (ms,95%): 65.65 err/s 1862.19 reconn/s: 0.00
+FATAL: PQexec() failed: 7 new multixact has more than one updating member: 0 3[868732 (keysh), 868764 (nokeyupd), 868795 (nokeyupd)]
+FATAL: failed query was: UPDATE warehouse1
+	          SET w_ytd = w_ytd + 2108 
+	        WHERE w_id = 2
+FATAL: `thread_run' function failed: /usr/share/sysbench/tpcc_run.lua:268: SQL error, errno = 0, state = 'XX000': new multixact has more than one updating member: 0 3[868732 (keysh), 868764 (nokeyupd), 868795 (nokeyupd)]
