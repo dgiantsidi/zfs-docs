@@ -1,0 +1,15 @@
+[seq_sync_job]
+ioengine=psync
+sync=1
+rw=write
+numjobs=${NUMJOBS}
+filesize=${FILESIZE}
+filename_format=file$jobnum
+group_reporting=1
+thread=1
+direct=0
+fsync=1
+directory=${DIRECTORY}
+time_based=1
+runtime=60
+bs=${BLOCKSIZE}
