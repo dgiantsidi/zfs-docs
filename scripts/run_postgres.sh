@@ -113,9 +113,9 @@ cleanup_docker_shielded_zfs() {
 
 cleanup_docker_zfs() {
     echo "disks are: $DISKS"
-    sudo zpool destroy /var/lib/docker
-    sudo rm -rf /var/lib/docker
+    sudo zpool destroy zpool-docker
     unmount_zfs
+    sudo rm -rf /var/lib/docker
     sudo wipefs -a $DISKS
 
 }
