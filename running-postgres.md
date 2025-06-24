@@ -27,3 +27,9 @@ To increase the warehouses:
 ```sh
 sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --run --tpcc --scale=<NUM_OF_WAREHOUSES>  --server-ip=127.0.0.1
 ```
+
+To configure the threads:
+
+```sh
+sudo docker run --name sysbench-client -it --rm --net host cloudsuite/data-serving-relational:client --run --tpcc --scale=<NUM_OF_WAREHOUSES>  --server-ip=127.0.0.1 --threads <NUM_OF_THREADS>
+```
