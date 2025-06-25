@@ -1,0 +1,61 @@
+args: ['--run', '--tpcc', '--server-ip=10.7.0.4', '--time', '300', '--threads', '20']
+sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 20
+Report intermediate results every 10 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+FATAL: Connection to database failed: connection to server at "10.7.0.4", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+FATAL: `thread_init' function failed: /usr/share/sysbench/tpcc_common.lua:76: connection creation failed
+FATAL: Connection to database failed: connection to server at "10.7.0.4", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+FATAL: `thread_init' function failed: /usr/share/sysbench/tpcc_common.lua:76: connection creation failed
+FATAL: Connection to database failed: connection to server at "10.7.0.4", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(last message repeated 3 times)
+FATAL: `thread_init' function failed: /usr/share/sysbench/tpcc_common.lua:76: connection creation failed
+(last message repeated 1 times)
+FATAL: Connection to database failed: connection to server at "10.7.0.4", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+FATAL: `thread_init' function failed: /usr/share/sysbench/tpcc_common.lua:76: connection creation failed
+(last message repeated 2 times)
+FATAL: Connection to database failed: connection to server at "10.7.0.4", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(last message repeated 3 times)
+FATAL: `thread_init' function failed: /usr/share/sysbench/tpcc_common.lua:76: connection creation failed
+(last message repeated 3 times)
+FATAL: Connection to database failed: connection to server at "10.7.0.4", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+FATAL: `thread_init' function failed: /usr/share/sysbench/tpcc_common.lua:76: connection creation failed
+FATAL: Connection to database failed: connection to server at "10.7.0.4", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+FATAL: `thread_init' function failed: /usr/share/sysbench/tpcc_common.lua:76: connection creation failed
+FATAL: Connection to database failed: connection to server at "10.7.0.4", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(last message repeated 2 times)
+FATAL: `thread_init' function failed: /usr/share/sysbench/tpcc_common.lua:76: connection creation failed
+(last message repeated 2 times)
+FATAL: Connection to database failed: connection to server at "10.7.0.4", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+(last message repeated 2 times)
+FATAL: `thread_init' function failed: /usr/share/sysbench/tpcc_common.lua:76: connection creation failed
+(last message repeated 2 times)
+FATAL: Connection to database failed: connection to server at "10.7.0.4", port 5432 failed: Connection refused
+	Is the server running on that host and accepting TCP/IP connections?
+
+FATAL: `thread_init' function failed: /usr/share/sysbench/tpcc_common.lua:76: connection creation failed
+FATAL: Thread initialization failed!

@@ -419,9 +419,9 @@ mkdir -p $RESULTS_DIR
 echo "*** ext4 ***"
 cleanup_ext4
 sleep 20
-#setup_ext4
-#sequential_sync_writes ext4
-#cleanup_ext4
+setup_ext4
+sequential_sync_writes ext4
+cleanup_ext4
 sleep 20
 
 echo "*** zfs ***"
