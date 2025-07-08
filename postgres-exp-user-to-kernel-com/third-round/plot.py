@@ -28,7 +28,7 @@ plt.plot(throughput_szfs, latency_szfs, 's--', label='Shielded ZFS', color='gree
 
 # Add text on top of the data points
 for i in range(len(latency_szfs)):
-    plt.text(throughput_szfs[i], latency_szfs[i], f'({clients[i]}, ({100*((latency_szfs[i] - latency_zfs[i])/latency_zfs[i])})%)',fontsize=9, ha='right'
+    plt.text(throughput_szfs[i], latency_szfs[i], f'({clients[i]}, {100*((latency_szfs[i] - latency_zfs[i])/latency_zfs[i]):.2f}%)',fontsize=9, ha='right'
 )
 
 title = f'TPC-C with 10 W over postgres ({date_string})'
