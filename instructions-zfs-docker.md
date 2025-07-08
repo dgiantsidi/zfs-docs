@@ -76,19 +76,23 @@ Instructions taken from: https://openzfs.github.io/openzfs-docs/Developer%20Reso
    ```
 
    Note that you should first check with `lsblk` in which disk the OS mount point is. You should exclude that disk.
+If you are running s-ZFS. This command is a blocking process.
+   ```sh
+   sudo zpool ccf <pool_name>
+   ```
 
-2) ```sh
+3) ```sh
    zfs unmount -a
    zpool destroy <pool_name>
    zpool list
    ```
    
-3) ``` sh
+4) ``` sh
    sudo zfs unmount <pool_name>
    sudo zfs mount <pool_name>
    ```
 
-4) Testing the ZIL
+5) Testing the ZIL
    ```sh
    sudo zpool freeze <pool_name>
    <execute cmds that write data> // the data will be directly flushed to the ZIL
@@ -116,11 +120,16 @@ Instructions taken from: https://openzfs.github.io/openzfs-docs/Developer%20Reso
 
 Note that you should first check with `lsblk` in which disk the OS mount point is.
 
-5) ```sh
+5) If you are running s-ZFS. This command is a blocking process.
+```sh
+sudo zpool ccf <pool_name>
+```
+
+6) ```sh
     sudo systemctl start docker
     ```
 
-6) ```sh
+7) ```sh
     sudo docker info
     ```
 
