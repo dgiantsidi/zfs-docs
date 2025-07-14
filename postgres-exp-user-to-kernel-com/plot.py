@@ -14,11 +14,11 @@ clients = [
 ]
 
 # data
-latency_zfs = [16.54,  19.98, 31.69, 34.09]
-throughput_zfs = [604.61, 1000.67, 1577.67, 1759.90]
+latency_zfs = [13.20,  17.47, 29.31, 31.28]
+throughput_zfs = [757.64, 1144.59, 1705.83, 1917.97]
 
-latency_szfs = [16.50, 20.12, 32.10, 34.44]
-throughput_szfs = [606.17, 993.87, 1557.39, 1741.99]
+latency_szfs = [13.28, 17.10, 29.26, 31.41]
+throughput_szfs = [752.90, 1169.50, 1708.38, 1909.79]
 
 # Plot
 plt.figure(figsize=(8, 6))
