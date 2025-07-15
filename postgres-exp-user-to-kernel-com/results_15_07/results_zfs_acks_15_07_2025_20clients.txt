@@ -1,0 +1,77 @@
+args: ['--run', '--tpcc', '--time', '180', '--server-ip=10.7.0.4', '--threads=20']
+sysbench 1.0.20 (using system LuaJIT 2.1.0-beta3)
+
+Running the test with following options:
+Number of threads: 20
+Report intermediate results every 10 second(s)
+Initializing random number generator from current time
+
+
+Initializing worker threads...
+
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+DB SCHEMA public
+Threads started!
+
+[ 10s ] thds: 20 tps: 1064.34 qps: 32771.35 (r/w/o: 14784.21/15267.99/2719.15) lat (ms,95%): 40.37 err/s 297.88 reconn/s: 0.00
+[ 20s ] thds: 20 tps: 1004.20 qps: 31456.76 (r/w/o: 14209.54/14680.14/2567.09) lat (ms,95%): 41.10 err/s 284.50 reconn/s: 0.00
+[ 30s ] thds: 20 tps: 1047.30 qps: 32582.75 (r/w/o: 14731.27/15197.47/2654.01) lat (ms,95%): 40.37 err/s 284.90 reconn/s: 0.00
+[ 40s ] thds: 20 tps: 1078.40 qps: 33585.02 (r/w/o: 15177.71/15684.91/2722.40) lat (ms,95%): 38.94 err/s 288.20 reconn/s: 0.00
+[ 50s ] thds: 20 tps: 1100.80 qps: 33780.59 (r/w/o: 15246.30/15728.50/2805.80) lat (ms,95%): 38.94 err/s 307.70 reconn/s: 0.00
+[ 60s ] thds: 20 tps: 1064.80 qps: 33152.29 (r/w/o: 14960.89/15478.59/2712.80) lat (ms,95%): 41.10 err/s 296.20 reconn/s: 0.00
+[ 70s ] thds: 20 tps: 1016.80 qps: 31596.97 (r/w/o: 14271.53/14739.33/2586.11) lat (ms,95%): 39.65 err/s 280.50 reconn/s: 0.00
+[ 80s ] thds: 20 tps: 1036.40 qps: 32320.74 (r/w/o: 14592.62/15093.02/2635.10) lat (ms,95%): 39.65 err/s 285.10 reconn/s: 0.00
+[ 90s ] thds: 20 tps: 1031.50 qps: 31725.07 (r/w/o: 14321.39/14775.79/2627.90) lat (ms,95%): 39.65 err/s 287.80 reconn/s: 0.00
+[ 100s ] thds: 20 tps: 1065.10 qps: 32951.77 (r/w/o: 14887.59/15347.29/2716.90) lat (ms,95%): 39.65 err/s 298.80 reconn/s: 0.00
+[ 110s ] thds: 20 tps: 1012.80 qps: 31432.77 (r/w/o: 14185.19/14653.59/2594.00) lat (ms,95%): 41.85 err/s 290.80 reconn/s: 0.00
+[ 120s ] thds: 20 tps: 1002.00 qps: 30970.48 (r/w/o: 13987.24/14421.44/2561.81) lat (ms,95%): 40.37 err/s 283.70 reconn/s: 0.00
+[ 130s ] thds: 20 tps: 1052.20 qps: 32599.67 (r/w/o: 14750.04/15182.84/2666.79) lat (ms,95%): 38.25 err/s 286.90 reconn/s: 0.00
+[ 140s ] thds: 20 tps: 1058.89 qps: 32850.07 (r/w/o: 14851.09/15311.99/2686.98) lat (ms,95%): 40.37 err/s 288.60 reconn/s: 0.00
+[ 150s ] thds: 20 tps: 1010.81 qps: 31611.36 (r/w/o: 14274.36/14769.17/2567.83) lat (ms,95%): 43.39 err/s 277.30 reconn/s: 0.00
+[ 160s ] thds: 20 tps: 1001.30 qps: 30912.84 (r/w/o: 13953.37/14403.87/2555.59) lat (ms,95%): 43.39 err/s 281.40 reconn/s: 0.00
+[ 170s ] thds: 20 tps: 976.10 qps: 30364.95 (r/w/o: 13719.62/14174.52/2470.80) lat (ms,95%): 44.17 err/s 264.80 reconn/s: 0.00
+[ 180s ] thds: 20 tps: 997.30 qps: 31239.04 (r/w/o: 14103.07/14588.57/2547.40) lat (ms,95%): 42.61 err/s 281.30 reconn/s: 0.00
+SQL statistics:
+    queries performed:
+        read:                            2610228
+        write:                           2695154
+        other:                           474018
+        total:                           5779400
+    transactions:                        186231 (1034.45 per sec.)
+    queries:                             5779400 (32102.51 per sec.)
+    ignored errors:                      51670  (287.01 per sec.)
+    reconnects:                          0      (0.00 per sec.)
+
+General statistics:
+    total time:                          180.0292s
+    total number of events:              186231
+
+Latency (ms):
+         min:                                    1.53
+         avg:                                   19.33
+         max:                                  755.92
+         95th percentile:                       41.10
+         sum:                              3599960.75
+
+Threads fairness:
+    events (avg/stddev):           9311.5500/153.20
+    execution time (avg/stddev):   179.9980/0.01
+
