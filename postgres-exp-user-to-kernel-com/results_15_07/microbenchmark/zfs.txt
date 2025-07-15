@@ -1,0 +1,137 @@
+azureuser@zfs:~/fio-benchmark$ time  sudo ./benchmark 
+Thread 100000 completed 22 writes in 302.4432 seconds
+Thread 100000 completed 19 writes in 302.4582 seconds
+Thread 100000 completed 10 writes in 302.4615 seconds
+Thread 100000 completed 52 writes in 302.4636 seconds
+Thread 100000 completed 24 writes in 302.4746 seconds
+Thread 100000 completed 16 writes in 302.4805 seconds
+Thread 100000 completed 3 writes in 302.4845 seconds
+Thread 100000 completed 2 writes in 302.4846 seconds
+Thread 100000 completed 11 writes in 302.4894 seconds
+Thread 100000 completed 55 writes in 302.4896 seconds
+Thread 100000 completed 6 writes in 302.4936 seconds
+Thread 100000 completed 0 writes in 302.4965 seconds
+Thread 100000 completed 41 writes in 302.4923 seconds
+Thread 100000 completed 26 writes in 302.4957 seconds
+Thread 100000 completed 5 writes in 302.5039 seconds
+Thread 100000 completed 47 writes in 302.5023 seconds
+Thread 100000 completed 57 writes in 302.5027 seconds
+Thread 100000 completed 61 writes in 302.5003 seconds
+Thread 100000 completed 33 writes in 302.5060 seconds
+Thread 100000 completed 38 writes in 302.5058 seconds
+Thread 100000 completed 51 writes in 302.5095 seconds
+Thread 100000 completed 23 writes in 302.5101 seconds
+Thread 100000 completed 50 writes in 302.5121 seconds
+Thread 100000 completed 1 writes in 302.5148 seconds
+Thread 100000 completed 20 writes in 302.5176 seconds
+Thread 100000 completed 62 writes in 302.5102 seconds
+Thread 100000 completed 13 writes in 302.5183 seconds
+Thread 100000 completed 8 writes in 302.5211 seconds
+Thread 100000 completed 36 writes in 302.5207 seconds
+Thread 100000 completed 7 writes in 302.5238 seconds
+Thread 100000 completed 27 writes in 302.5215 seconds
+Thread 100000 completed 39 writes in 302.5205 seconds
+Thread 100000 completed 18 writes in 302.5276 seconds
+Thread 100000 completed 44 writes in 302.5248 seconds
+Thread 100000 completed 9 writes in 302.5306 seconds
+Thread 100000 completed 4 writes in 302.5310 seconds
+Thread 100000 completed 14 writes in 302.5302 seconds
+Thread 100000 completed 54 writes in 302.5270 seconds
+Thread 100000 completed 53 writes in 302.5296 seconds
+Thread 100000 completed 43 writes in 302.5323 seconds
+Thread 100000 completed 34 writes in 302.5330 seconds
+Thread 100000 completed 15 writes in 302.5444 seconds
+Thread 100000 completed 63 writes in 302.5366 seconds
+Thread 100000 completed 25 writes in 302.5450 seconds
+Thread 100000 completed 29 writes in 302.5447 seconds
+Thread 100000 completed 37 writes in 302.5462 seconds
+Thread 100000 completed 21 writes in 302.5503 seconds
+Thread 100000 completed 42 writes in 302.5500 seconds
+Thread 100000 completed 60 writes in 302.5534 seconds
+Thread 100000 completed 17 writes in 302.5546 seconds
+Thread 100000 completed 32 writes in 302.5527 seconds
+Thread 100000 completed 12 writes in 302.5586 seconds
+Thread 100000 completed 35 writes in 302.5560 seconds
+Thread 100000 completed 48 writes in 302.5611 seconds
+Thread 100000 completed 58 writes in 302.5630 seconds
+Thread 100000 completed 56 writes in 302.5610 seconds
+Thread 100000 completed 46 writes in 302.5635 seconds
+Thread 100000 completed 28 writes in 302.5624 seconds
+Thread 100000 completed 59 writes in 302.5699 seconds
+Thread 100000 completed 49 writes in 302.5722 seconds
+Thread 100000 completed 30 writes in 302.5762 seconds
+Thread 100000 completed 45 writes in 302.5809 seconds
+Thread 100000 completed 40 writes in 302.5815 seconds
+Thread 100000 completed 31 writes in 302.5878 seconds
+
+Benchmark Results:
+Thread 0: 302.4965 seconds, latency=3.0250 ms
+Thread 1: 302.5148 seconds, latency=3.0251 ms
+Thread 2: 302.4846 seconds, latency=3.0248 ms
+Thread 3: 302.4845 seconds, latency=3.0248 ms
+Thread 4: 302.5310 seconds, latency=3.0253 ms
+Thread 5: 302.5039 seconds, latency=3.0250 ms
+Thread 6: 302.4936 seconds, latency=3.0249 ms
+Thread 7: 302.5238 seconds, latency=3.0252 ms
+Thread 8: 302.5211 seconds, latency=3.0252 ms
+Thread 9: 302.5306 seconds, latency=3.0253 ms
+Thread 10: 302.4615 seconds, latency=3.0246 ms
+Thread 11: 302.4894 seconds, latency=3.0249 ms
+Thread 12: 302.5586 seconds, latency=3.0256 ms
+Thread 13: 302.5183 seconds, latency=3.0252 ms
+Thread 14: 302.5302 seconds, latency=3.0253 ms
+Thread 15: 302.5444 seconds, latency=3.0254 ms
+Thread 16: 302.4805 seconds, latency=3.0248 ms
+Thread 17: 302.5546 seconds, latency=3.0255 ms
+Thread 18: 302.5276 seconds, latency=3.0253 ms
+Thread 19: 302.4582 seconds, latency=3.0246 ms
+Thread 20: 302.5176 seconds, latency=3.0252 ms
+Thread 21: 302.5503 seconds, latency=3.0255 ms
+Thread 22: 302.4432 seconds, latency=3.0244 ms
+Thread 23: 302.5101 seconds, latency=3.0251 ms
+Thread 24: 302.4746 seconds, latency=3.0247 ms
+Thread 25: 302.5450 seconds, latency=3.0255 ms
+Thread 26: 302.4957 seconds, latency=3.0250 ms
+Thread 27: 302.5215 seconds, latency=3.0252 ms
+Thread 28: 302.5624 seconds, latency=3.0256 ms
+Thread 29: 302.5447 seconds, latency=3.0254 ms
+Thread 30: 302.5762 seconds, latency=3.0258 ms
+Thread 31: 302.5878 seconds, latency=3.0259 ms
+Thread 32: 302.5527 seconds, latency=3.0255 ms
+Thread 33: 302.5060 seconds, latency=3.0251 ms
+Thread 34: 302.5330 seconds, latency=3.0253 ms
+Thread 35: 302.5560 seconds, latency=3.0256 ms
+Thread 36: 302.5207 seconds, latency=3.0252 ms
+Thread 37: 302.5462 seconds, latency=3.0255 ms
+Thread 38: 302.5058 seconds, latency=3.0251 ms
+Thread 39: 302.5205 seconds, latency=3.0252 ms
+Thread 40: 302.5815 seconds, latency=3.0258 ms
+Thread 41: 302.4923 seconds, latency=3.0249 ms
+Thread 42: 302.5500 seconds, latency=3.0255 ms
+Thread 43: 302.5323 seconds, latency=3.0253 ms
+Thread 44: 302.5248 seconds, latency=3.0252 ms
+Thread 45: 302.5809 seconds, latency=3.0258 ms
+Thread 46: 302.5635 seconds, latency=3.0256 ms
+Thread 47: 302.5023 seconds, latency=3.0250 ms
+Thread 48: 302.5611 seconds, latency=3.0256 ms
+Thread 49: 302.5722 seconds, latency=3.0257 ms
+Thread 50: 302.5121 seconds, latency=3.0251 ms
+Thread 51: 302.5095 seconds, latency=3.0251 ms
+Thread 52: 302.4636 seconds, latency=3.0246 ms
+Thread 53: 302.5296 seconds, latency=3.0253 ms
+Thread 54: 302.5270 seconds, latency=3.0253 ms
+Thread 55: 302.4896 seconds, latency=3.0249 ms
+Thread 56: 302.5610 seconds, latency=3.0256 ms
+Thread 57: 302.5027 seconds, latency=3.0250 ms
+Thread 58: 302.5630 seconds, latency=3.0256 ms
+Thread 59: 302.5699 seconds, latency=3.0257 ms
+Thread 60: 302.5534 seconds, latency=3.0255 ms
+Thread 61: 302.5003 seconds, latency=3.0250 ms
+Thread 62: 302.5102 seconds, latency=3.0251 ms
+Thread 63: 302.5366 seconds, latency=3.0254 ms
+Total time across all threads: 19361.5670 seconds, avg_latency= 3.0252 ms
+Wall-clock time: 302.5920 seconds
+
+real    5m2.607s
+user    0m0.003s
+sys     0m0.009s
