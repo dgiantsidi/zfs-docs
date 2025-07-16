@@ -29,7 +29,7 @@ plt.figure(figsize=(8, 6))
 
 plt.plot(throughput_zfs, latency_zfs, 'o-', label='Shielded ZFS', color='blue')
 plt.plot(throughput_szfs, latency_szfs, 's--', label='Shielded ZFS w/ acked cmts from userspace', color='green')
-plt.plot(throughput_szfs_delay500us, latency_szfs_delay500us, 'X--', label='Shielded ZFS w/ acked cmts (0.5ms CCF-mocked delay)', color='orange')
+plt.plot(throughput_szfs_delay500us, latency_szfs_delay500us, 'X--', label='Shielded ZFS w/ acked cmts (0.5ms CCF-mocked delay)', color='black')
 
 # Add text on top of the data points
 for i in range(len(latency_szfs)):
