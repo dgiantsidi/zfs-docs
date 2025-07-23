@@ -124,6 +124,10 @@ Note that you should first check with `lsblk` in which disk the OS mount point i
 
 5) If you are running s-ZFS. This command is a blocking process.
 ```sh
+./ccf/user_space_proc_cpp <pool_name>
+```
+The following cmd is obsolete based on the previous single-threaded codebase (todo: might be supported also in the future)
+```sh
 sudo zpool ccf <pool_name>
 ```
 
