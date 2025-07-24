@@ -102,3 +102,12 @@ git clone git@github.com:dgiantsidi/ngtcp2.git && cd ngtcp2 && git submodule upd
   - `./configure --with-picotls PICOTLS_CFLAGS="-I$PWD/picotls/include/" PICOTLS_LIBS="-L$PWD/picotls -lpicotls-openssl -lpicotls-core" PKG_CONFIG_PATH=$PWD/nghttp3/build/lib/pkgconfig`
   - `make -C third-party/`
   - `make`
+    
+5) Generate the key for the server
+```sh
+openssl genrsa -out server.key 2048
+```
+
+```sh
+openssl req -new -x509 -key server.key -out server.crt -days 365
+```
