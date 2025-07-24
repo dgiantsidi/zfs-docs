@@ -78,9 +78,8 @@ primary: `sudo -E LD_LIBRARY_PATH=${LD_LIBRARY_PATH}:$(realpath ../../ngtcp2/lib
 Instructions followed from the following references:
 
 1)
-```
-git clone git@github.com:dgiantsidi/ngtcp2.git && cd ngtcp2 && git submodule update --init
-&& sudo apt-get update && sudo apt-get install libtool  libev-dev libssl-dev pkg-config
+```sh
+git clone git@github.com:dgiantsidi/ngtcp2.git && cd ngtcp2 && git submodule update --init && sudo apt-get update && sudo apt-get install libtool  libev-dev libssl-dev pkg-config cmake
 ```
 2)  Build `picotls` (for resolving OpenSSL conficts)
   - `git clone git@github.com:h2o/picotls.git`
