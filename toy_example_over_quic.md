@@ -21,6 +21,8 @@ We work on the `commitments-protocol-dev` branch of the ngtcp2 repo.
 
 4) repeat steps 2 and 3 for the server-side.
 
+(on the server side) You might also want to execute `export LDFLAGS="-lpthread"` before `autoreconf -i` if the linker is complaining about undefined references of
+pthreads, etc.
 
 ## How to run
 
