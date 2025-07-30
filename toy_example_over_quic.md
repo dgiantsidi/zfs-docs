@@ -8,6 +8,8 @@ The user-space process has two threads, one for quering the kernel module (`thre
 
 ## How to build
 
+We work on the `commitments-protocol-dev` branch of the ngtcp2 repo.
+
 1) ```sh
     git clone https://github.com/dgiantsidi/genltest && cd genltest && make && sudo insmod netlink_module.ko && cd ..
     ```
