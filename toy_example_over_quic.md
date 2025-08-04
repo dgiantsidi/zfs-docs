@@ -17,7 +17,7 @@ We work on the `commitments-protocol-dev` branch of the ngtcp2 repo.
 2) ```sh
     git clone git@github.com:dgiantsidi/ngtcp2.git ngtcp2-client && git checkout commitments-protocol-dev
     ```
-3) follow the instructions [here](https://github.com/dgiantsidi/zfs-docs/blob/main/quic-instructions.md#how-to-build)
+3) For full installation: follow the instructions [here](https://github.com/dgiantsidi/zfs-docs/blob/main/quic-instructions.md#how-to-build)
 
 4) repeat steps 2 and 3 for the server-side.
 
