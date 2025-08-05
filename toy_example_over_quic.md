@@ -42,3 +42,16 @@ For example,
 ```
 
 For example, `./examples/ptlsclient 10.5.0.7 6800 https://10.5.0.7:1800 -d ./examples/text2.txt`
+
+
+
+## Results
+
+| System                          | TPC-C (10W)                                               | Microbenchmark with fsync       |
+|-------------------------------|---------------------------------------------------------- |---------------------|
+| Shielded ZFS          | latency=32.25ms, tps=1860                                           | 2.85ms              |
+| Shielded ZFS w/ acks (local)      | latency=31.83ms, tps=1884  (-1% w.r.t. Shielded ZFS)               | 3.21ms  (12% slowdown w.r.t. Shielded ZFS)       |
+| Shielded ZFS w/ acks (remote)           | latency=32.77ms, tps=1830 (1.6% w.r.t. Shielded ZFS)                 | 3.43ms    (20% slowdown w.r.t. Shielded ZFS)     |
+
+
+
