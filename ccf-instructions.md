@@ -4,13 +4,15 @@
 
 2. `sudo -E ./run.sh ccf-dev.yml --extra-vars "platform=virtual" --extra-vars "clang_version=15"`
 
-3. `mkdir build && cd build`
+3. 5. `cd ../../`
 
-4. `cmake -GNinja -DCOMPILE_TARGET=virtual ..` . You may add ``` -DUSE_AUTHENTICATOR=1``` for message integrity
+4. `mkdir build && cd build`
 
-5. `ninja`
+5. `cmake -GNinja -DCOMPILE_TARGET=virtual ..` . You may add ``` -DUSE_AUTHENTICATOR=1``` for message integrity
 
-6. `sudo ninja install`
+6. `ninja`
+
+7. `sudo ninja install`
 
 
 # How to run
